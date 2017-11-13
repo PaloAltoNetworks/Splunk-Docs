@@ -1,3 +1,4 @@
-# My Awesome Book
+# Coming soon...
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+Check back soon for the new Palo Alto Networks App for Splunk site.  For now, please [register for the webinar](/webinar.html) to learn all the great new features coming in App version 6.0!
+
