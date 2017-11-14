@@ -3,7 +3,8 @@
         "image-captions",
         "bootstrap-callout",
         "header",
-        "collapsible-chapters"
+        "collapsible-chapters",
+        "ga"
     ],
     "pluginsConfig": {
         "scripts": {
@@ -12,6 +13,13 @@
         "collapsible-chapters": {},
         "layout": {
             "headerPath" : "layouts/header.html"
+        },
+        "ga": {
+            "token": "UA-44897305-6",
+            "configuration": {
+                "cookieDomain": "splunk.paloaltonetworks.com"
+            }
         }
+
     }
 }
