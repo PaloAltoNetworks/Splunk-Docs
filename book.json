@@ -2,7 +2,6 @@
     "plugins": [
         "image-captions",
         "bootstrap-callout",
-        "scripts",
         "header",
         "collapsible-chapters"
     ],
