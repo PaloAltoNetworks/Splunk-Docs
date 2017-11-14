@@ -1,0 +1,18 @@
+{
+    "plugins": [
+        "image-captions",
+        "bootstrap-callout",
+        "scripts",
+        "header",
+        "collapsible-chapters"
+    ],
+    "pluginsConfig": {
+        "scripts": {
+            "files": []
+        },
+        "collapsible-chapters": {},
+        "layout": {
+            "headerPath" : "layouts/header.html"
+        }
+    }
+}
