@@ -1,5 +1,8 @@
 <img src="assets/logos.png" class="no-shadow" />
 
+> #### warning::
+> [Register for the upcoming Webinar](http://splunk.paloaltonetworks.com/webinar.html) to see the latest features in App version 6.0!
+
 About the App
 -------------
 
