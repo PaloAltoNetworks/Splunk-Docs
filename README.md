@@ -29,10 +29,12 @@ The **Palo Alto Networks App** and **Add-on** have different features that are d
 
 **Palo Alto Networks App**
 
--   Dashboards to track SaaS application usage, user activity, system health, configuration changes for audits, Wildfire malware, GlobalProtect and other Palo Alto Networks specific features.
+-   Dashboards to track adversary attacks, incidents, SaaS application usage, user activity, system health, configuration changes for audits, malware, GlobalProtect VPN, and other Palo Alto Networks specific features.
 -   Advanced correlations in each dashboard
 -   Datamodels with pivots for easy access to data and visualizations
--   Index the [behavioral footprint](/wildfire.md) of malware seen by Wildfire
+-   Leverage [AutoFocus](/autofocus-and-minemeld.md) to prioritize attacks and investigations and search for IOC's
+-   Splunk [Adaptive Response](/adaptive-response.md) integration for automated action and remediation
+-   Index the [behavioral footprint](/wildfire.md) of malware seen by WildFire
 -   [Sync user login events with User-ID](/userid.md)
 -   [Use Adaptive Response to share context with Dynamic Address Groups](/adaptive-response.md)
 -   [Update metadata from content packs](/lookups.md#contentpack)
@@ -42,7 +44,8 @@ The **Palo Alto Networks App** and **Add-on** have different features that are d
 **Palo Alto Networks Add-on**
 
 -   Fully [CIM](http://docs.splunk.com/Documentation/CIM/latest/User/Overview) compliant and designed for use with [Splunk Enterprise Security](http://www.splunk.com/en_us/products/premium-solutions/splunk-enterprise-security.html)
--   Field extraction for Palo Alto Networks logs from [Firewalls](https://www.paloaltonetworks.com/products/platforms/firewalls.html), [Panorama](https://www.paloaltonetworks.com/products/platforms/centralized-management/panorama/overview.html), and [Traps Endpoint Security](https://www.paloaltonetworks.com/products/endpoint-security.html)
+-   Field extraction for Palo Alto Networks logs from [Firewalls](https://www.paloaltonetworks.com/products/platforms/firewalls.html), [Panorama](https://www.paloaltonetworks.com/products/platforms/centralized-management/panorama/overview.html), [Traps Endpoint Security](https://www.paloaltonetworks.com/products/endpoint-security.html), and [Aperture SaaS Application Security](https://www.paloaltonetworks.com/products/secure-the-cloud/aperture)
+-   Leverage threat intelligence from [MineMeld and AutoFocus](/autofocus-and-minemeld.md)
 -   [IP Classification](/lookups.md) tailored to your network environment
 -   [Designate SaaS applications](/lookups.md#saas) as sanctioned or unsanctioned for your organization
 -   App and Threat metadata from the Palo Alto Networks content and signature packs
