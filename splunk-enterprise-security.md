@@ -1,5 +1,19 @@
 # Splunk Enterprise Security
 
+## Common Information Model \(CIM\) Compliance
+
+The Palo Alto Networks Add-on is fully compliant with the [Common Information Model](http://docs.splunk.com/Documentation/CIM/latest/User/Overview) \(CIM\) provided by Splunk to normalize data fields. This table indicates the [CIM datamodels](http://docs.splunk.com/Documentation/CIM/4.9.1/User/Overview#What_data_models_are_included) and tags that apply to Palo Alto Networks data.
+
+| CIM Datamodel | Tags | Palo Alto Networks Eventtypes |
+| :--- | :--- | :--- |
+| [Change Analysis](http://docs.splunk.com/Documentation/CIM/latest/User/ChangeAnalysis) | change | pan\_config |
+| [Email](http://docs.splunk.com/Documentation/CIM/latest/User/Email) | email, filter | pan\_email |
+| [Intrusion Detection](http://docs.splunk.com/Documentation/CIM/latest/User/IntrusionDetection) | ids, attack | pan\_threat |
+| [Malware](http://docs.splunk.com/Documentation/CIM/latest/User/Malware) | malware, attack, operations | pan\_malware\_attacks, pan\_malware\_operations, pan\_wildfire |
+| [Network Sessions](http://docs.splunk.com/Documentation/CIM/latest/User/NetworkSessions) | network, session, start, end | pan\_traffic\_start, pan\_traffic\_end |
+| [Network Traffic](http://docs.splunk.com/Documentation/CIM/latest/User/NetworkTraffic) | network, communicate | pan\_traffic |
+| [Web](http://docs.splunk.com/Documentation/CIM/latest/User/Web) | web, proxy | pan\_url |
+
 ## Share MineMeld Indicators
 
 _Added in Add-on version 6.0_
@@ -19,13 +33,13 @@ Here's an example walk through for enabling sharing IPv4 indicators.
 
 #### Enable Saved Searches
 
-Navigate to **Settings** > **Searches, reports, and alerts**.
+Navigate to **Settings** &gt; **Searches, reports, and alerts**.
 
-Find the `Generate MineMeld IPv4 Enterprise Security Threatlist` saved search, then in the Actions column, click **Edit** > **Enable**.
+Find the `Generate MineMeld IPv4 Enterprise Security Threatlist` saved search, then in the Actions column, click **Edit** &gt; **Enable**.
 
 #### Enable Enterprise Security Threatlists
 
-Navigate to **Enterprise Security** > **Configure** > **Data Enrichment** > **Threat Intelligence Downloads**.
+Navigate to **Enterprise Security** &gt; **Configure** &gt; **Data Enrichment** &gt; **Threat Intelligence Downloads**.
 
 Find the threatlist named `minemeld_ipv4threatlist`, then click the **Enable** link.
 
