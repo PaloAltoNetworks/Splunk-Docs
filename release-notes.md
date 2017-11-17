@@ -26,7 +26,7 @@ Is your organization safe from those who intend the most harm? Know your adversa
 -   [AutoFocus Tags Support](/autofocus-and-minemeld.md)
 -   [Aperture Support](/aperture.md)
 -   [PAN-OS 8.0](https://www.paloaltonetworks.com/products/new/new-panos8-0) new fields
--   Threat Intelligence from MineMeld can be [shared with Splunk Enterprise Security](/splunk-enterprise-security.md)
+-   Threat Intelligence from MineMeld can be [shared with Splunk Enterprise Security](/enterprise-security.md#share-minemeld-indicators)
 -   [Improved CIM adoption](/upgrade.md#datamodel-changes)
 -   [Datamodel optimizations](/upgrade.md#datamodel-changes) for size on disk and performance
 

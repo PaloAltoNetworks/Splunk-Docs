@@ -22,7 +22,7 @@
 ## Configuration
 
 * [Upgrade the App/Add-on](upgrade.md)
-* [Splunk Enterprise Security](splunk-enterprise-security.md)
+* [Splunk Enterprise Security](enterprise-security.md)
 * [Add Context to Searches](lookups.md)
 
 ## Advanced Features
