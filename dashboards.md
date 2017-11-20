@@ -19,7 +19,7 @@ Most organizations get more incidents than can feasably be investigated so prior
 * Filter results by selecting a log type or severity from the time charts or using the filters at the top.
 * Click a table row in the incident feed to see the details and context of that incident.
 
-###### Incident Trends
+###### Incident Trend Graphs
 
 Each of the 'per hour' incident trendlines at the top of the All Incidents dashboard pulls from a different kind of log or product.  To populate all the trendlines and thus see all possible incidents, ensure you're sending the needed logs from the right product to populate each incident trend. The following table shows the product and log required for each incident trend, and the Splunk search to bring up these kinds of logs. You can use this search to determine if these logs are in your Splunk index.
 
@@ -29,7 +29,7 @@ Each of the 'per hour' incident trendlines at the top of the All Incidents dashb
 | Network Incidents | [Firewall](https://www.paloaltonetworks.com/products/secure-the-network/next-generation-firewall) or [Panorama](https://www.paloaltonetworks.com/products/management/panorama) sending threat logs | \`pan\_threat\` |
 | Endpoint Incidents | [Traps Endpoint Protection](https://www.paloaltonetworks.com/products/secure-the-endpoint/traps) | \`pan\_endpoint\` |
 | Aperture SaaS Incidents | [Aperture Enterprise SaaS Security](https://www.paloaltonetworks.com/products/secure-the-cloud/aperture) | \`pan\_aperture\` |
-| Malicious WildFire Submissions | [WildFire Malware Analysis](https://www.paloaltonetworks.com/products/secure-the-network/subscriptions/wildfire) | \`pan\_wildfire\` verdict="malicious" |
+| Malicious WildFire Submissions | [WildFire Malware Analysis](https://www.paloaltonetworks.com/products/secure-the-network/subscriptions/wildfire) and a [Firewall](https://www.paloaltonetworks.com/products/secure-the-network/next-generation-firewall) or [Panorama](https://www.paloaltonetworks.com/products/management/panorama) sending WildFire logs | \`pan\_wildfire\` verdict="malicious" |
 
 ## Adversary Scoreboard {#adversary}
 
