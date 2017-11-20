@@ -16,8 +16,20 @@ Most organizations get more incidents than can feasably be investigated so prior
 
 ###### Take Action
 
-- Filter results by selecting a log type or severity from the time charts or using the filters at the top.
-- Click a table row in the incident feed to see the details and context of that incident.
+* Filter results by selecting a log type or severity from the time charts or using the filters at the top.
+* Click a table row in the incident feed to see the details and context of that incident.
+
+###### Incident Trends
+
+Each of the 'per hour' incident trendlines at the top of the All Incidents dashboard pulls from a different kind of log or product.  To populate all the trendlines and thus see all possible incidents, ensure you're sending the needed logs from the right product to populate each incident trend. The following table shows the product and log required for each incident trend, and the Splunk search to bring up these kinds of logs. You can use this search to determine if these logs are in your Splunk index.
+
+| Incident Trend \(per hour\) | Product Required | Splunk Search |
+| :--- | :--- | :--- |
+| Correlated Incidents | [Firewall](https://www.paloaltonetworks.com/products/secure-the-network/next-generation-firewall) or [Panorama](https://www.paloaltonetworks.com/products/management/panorama) sending correlation logs | \`pan\_correlation\` |
+| Network Incidents | [Firewall](https://www.paloaltonetworks.com/products/secure-the-network/next-generation-firewall) or [Panorama](https://www.paloaltonetworks.com/products/management/panorama) sending threat logs | \`pan\_threat\` |
+| Endpoint Incidents | [Traps Endpoint Protection](https://www.paloaltonetworks.com/products/secure-the-endpoint/traps) | \`pan\_endpoint\` |
+| Aperture SaaS Incidents | [Aperture Enterprise SaaS Security](https://www.paloaltonetworks.com/products/secure-the-cloud/aperture) | \`pan\_aperture\` |
+| Malicious WildFire Submissions | [WildFire Malware Analysis](https://www.paloaltonetworks.com/products/secure-the-network/subscriptions/wildfire) | \`pan\_wildfire\` verdict="malicious" |
 
 ## Adversary Scoreboard {#adversary}
 
@@ -87,15 +99,16 @@ This is the only real-time dashboard in the entire App and is used primarily for
 
 Some organizations do not allow real-time searches in their Splunk environment. If this is the case, you have a few options to disabled or remove the real-time search in this dashboard:
 
-**Option 1:** Turn on [Indexed Real-time Searches](http://docs.splunk.com/Documentation/Splunk/7.0.0/Search/Aboutrealtimesearches#Indexed_real-time_search)
+**Option 1:** Turn on [Indexed Real-time Searches](http://docs.splunk.com/Documentation/Splunk/7.0.0/Search/Aboutrealtimesearches#Indexed_real-time_search)  
 This is a setting in the Splunk server that can be enabled for all Apps.
 
-**Option 2:** Change the timeframe in this dashboard
+**Option 2:** Change the timeframe in this dashboard  
 In the dashboard XML, change earliest from `rt-5m` to `-5m@m` and change latest from `rt` to `now`.
 
-**Option 3:** Remove the _Real-time Event Feed_ dashboard
+**Option 3:** Remove the _Real-time Event Feed_ dashboard  
 Do this by deleting the file `$SPLUNK_HOME/etc/apps/SplunkforPaloAltoNetworks/default/data/ui/views/realtime_event_feed.xml`.
 
 ## Datamodel Audit {#datamodel}
 
 Monitor the size, health, and acceleration of the Palo Alto Networks datamodels. This is an excellent tool for troubleshooting dashboards to see why data isn't showing up. All the dashboards except the Real-time Event Feed leverage the datamodel.
+
