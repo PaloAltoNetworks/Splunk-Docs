@@ -36,7 +36,7 @@ Some things to check to get WildFire data into Splunk:
 * If there are WildFire events \(syslogs\) but not WildFire reports \(XML\), check the report gathering logs for errors in `$SPLUNK_HOME/var/log/splunk/python.log`.
 * Check that you have configured the TA with the WildFire API Key, especially if upgrading from a pre-5.3 version of the App.
 
-### Datamodel Build Problems
+### Datamodel Build Problems {#datamodel}
 
 If using App 6.0 or higher, use the [Datamodel Audit](https://splunk.paloaltonetworks.com/dashboards.html#datamodel) dashboard to get visibility into the datamodels and what they are storing.
 
