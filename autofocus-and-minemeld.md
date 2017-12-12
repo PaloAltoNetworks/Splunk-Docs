@@ -67,3 +67,15 @@ First, get the AutoFocus API key at [https://autofocus.paloaltonetworks.com/#/se
 Then, navigate to the **Palo Alto Networks Add-on**, then click the **Configuration** tab at the top.  Click the **Add-on Settings** tab. Enter your AutoFocus API key into the field.
 
 ![Enter an AutoFocus API Key to collect information about AutoFocus tags in MineMeld data](/assets/autofocus-api-key.png)
+
+## Verify AutoFocus Tags
+
+AutoFocus tags are pulled at midnight every night by default. To manually trigger a tag retrieval with this search:
+
+    | panautofocustags
+
+To verify the tags have downloaded use this search:
+
+    | `pan_autofocus_tags`
+
+This should come up with a table full of AutoFocus tags and data about those tags.
