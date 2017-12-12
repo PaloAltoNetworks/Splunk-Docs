@@ -70,7 +70,7 @@ Then, navigate to the **Palo Alto Networks Add-on**, then click the **Configurat
 
 ## Verify AutoFocus Tags
 
-AutoFocus tags are pulled at midnight every night by default. To manually trigger a tag retrieval with this search:
+AutoFocus tags are pulled at midnight every night by default. You can manually trigger a tag retrieval with this search:
 
     | panautofocustags
 
