@@ -7,7 +7,7 @@ See [Installation](/installation.md) and [Getting Data Into Splunk](/getting-dat
 **Troubleshooting?**  
 See the [Troubleshooting Guide](/troubleshoot.md)
 
-**Need more help? Have questions?**
+**Need more help? Have questions?**  
 [Ask a question](https://answers.splunk.com/answers/ask.html?appid=491) on Splunk Answers.  
 A notification is sent to a team of technical representatives at Palo Alto Networks and Splunk, including the developers of the app, who will respond as soon as possible.
 
