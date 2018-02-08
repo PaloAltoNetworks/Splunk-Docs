@@ -12,7 +12,7 @@ When upgrading any app in Splunk, configuration created by the Splunk administra
 
 **All dashboards have no data**
 
-Perform a search for `eventtype=pan` with 'All time' as the timeframe. If logs show up, then verify the timestamp of the logs is correct. If it is wrong, check that the clock and timezone on the Firewall/Panorama matches the Splunk server, or use NTP on both. See Troubleshooting Step 2 below for more detail.
+Perform a search for `eventtype=pan` with 'All time' as the timeframe. If logs show up, then verify the timestamp of the logs is correct. If it is wrong, check that the clock and timezone on the Firewall/Panorama matches the Splunk server, or use NTP on both. See [Time and Timezone Problems](/troubleshoot.md#time-and-timezone-problems "Time and Timezone Problems") below for more detail.
 
 **Only 'Overview' or 'Real-time Event Feed' dashboard has data**
 
@@ -21,6 +21,30 @@ The 'Overview' dashboard has data, but other dashboards do not, usually the data
 **'Overview' or 'Real-time Event Feed' dashboard has no data**
 
 The 'Overview' dashboards has no data, but other dashboards work correctly, the clock on your firewall is a few minutes off, or the timezone is set wrong. The 'Overview' dashboard is a real-time 5 minute search, while the other dashboards pull a larger timeframe from the data model. So the 'Overview' is more suseptible to minor variations in system clock. Please verify the clock and timezone on Splunk and the Firewall/Panorama are set exactly the same.
+
+### Time and Timezone Problems
+
+There are a few factors that determine the time and timezone of a log:
+
+* The Splunk server's time and date
+* The Splunk server timezone, or the Splunk container timezone when using Docker
+* The date/time and timezone settings on Firewall, Panorama, or Traps ESM
+* The [per-log timezone setting](http://docs.splunk.com/Documentation/SplunkCloud/6.6.3/Data/Applytimezoneoffsetstotimestamps) in props.conf
+
+By default, the App and Add-on do not interpret timezones or have any preconfigured timezone settings.
+
+Firewall/Panorama and Traps always output logs without a timezone, so the timezone setting is honored, but not included with the log.  For example, if your Firewall is set to 8:00:00 EST, then the time in the syslog will be 8:00:00 \(without the EST timezone\).
+
+Splunk always interprets Palo Alto Networks logs as the timezone of the Splunk server \(or container\).
+
+Therefor, if a Splunk server and Firewall have the same timezone, then the timestamp will be interpreted correctly by Splunk.  If they have different timezones, then the interpreted time will be offset by the difference in the timezones.  You can overcome this by creating a `local/props.conf` file that explicitly [sets the timezone](http://docs.splunk.com/Documentation/SplunkCloud/6.6.3/Data/Applytimezoneoffsetstotimestamps) for the logs.  For example, if Splunk is set to UTC and the Firewall is set to EST, then configure a local `props.conf` file to interpret the Firewall logs as EST, as they will incorrectly be interpreted as UTC by default.
+
+An example timezone setting in `props.conf` might look like this:
+
+    [host::newyork-firewall-*]
+    TZ = US/Eastern
+    
+This example would cause logs from `newyork-firewall-1`, `newyork-firewall-2`, etc. to be interpreted as US/Eastern timezone.
 
 ### No WildFire Data
 
