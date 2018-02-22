@@ -24,9 +24,9 @@ Some organizations prefer not to install Add-ons on Search Heads. This is fine f
 
 > #### warning::Important changes
 >
-> Previous guidance was to install the App and Add-on to all Search Heads, Indexers, and Heavy Forwarders. However, this can result in duplicate datamodel acceleration in some clustered configurations. The App should only be installed on Search Heads per the table above. If you have installed the App on Indexers or Heavy Forwarders, please delete the App so only the Add-on remains on those nodes.
+> Previous guidance was to install the App and Add-on to all Search Heads, Indexers, and Heavy Forwarders. However, this can result in duplicate storage of accelerated datamodels. Now, it is recommended to install the App only on Search Heads per the table above. If you have installed the App on Indexers or Heavy Forwarders, please delete the App so only the Add-on remains on those nodes.
 >
-> Earlier versions of the App would install the Add-on automatically. This is no longer allowed by Splunk so since App 5.4.2 you are required you to install the App and Add-on individually.
+> Earlier versions of the App would install the Add-on automatically. This is no longer allowed by Splunk so since App 5.4.2 you are required to install the App and Add-on individually.
 
 ### Install the App and Add-on
 
