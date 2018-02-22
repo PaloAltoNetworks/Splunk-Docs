@@ -121,7 +121,7 @@ If logs showed in step 2, but no logs show up now, then the logs are not getting
 
 ![](assets/troubleshooting_dashboard.png)
 
-Check that the dashboards are populating with data. The Overview dashboard doesn't use acceleration, so it should work at this point. If it doesn't, then go back to the previous troubleshooting steps. For all the other dashboards, after 5-8 minutes of syslogging to the Splunk server, the dashboards should populate with data. If the dashboards are populating, then acceleration and summary indexing are working. If not, check the following:
+Check that the dashboards are populating with data. The Overview (pre-6.0) and Realtime Event Feed (6.0+) dashboards don't use datamodel acceleration, so it should work at this point. If it doesn't, then go back to the previous troubleshooting steps. For all the other dashboards, after 5-8 minutes of syslogging to the Splunk server, the dashboards should populate with data. If the dashboards are populating, then acceleration and summary indexing are working. If not, check the following:
 
 App Version 4.0 and earlier:  
 Uses TSIDX for acceleration.
@@ -133,7 +133,7 @@ App Version 4.1 and later:
 Uses Data Model for acceleration.
 
 * Check acceleration settings in the data model under Settings &gt; Data Model &gt;  
-  and fine the Palo Alto Networks datamodels. \(There may be 1 or 3 datamodels depending on the App version\)
+  and find the Palo Alto Networks datamodels. \(There may be 1, 3, or 4 datamodels depending on the App version\)
 
 * Verify that acceleration is enabled for all Palo Alto Networks datamodels.
 
