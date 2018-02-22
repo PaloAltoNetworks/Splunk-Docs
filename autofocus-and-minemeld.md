@@ -58,9 +58,13 @@ This should come up with a table full of indicators and data about those indicat
 
 ## AutoFocus Tags
 
-AutoFocus categorizes threat indicators using tags including threat actors, malicious behaviors, campaigns, and malware families. These tags are part of the indicators above, but to get the full value of AutoFocus, it is recommended to also bring the tag metadata into Splunk, to get the complete picture of what each tag means.
+AutoFocus categorizes threat indicators using tags including threat actors, malicious behaviors, campaigns, and malware families. These tags are part of the indicators from MineMeld above.  This feature brings the tag metadata into Splunk, to get the complete picture of what each tag means.
 
-This is easily done by entering your AutoFocus API key into Splunk.
+> #### primary::Note
+>
+> **Requires MineMeld** This feature does nothing without configuring a MineMeld input using the instructions above. The AutoFocus Tags collected by this AutoFocus API key consists of metadata about the tags retrieved from MineMeld. This metadata is not useful on its own without MineMeld.
+
+AutoFocus tag metadata is easily collected by entering your AutoFocus API key into Splunk.
 
 First, get the AutoFocus API key at [https://autofocus.paloaltonetworks.com/#/settings](https://autofocus.paloaltonetworks.com/#/settings).
 
