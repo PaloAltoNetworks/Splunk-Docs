@@ -31,6 +31,8 @@
 | PAN-OS 7.0 | Add-on 3.5.1 and higher |
 | PAN-OS 4.0 - 6.1 | Any Add-on version |
 
+Correlation logs are supported from PAN-OS 7.1.10 and higher. Prior to 7.1.10, the correlation logs had a different format which is not supported.
+
 ## Traps Advanced Endpoint Security Support:
 
 | Traps | App / Add-on |
