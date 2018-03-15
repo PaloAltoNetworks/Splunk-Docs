@@ -3,7 +3,7 @@
 About the App
 -------------
 
-<a href="https://www.paloaltonetworks.com/resources/videos/splunk"><img src="/assets/video1.png" /></a>
+<a href="https://www.paloaltonetworks.com/resources/videos/splunk"><img src="/assets/video1.png" width="560" height="315" /></a>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VFgl5hvjUyg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 

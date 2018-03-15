@@ -4,8 +4,7 @@
         "bootstrap-callout",
         "header",
         "collapsible-chapters",
-        "ga",
-        "youtube"
+        "ga"
     ],
     "pluginsConfig": {
         "scripts": {
