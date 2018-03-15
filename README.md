@@ -5,7 +5,7 @@ About the App
 
 <a href="https://www.paloaltonetworks.com/resources/videos/splunk"><img src="/assets/video1.png" /></a>
 
-{% youtube src="https://www.youtube.com/watch?v=VFgl5hvjUyg" %}{% endyoutube %}
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VFgl5hvjUyg?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 Palo Alto Networks and Splunk have partnered to deliver an advanced security reporting and analysis tool. The collaboration delivers operational reporting as well as simplified and configurable dashboard views across Palo Alto Networks family of next-generation firewalls.
 
