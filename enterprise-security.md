@@ -39,7 +39,35 @@ Find the `Generate MineMeld IPv4 Enterprise Security Threatlist` saved search, t
 
 #### Enable Enterprise Security Threatlists
 
-Navigate to **Enterprise Security** &gt; **Configure** &gt; **Data Enrichment** &gt; **Threat Intelligence Downloads**.
+Add the following four `threatlist` inputs to the file:
+`$SPLUNK_HOME/etc/apps/Splunk_TA_paloalto/local/inputs.conf` (or to your preferred inputs.conf file)
 
-Find the threatlist named `minemeld_ipv4threatlist`, then click the **Enable** link.
+```
+[threatlist://minemeld_ipv4threatlist]
+description = MineMeld IPv4 threatlist indicators for Splunk ES
+interval = 14400
+disabled = false
+type = threatlist
+url = lookup://minemeld_ipv4threatlist
 
+[threatlist://minemeld_domainthreatlist]
+description = MineMeld Domain threatlist indicators for Splunk ES
+interval = 14400
+disabled = false
+type = threatlist
+url = lookup://minemeld_domainthreatlist
+
+[threatlist://minemeld_urlthreatlist]
+description = MineMeld URL threatlist indicators for Splunk ES
+interval = 14400
+disabled = false
+type = threatlist
+url = lookup://minemeld_urlthreatlist
+
+[threatlist://minemeld_filethreatlist]
+description = MineMeld file threatlist indicators for Splunk ES
+interval = 14400
+disabled = false
+type = threatlist
+url = lookup://minemeld_filethreatlist
+```
