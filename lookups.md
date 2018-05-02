@@ -45,7 +45,7 @@ Sanctioned designation is found in the field `app:is_sanctioned_saas`.
 
 For a list of all SaaS applications, visit [Applipedia](https://applipedia.paloaltonetworks.com/) and under the Characteristics header, click SaaS.
 
-## Update App Metadata from Content Pack {#contentpack}
+## Update App and Threat Metadata from Content Pack {#contentpack}
 
 *Added in App version 5.0*
 
