@@ -9,7 +9,7 @@ If upgrading to App 5.0, or 6.0, please read the [Upgrade Guide](upgrade.md).
 
 Not sure what version to download? Check the [Compatibility Guide](compatibility.md).
 
-The Palo Alto Networks Splunk App and Add-on are designed to work together, and with Splunk Enterprise Security if available. The Add-on can be used with or without the App.
+The Palo Alto Networks Splunk App and Add-on are designed to work together, and with Splunk Enterprise Security if available. The App requires the Add-on to be installed. The Add-on can be used with or without the App.
 
 ### Where to install
 
