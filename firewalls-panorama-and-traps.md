@@ -72,10 +72,10 @@ There are two ways to send logs from a Next generation Firewall to Splunk:
 The Palo Alto Networks syslog documentation describes each option in detail:
 
 **Firewall and Panorama syslog to Splunk:**
-<https://www.paloaltonetworks.com/documentation/70/pan-os/pan-os/monitoring/use-external-services-for-monitoring.html>
+<https://www.paloaltonetworks.com/documentation/81/pan-os/pan-os/monitoring/use-syslog-for-monitoring/configure-syslog-monitoring>
 
 **Traps Endpoint Security Manager (ESM) syslog to Splunk:**
-<https://www.paloaltonetworks.com/documentation/33/endpoint/endpoint-admin-guide/reports-and-logging/forward-logs-to-a-syslog-server>
+<https://www.paloaltonetworks.com/documentation/41/endpoint/endpoint-admin-guide/reports-and-logging/forward-logs-to-an-external-logging-platform>
 
 > #### primary::Note
 >
