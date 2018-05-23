@@ -37,6 +37,7 @@ Correlation logs are supported from PAN-OS 7.1.10 and higher. Prior to 7.1.10, t
 
 | Traps | App / Add-on |
 | --- | --- |
+| Traps 5.x | Coming soon |
 | Traps 3.4 and 4.x | Add-on 3.8 and higher |
 | Traps 3.3.2 and higher | Add-on 3.6 and higher |
 | Traps 3.3.0 and 3.3.1 | Not supported |
