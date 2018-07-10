@@ -56,7 +56,7 @@ If your logs are not getting converted to these other sourcetypes and are instea
 
 1. Use the correct log format. For Firewall or Panorama logs, use the default syslog format. For Traps logs use CEF format.
 2. For UDP logs, try adding `no_appending_timestamp = true` to your `inputs.conf`.
-3. If you're using a Heavy Forwarder, ensure the Palo Alto Networks Add-on is isntalled on the Heavy Forwarder, and configure the `inputs.conf` there.
+3. Ensure the Palo Alto Networks Add-on is installed on all Indexers and Heavy Forwarders, and configure the `inputs.conf` on the node receiving the logs.
 4. If you're using syslog-ng or another syslog collector with a Splunk Heavy or Universal Forwarder, then syslog-ng can add a prefix to the logs which interferes with parsing. Follow the directions at [Syslog-ng and Universal Forwarder](/universal-forwarder.md) to configure syslog-ng to omit this prefix.
 
 ### No WildFire Data
