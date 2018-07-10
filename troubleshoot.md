@@ -41,10 +41,23 @@ Therefor, if a Splunk server and Firewall have the same timezone, then the times
 
 An example timezone setting in `props.conf` might look like this:
 
-    [host::newyork-firewall-*]
-    TZ = US/Eastern
-    
+```
+[host::newyork-firewall-*]
+TZ = US/Eastern
+```
+
 This example would cause logs from `newyork-firewall-1`, `newyork-firewall-2`, etc. to be interpreted as US/Eastern timezone.
+
+### Logs have only sourcetype of pan:log {#parsing}
+
+You set the sourcetype to `pan:log` in your inputs.conf, however, Splunk parses the logs and changes the sourcetype to a more specific one, including `pan:traffic`, `pan:threat`, `pan:system`, `pan:config`, and others.
+
+If your logs are not getting converted to these other sourcetypes and are instead remaining with the `pan:log` sourcetype, then there is a parsing issue with the logs. This can happen for several reason, so please check each of these reason until the problem is resolved.  Note that sourcetype changes happen at index-time so only newly received logs will get parsed to a sourcetype.
+
+1. Use the correct log format. For Firewall or Panorama logs, use the default syslog format. For Traps logs use CEF format.
+2. For UDP logs, try adding `no_appending_timestamp = true` to your `inputs.conf`.
+3. If you're using a Heavy Forwarder, ensure the Palo Alto Networks Add-on is isntalled on the Heavy Forwarder, and configure the `inputs.conf` there.
+4. If you're using syslog-ng or another syslog collector with a Splunk Heavy or Universal Forwarder, then syslog-ng can add a prefix to the logs which interferes with parsing. Follow the directions at [Syslog-ng and Universal Forwarder](/universal-forwarder.md) to configure syslog-ng to omit this prefix.
 
 ### No WildFire Data
 
@@ -121,7 +134,7 @@ If logs showed in step 2, but no logs show up now, then the logs are not getting
 
 ![](assets/troubleshooting_dashboard.png)
 
-Check that the dashboards are populating with data. The Overview (pre-6.0) and Realtime Event Feed (6.0+) dashboards don't use datamodel acceleration, so it should work at this point. If it doesn't, then go back to the previous troubleshooting steps. For all the other dashboards, after 5-8 minutes of syslogging to the Splunk server, the dashboards should populate with data. If the dashboards are populating, then acceleration and summary indexing are working. If not, check the following:
+Check that the dashboards are populating with data. The Overview \(pre-6.0\) and Realtime Event Feed \(6.0+\) dashboards don't use datamodel acceleration, so it should work at this point. If it doesn't, then go back to the previous troubleshooting steps. For all the other dashboards, after 5-8 minutes of syslogging to the Splunk server, the dashboards should populate with data. If the dashboards are populating, then acceleration and summary indexing are working. If not, check the following:
 
 App Version 4.0 and earlier:  
 Uses TSIDX for acceleration.
