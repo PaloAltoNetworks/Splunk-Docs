@@ -6,6 +6,7 @@ Webinar and Videos
 **Webinar:** [Enhanced Security Posture with the Palo Alto Networks App for Splunk](https://www.paloaltonetworks.com/campaigns/brighttalk.html?commid=293019)
 
 **Why use the Palo Alto Networks App for Splunk:**
+
 <a href="https://www.paloaltonetworks.com/resources/videos/splunk"><img src="/assets/video1.png" width="560" height="315" /></a>
 
 **Overview of App features:**
