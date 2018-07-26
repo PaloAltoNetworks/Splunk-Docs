@@ -1,13 +1,21 @@
 <img src="assets/logos.png" class="no-shadow" />
 
-About the App
--------------
+Webinar and Videos
+------------------
 
+**Webinar:** [Enhanced Security Posture with the Palo Alto Networks App for Splunk](https://www.paloaltonetworks.com/campaigns/brighttalk.html?commid=293019)
+
+**Why use the Palo Alto Networks App for Splunk:**
 <a href="https://www.paloaltonetworks.com/resources/videos/splunk"><img src="/assets/video1.png" width="560" height="315" /></a>
 
+**Overview of App features:**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/0Cbtz5MRD8A?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+**Deep-dive into App features:**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VFgl5hvjUyg?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+About the App
+-------------
 
 Palo Alto Networks and Splunk have partnered to deliver an advanced security reporting and analysis tool. The collaboration delivers operational reporting as well as simplified and configurable dashboard views across Palo Alto Networks family of next-generation firewalls.
 
