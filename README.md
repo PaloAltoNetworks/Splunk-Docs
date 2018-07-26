@@ -3,7 +3,7 @@
 Webinars and Videos
 ------------------
 
-Watch the App in action with our [](/webinars-and-videos.md)
+Watch the App in action with our [Webinars and Videos](/webinars-and-videos.md)
 
 About the App
 -------------
