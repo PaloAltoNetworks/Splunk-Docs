@@ -1,20 +1,9 @@
 <img src="assets/logos.png" class="no-shadow" />
 
-Webinar and Videos
+Webinars and Videos
 ------------------
 
-**Webinar:**
-<a href="https://www.paloaltonetworks.com/campaigns/brighttalk.html?commid=293019"><img src="/assets/webinar.png" width="560" height="315"></a>
-
-**Why use the Palo Alto Networks App for Splunk:**
-
-<a href="https://www.paloaltonetworks.com/resources/videos/splunk"><img src="/assets/video1.png" width="560" height="315" /></a>
-
-**Overview of App features:**
-<iframe width="560" height="315" src="https://www.youtube.com/embed/0Cbtz5MRD8A?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
-**Deep-dive into App features:**
-<iframe width="560" height="315" src="https://www.youtube.com/embed/VFgl5hvjUyg?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+Watch the App in action with our [](/webinars-and-videos.md)
 
 About the App
 -------------

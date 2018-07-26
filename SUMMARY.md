@@ -3,6 +3,7 @@
 ## Overview
 
 * [Introduction](README.md)
+* [Webinars and Videos](webinars-and-videos.md)
 * [Frequently Asked Questions](faq.md)
 * [Troubleshooting](troubleshoot.md)
 * [Get Support](support.md)
