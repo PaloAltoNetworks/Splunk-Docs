@@ -10,11 +10,14 @@ External Search can be used with AutoFocus **Remote Search** feature. Remote sea
 
 Setting up remote search and how to use it in AutoFocus is documented on the Palo Alto Networks Website and will not be covered here. The values needed in `Step 3` of the documentation are provided here along with the link to the documentation.
 
--   [Setup AutoFocus remote search](https://www.paloaltonetworks.com/documentation/autofocus/autofocus/autofocus_admin_guide/autofocus-search/set-up-remote-search)
--   Values to be used in Step 3 of the doc  
-    System Type: `Custom`
+- [Setup AutoFocus remote search](https://www.paloaltonetworks.com/documentation/autofocus/autofocus/autofocus_admin_guide/autofocus-search/set-up-remote-search)
+- Values to be used in Step 3 of the doc
+  - System Type: `Splunk`
+  - Address: `https://<SPLUNK SERVER>:8000`
 
-    Address: `https://<SPLUNK SERVER>:8000/en-US/app/SplunkforPaloAltoNetworks/external_search?search=`
+Change the `https` to `http` if not using encryption in Splunk.  Change the port from `:8000` to the appropriate port for your Splunk server Web GUI.
+
+You don't need to open a port for AutoFocus into your Splunk server. The technique redirects your browser from AutoFocus to the appropriate SPL search in Splunk. It will work as long as your browser can access both AutoFocus and Splunk.
 
 ## External Search from Firewall and Panorama
 
