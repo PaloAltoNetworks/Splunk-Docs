@@ -23,6 +23,7 @@
 ## Configuration
 
 * [Upgrade the App/Add-on](upgrade.md)
+* [Tune or Reduce Firewall Logs](tune-or-reduce-firewall-logs.md)
 * [Splunk Enterprise Security](enterprise-security.md)
 * [Add Context to Searches](lookups.md)
 
