@@ -49,7 +49,7 @@ You can eliminate specific log types that are not of use for your organization. 
 You can only get so far disabling entire log types. Most organizations need these log types and can't disable all URL or Traffic logs. You can still make an impact by reducing these log types only when they are redundant or unnecessary. You can turn these logs on or off for specific rules which gives you complete control over every log. Here are examples of where you might consider reducing log volume:
 
 1. Backup software runs every night generating thousands of connections from endpoints to a backup server. Create a rule for this backup app from internal endponts to the backup server which logs only threats, and doesn't log traffic sessions, urls, or files.
-2. Use of an internal app regularly triggers a vulnerability or spyware alert, however, its determined that this is the normal operation of the app and no risk exists. Create a rule for this specific app and the server it runs on that disables this signature.
+2. Use of an internal app regularly triggers a vulnerability or spyware alert, however, its determined that this is the normal operation of the app and no risk exists. Create a rule for this specific app and the server it runs on that disables this signature. See [How to disable signatures for a specific host](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000ClN3CAK)
 
 
 
