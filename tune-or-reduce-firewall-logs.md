@@ -2,7 +2,7 @@
 
 The **most common** question we get is:
 
-> "The firewall/Panorama produces a lot of logs and it's overwhelming our Splunk license. How can I reduce the log volume without losing security visibility?"
+> "The firewall/Panorama produces a lot of logs and it's overwhelming our Splunk license or producing a lot of noise that's hard to filter through. How can I reduce the log volume without losing security visibility?"
 
 The firewall offers very granular logging controls, so you can tune and reduce logs to Splunk with extreme precision. Even so, this question is difficult to answer because the answer is different for every organization. So this page is an effort to provide general guidance to help you answer this question for yourself.
 
