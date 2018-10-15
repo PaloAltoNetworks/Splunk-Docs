@@ -39,7 +39,7 @@ You can eliminate specific log types that are not of use for your organization. 
 1. If you use Splunk in a SOC for security, but are not responsible for the operational health of the firewalls, you could consider disabling System and Config log types
 2. Traffic logs are large and frequent. Cut their volume in half by shutting off 'Start' logs in all your firewall rules. 'Start' logs often have an incorrect app anyway, becuase they are logged before the app is fully determined. The 'End' logs will have the correct App and other data such as the session duration. See [Session Log Best Practices](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000Clt5CAC).
 
-## Elinitate Logs for Specific Endpoints or Threats
+## Eliminate Logs for Specific Endpoints or Threats
 
 You can only get so far disabling entire log types. Most organizations need these log types and can't disable all URL or Traffic logs. You can make an impact by reducing these log types only when they are redundant or unnecessary. You can turn these logs on or off on specific rules which gives you complete control over every log. Here are examples of where you might consider reducing log volume:
 
