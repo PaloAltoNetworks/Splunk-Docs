@@ -51,5 +51,7 @@ You can only get so far disabling entire log types. Most organizations need thes
 1. Backup software runs every night generating thousands of connections from endpoints to a backup server. Create a rule for this backup app from internal endponts to the backup server which logs only threats, and doesn't log traffic sessions, urls, or files.
 2. Use of an internal app regularly triggers a vulnerability or spyware alert, however, its determined that this is the normal operation of the app and no risk exists. Create a rule for this specific app and the server it runs on that disables this signature. See [How to disable signatures for a specific host](https://knowledgebase.paloaltonetworks.com/KCSArticleDetail?id=kA10g000000ClN3CAK)
 
+## Filter Logs with Syslog-NG
 
+Some organizations using syslog-ng as a log collector prefer to apply filters in their syslog-ng configuration to drop some logs before they are sent to Splunk. Filter match criteria in syslog-ng is flexible and can even match with regex. The team responsible for log collection can control the filtering of logs without having to access the firewall configuration or make a request to the security team. This method requires knowledge of syslog-ng filter configuration which is outside the scope of this document. For more information, see [syslog-ng filter functions](https://www.syslog-ng.com/technical-documents/doc/syslog-ng-open-source-edition/3.16/administration-guide/53).
 
