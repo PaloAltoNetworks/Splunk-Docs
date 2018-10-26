@@ -1,7 +1,8 @@
-Firewalls, Panorama, and Traps
-==============================
+# Firewalls, Panorama, and Traps
 
 ## Logging architectures
+
+**Log Forwarding App for Logging Service** forwards syslogs to Splunk from the Palo Alto Networks Logging Service using an SSL Connection.
 
 **Firewalls** can send logs to Splunk directly, or they can send logs to Panorama or a Log Collector which forwards the logs to Splunk.
 
@@ -13,12 +14,13 @@ Firewalls, Panorama, and Traps
 
 **Syslog to Splunk using the following protocols:**
 
-| Product                           | Syslog Protocols |
-|-----------------------------------|------------------|
-| Next-generation Firewall          | UDP, TCP, or SSL |
-| Panorama                          | UDP, TCP, or SSL |
-| Traps Endpoint Security >= 3.3    | UDP, TCP, or SSL |
-| Traps Endpoint Security 3.2       | UDP              |
+| Product | Syslog Protocols |
+| --- | --- |
+| Log Forwarding App for Logging Service | SSL |
+| Next-generation Firewall | UDP, TCP, or SSL |
+| Panorama | UDP, TCP, or SSL |
+| Traps Endpoint Security &gt;= 3.3 | UDP, TCP, or SSL |
+| Traps Endpoint Security 3.2 | UDP |
 
 ## Create a data input
 
@@ -26,19 +28,36 @@ Use the GUI to create a Data Input, or create it in inputs.conf using the CLI.
 
 Firewalls, Panorama, and Traps ESM can all send logs to the same data input and port. The Add-on will automatically detect the source of each log and parse it correctly.
 
+### Select a sourcetype
+
+For App/Add-on 6.0.x and lower use the sourcetype: `pan:log`
+
+Starting in App/Add-on 6.1.0, you can choose one of these 3 sourcetypes to assign the incoming logs:
+
+| Log source | SourceType |
+| :--- | :--- |
+| Only Firewall logs | pan:firewall |
+| Only Traps Management Service logs | pan:traps |
+| Only Traps 4.x logs | pan:traps4 |
+| This input receives Firewall and Traps logs | pan:log |
+
+It is preferable to use `pan:firewall` or `pan:traps` instead of `pan:log` because less parsing is required and timestamps will be slightly more accurate.
+
 ### GUI
 
-- In the top right corner, click **Settings** -> **Data inputs**
-- In the row for **UDP** or **TCP** click **Add new** (SSL Data Inputs can't be created in the GUI)
-- Enter a port number and click **Next**
-- Click **Select Sourcetype** -> **Network & Security** -> **pan:log**
-- Change the **App Context** to the Palo Alto Networks Add-on
-- Set any other settings such as Method or Index as appropriate for your environment
-- Click **Review**, followed by **Submit**
+* In the top right corner, click **Settings** -&gt; **Data inputs**
+* In the row for **UDP** or **TCP** click **Add new** \(SSL Data Inputs can't be created in the GUI\)
+* Enter a port number and click **Next**
+* Click **Select Sourcetype** -&gt; **Network & Security** -&gt; **pan:log** (or a more specific sourcetype from the table above)
+* Change the **App Context** to the Palo Alto Networks Add-on
+* Set any other settings such as Method or Index as appropriate for your environment
+* Click **Review**, followed by **Submit**
+
+You can optionally use a more specific sourcetype than `pan:log` such as `pan:firewall` or `pan:traps`. See the sourcetype table above for options.
 
 ### CLI
 
-Create the inputs.conf in the correct directory:
+Create the inputs.conf in the correct directory:  
 `$SPLUNK_HOME/etc/apps/Splunk_TA_paloalto/local/inputs.conf`
 
 > #### primary::Note
@@ -47,40 +66,37 @@ Create the inputs.conf in the correct directory:
 
 Add the following lines to the `inputs.conf` file. This examples uses the default syslog port UDP 514. Change the port as needed. :
 
-    ## App version 5.x/6.x with Add-on
+```
+[udp://514]
+sourcetype = pan:log
+no_appending_timestamp = true
+index = pan_logs
+```
+You can optionally change the sourcetype from `pan:log` to a more specific sourcetype such as `pan:firewall` or `pan:traps`.  See the sourcetype table above for options.
 
-    [udp://514]
-    sourcetype = pan:log
-    no_appending_timestamp = true
+For UDP logs, `no_appending_timestamp` setting is required. For TCP or SSL syslogs, remove the `no_appending_timestamp` setting.
 
-    ## App version 4.x and 3.x
+You can optionally set an `index` to store the logs, or remove the index setting to store logs in the default index.
 
-    [udp://514]
-    index = pan_logs
-    sourcetype = pan_log
-    no_appending_timestamp = true
-
-The `sourcetype`, and `no_appending_timestamp` setting must be set exactly as in the example. For TCP or SSL syslogs, remove the `no_appending_timestamp` setting. The `index` must be set to `pan_logs` for App version 4.x and 3.x, but can be set to anything you want (or left blank for the default index) when using the Add-on.
-
-## Configure the Firewall or Endpoint Security Manager
+## Configure the Firewall or Traps Endpoint Security Manager
 
 There are two ways to send logs from a Next generation Firewall to Splunk:
 
-1.  All firewalls syslog directly to Splunk
-2.  All firewalls log to Panorama, then Panorama syslogs to Splunk
+1. All firewalls syslog directly to Splunk
+2. All firewalls log to Panorama, then Panorama syslogs to Splunk
 
 The Palo Alto Networks syslog documentation describes each option in detail:
 
-**Firewall and Panorama syslog to Splunk:**
-<https://www.paloaltonetworks.com/documentation/81/pan-os/pan-os/monitoring/use-syslog-for-monitoring/configure-syslog-monitoring>
+**Firewall and Panorama syslog to Splunk:**  
+[https://www.paloaltonetworks.com/documentation/81/pan-os/pan-os/monitoring/use-syslog-for-monitoring/configure-syslog-monitoring](https://www.paloaltonetworks.com/documentation/81/pan-os/pan-os/monitoring/use-syslog-for-monitoring/configure-syslog-monitoring)
 
-**Traps Endpoint Security Manager (ESM) syslog to Splunk:**
-<https://www.paloaltonetworks.com/documentation/41/endpoint/endpoint-admin-guide/reports-and-logging/forward-logs-to-an-external-logging-platform>
+**Traps Endpoint Security Manager \(ESM\) syslog to Splunk:**  
+[https://www.paloaltonetworks.com/documentation/41/endpoint/endpoint-admin-guide/reports-and-logging/forward-logs-to-an-external-logging-platform](https://www.paloaltonetworks.com/documentation/41/endpoint/endpoint-admin-guide/reports-and-logging/forward-logs-to-an-external-logging-platform)
 
 > #### primary::Note
 >
 > Firewall and Panorama logs must be sent in the default format.  
-> Traps logs must be in CEF format (CEF is the default on ESM).
+> Traps 4.x logs must be in CEF format \(CEF is the default on ESM\).
 
 ## Test the configuration
 
@@ -90,7 +106,9 @@ Now, make any configuration change and the firewall to produce a config event sy
 
 Verify the log reached Splunk by going to the Palo Alto Networks App click Search in the navigation bar, and enter:
 
-    eventtype=pan_config
+```
+eventtype=pan_config
+```
 
 > #### primary::Note
 >
