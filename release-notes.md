@@ -2,6 +2,34 @@
 
 # Latest
 
+### App 6.1
+
+- New: Support for Traps 5.0 (Traps Management Service)
+- New: User ID updates can now be added with a timeout setting
+- Fix: User ID updates work consistently via Panorama
+- Fix: Issue with Block-Continue panel in Web Activity report
+
+### Add-on 6.1
+
+- New: Support for Traps 5.0 (Traps Management Service)
+- New: Support for Firewall User-ID logs
+- New: Credential Detected flag for PAN-OS 8.1
+- New: MineMeld indicator retention timer
+- New: Batch collection of Aperture logs
+- New: Support all Aperture regions
+- New: Easier to disable certificate validation for self-hosted MineMeld
+- New: Malicious WildFire events tagged for Malware CIM datamodel
+- Fix: category field for URL logs is now more consistent
+- Fix: url_length field fixed
+- Fix: Corrected the double parse of Aperture logs
+
+>
+#### primary::Note
+>
+> Traps datamodel has been renamed from `pan_endpoint` to `pan_traps` and some fields have changed names in the datamodel to support Traps 5.0 additional data. If you have previously created your own dashboards based on the Palo Alto Networks datamodels, you may need to update those dashboards.
+
+# Previous Versions
+
 ### App 6.0
 
 6.0.0
@@ -33,8 +61,6 @@ Is your organization safe from those who intend the most harm? Know your adversa
 > #### primary::Note
 >
 > Some fields have changed names in the datamodel. If you have previously created your own dashboards based on the Palo Alto Networks datamodels, you may need to update some field names. See the [Upgrade Guide](/upgrade.md#datamodel-changes) for changed field names.
-
-# Previous Versions
 
 ### App 5.4
 
