@@ -27,6 +27,10 @@ Some organizations prefer not to install Add-ons on Search Heads. This is fine f
 > Previous guidance was to install the App and Add-on to all Search Heads, Indexers, and Heavy Forwarders. However, this can result in duplicate storage of accelerated datamodels. Now, it is recommended to install the App only on Search Heads per the table above. If you have installed the App on Indexers or Heavy Forwarders, please delete the App so only the Add-on remains on those nodes.
 >
 > Earlier versions of the App would install the Add-on automatically. This is no longer allowed by Splunk so since App 5.4.2 you are required to install the App and Add-on individually.
+>
+> Data Model acceleration is no longer enabled by default. Dashboards will not display any data until the data model is accelerated.
+
+
 
 ### Install the App and Add-on
 
@@ -51,6 +55,16 @@ From the directory `$SPLUNK_HOME/etc/apps/`, type the following command:
 ```
 git clone https://github.com/PaloAltoNetworks/Splunk_TA_paloalto.git Splunk_TA_paloalto
 ```
+
+## Data Model Acceleration
+
+The app dashboard's requires data model acceleration. You must enable the data model that have been installed with the app.
+
+From the Settings menu click on "Data models".![](/assets/Screen Shot 2019-01-02 at 2.47.55 PM.png)
+
+Click on "Edit Acceleration" for each of the data models for the Palo Alto Networks App and enable the data model. 
+
+![](/assets/Screen Shot 2019-01-02 at 2.48.53 PM.png)
 
 
 
