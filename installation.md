@@ -30,8 +30,6 @@ Some organizations prefer not to install Add-ons on Search Heads. This is fine f
 >
 > Data Model acceleration is no longer enabled by default. Dashboards will not display any data until the data model is accelerated.
 
-
-
 ### Install the App and Add-on
 
 Install the Palo Alto Networks App by downloading it from the App homepage, or by installing it from within Splunk.
@@ -62,9 +60,7 @@ The app dashboard's requires data model acceleration. You must enable the data m
 
 From the Settings menu click on "Data models".![](/assets/Screen Shot 2019-01-02 at 2.47.55 PM.png)
 
-Click on "Edit Acceleration" for each of the data models for the Palo Alto Networks App and enable the data model. 
+Click on "Edit Acceleration" for each of the data models for the Palo Alto Networks App and check the box next to "acceleration".
 
 ![](/assets/Screen Shot 2019-01-02 at 2.48.53 PM.png)
-
-
 
