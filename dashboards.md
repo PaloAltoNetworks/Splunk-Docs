@@ -23,7 +23,7 @@ Most organizations get more incidents than can feasably be investigated so prior
 
 Each of the 'per hour' incident trendlines at the top of the All Incidents dashboard pulls from a different kind of log or product.  To populate all the trendlines and thus see all possible incidents, ensure you're sending the needed logs from the right product to populate each incident trend. The following table shows the product and log required for each incident trend, and the Splunk search to bring up these kinds of logs. You can use this search to determine if these logs are in your Splunk index.
 
-| Incident Trend \(per hour\) | Product Required | Splunk Search |
+| Incident Trend \(per hour\) | Product Required | Splunk Search Macros |
 | :--- | :--- | :--- |
 | Correlated Incidents | [Firewall](https://www.paloaltonetworks.com/products/secure-the-network/next-generation-firewall) or [Panorama](https://www.paloaltonetworks.com/products/management/panorama) sending correlation logs | \`pan\_correlation\` |
 | Network Incidents | [Firewall](https://www.paloaltonetworks.com/products/secure-the-network/next-generation-firewall) or [Panorama](https://www.paloaltonetworks.com/products/management/panorama) sending threat logs | \`pan\_threat\` |
@@ -40,6 +40,13 @@ The Adversary Scoreboard offers a broad view of the threats to your organization
 ###### Take Action
 
 Click a table row to see the incidents attributed to an actor, campaign, or malware family. From there you can click an incident to see its details and context.
+
+| Product Required | Splunk Search Macros |
+| :--- | :--- |
+| Firewall or Panorama | \`pan\_threat\` |
+| Autofocus | \`pan\_autofocus\_tags\` |
+| Minemeld | \`mm\_indicators\` |
+| Traps | \`pan\_endpoint\` |
 
 ## Incident Context View {#incident-context}
 
