@@ -41,12 +41,12 @@ The Adversary Scoreboard offers a broad view of the threats to your organization
 
 Click a table row to see the incidents attributed to an actor, campaign, or malware family. From there you can click an incident to see its details and context.
 
-| Product Required | Splunk Search Macros |
+| Product Required | Splunk Search |
 | :--- | :--- |
 | Firewall or Panorama | \`pan\_threat\` |
-| Autofocus | \`pan\_autofocus\_tags\` |
+| AutoFocus | \`pan\_autofocus\_tags\` |
 | Minemeld | \`mm\_indicators\` |
-| Traps | \`pan\_endpoint\` |
+| Endpoint Incidents | \`pan\_endpoint\` |
 
 ## Incident Context View {#incident-context}
 
@@ -60,9 +60,22 @@ See similar events, related user activity, malicious files, the source of the at
 
 Click fields in the similar logs to get more information about the IP addresses and users in those fields.  Click the _Open In..._ field on the right side for a context-aware menu of actions to take. You can open a threat in Threat Vault, AutoFocus, or VirusTotal for more context, and even download the PCAP for the threat from the firewall.
 
+| Product Required | Splunk Search |
+| :--- | :--- |
+| Firewall or Panorama | \`pan\_threat\` |
+| Endpoint Incidents | \`pan\_endpoint |
+| AutoFocus | \`pan\_autofocus\_tags\` |
+| Endpoint Incidents | \`pan\_endpoint\` |
+| Wildfire | \`pan\_wildfire\` |
+
 ## Malware {#malware}
 
 The Malware dashboard presents information about malicious files across all the products in the Palo Alto Networks security platform. For example, information will show here for any malicious file transferred across a firewall, executed on an endpoint, or stored in a organization's SaaS account.
+
+| Product Required | Splunk Search |
+| :--- | :--- |
+| Firewall or Panorama | \`pan\_threat\` |
+| Endpoint Incidents | \`pan\_endpoint\` |
 
 ## WildFire Submissions {#wildfire}
 
@@ -70,9 +83,17 @@ WildFire cloud-based threat analysis and prevention engine for highly evasive ze
 
 The WildFire Submissions dashboard enables you to track submission of new samples to WildFire and the results of that analysis. Any samples that are determined as _malicious_ are actionable and should be remediated.
 
+| Product Required | Splunk Search |
+| :--- | :--- |
+| WildFire | \`pan\_wildfire\` |
+
 ## User Behavior {#user}
 
 Track anamalous user behavior such as unacceptable web browsing, protocol tunneling, data leakage, and non-standard application usage. Use filters to create a report for a specific user.
+
+| Product Required |  |
+| :--- | :--- |
+|  |  |
 
 ## SaaS Activity {#saas-activity}
 

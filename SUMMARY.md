@@ -35,4 +35,5 @@
 * [User-ID with Splunk](userid.md)
 * [Searchbar Command Reference](commands.md)
 * [Dashboard Reference](dashboards.md)
+* [Source Type Reference](source-type-reference.md)
 
