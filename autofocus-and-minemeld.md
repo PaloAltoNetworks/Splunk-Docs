@@ -34,7 +34,7 @@ Within the Add-on, click the **Inputs** tab at the top left. Then click **Create
 >
 > **AutoFocus Export** is another way to bring AutoFocus indicators into Splunk without MineMeld, using AutoFocus Export Lists which are manually curated lists of indicators. MineMeld Feeds convey the same information to Splunk, but automatically collect indicators from AutoFocus instead of using manually created export lists. It is recommended to use MineMeld instead of Export Lists.
 
-![](/assets/minemeld-feed-settings.png)
+![](/assets/minemeld-feed-settings-6-1.png)
 
 Enter the settings for the MineMeld feed input:
 
@@ -44,6 +44,7 @@ Enter the settings for the MineMeld feed input:
 | Interval | Frequency in seconds to check for new logs (60 seconds recommended) |
 | Index | This setting is ignored because the KVStore is used |
 | Output Node Feed URL | The Feed URL from the previous step |
+| Indicator Timeout | How long to retain indicators (in hours) |
 | Global Account | Credentials for the Feed URL (optional) |
 
 Click **Add** to save the MineMeld Feed input.
