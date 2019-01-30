@@ -48,7 +48,7 @@ It is preferable to use `pan:firewall` or `pan:traps` instead of `pan:log` becau
 * In the top right corner, click **Settings** -&gt; **Data inputs**
 * In the row for **UDP** or **TCP** click **Add new** \(SSL Data Inputs can't be created in the GUI\)
 * Enter a port number and click **Next**
-* Click **Select Sourcetype** -&gt; **Network & Security** -&gt; **pan:log** (or a more specific sourcetype from the table above)
+* Click **Select Sourcetype** -&gt; **Network & Security** -&gt; **pan:log** \(or a more specific sourcetype from the table above\)
 * Change the **App Context** to the Palo Alto Networks Add-on
 * Set any other settings such as Method or Index as appropriate for your environment
 * Click **Review**, followed by **Submit**
@@ -72,6 +72,7 @@ sourcetype = pan:log
 no_appending_timestamp = true
 index = pan_logs
 ```
+
 You can optionally change the sourcetype from `pan:log` to a more specific sourcetype such as `pan:firewall` or `pan:traps`.  See the sourcetype table above for options.
 
 For UDP logs, `no_appending_timestamp` setting is required. For TCP or SSL syslogs, remove the `no_appending_timestamp` setting.
@@ -117,4 +118,16 @@ eventtype=pan_config
 If Splunk is getting the syslogs from the firewall and parsing them correctly, then you'll see the config event syslogs show up here from the changes you made on the firewall configuration.
 
 If you don't see the syslog, verify the steps above or try the [Troubleshooting Guide](troubleshoot.md).
+
+### Firewall/Panorama API Configuration {#firewallpanorama-credential-changes}
+
+Adaptive Response and Searchbar Commands leverage API calls to the FIrewall/Panorama. 
+
+Create an administrative user and role with API access on the Firewall/Panorama.
+
+Navigate to Configuration &gt; Accounts on the add-on. Firewall/Panorama credentials are now designated as whichever credential has the name "Firewall"
+
+![](https://splunk.paloaltonetworks.com/assets/firewall-credentials.png "The credentials name &quot;Firewall&quot; will be used for connection to Firewalls or Panorama")
+
+Figure: The credentials name "Firewall" will be used for connection to Firewalls or Panorama
 
