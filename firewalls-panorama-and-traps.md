@@ -6,9 +6,9 @@
 
 **Firewalls** can send logs to Splunk directly, or they can send logs to Panorama or a Log Collector which forwards the logs to Splunk.
 
-**Panorama** sends its own logs to Splunk and can forward logs from firewalls to Splunk
+**Panorama** sends its own logs to Splunk and can forward logs from firewalls to Splunk.
 
-**Traps** can send logs to Splunk and Panorama, but Panorama does not forward Traps logs to Splunk
+**Traps** can send logs to Splunk and Panorama, but Panorama does not forward Traps logs to Splunk.
 
 **Syslog-ng and Universal Forwarder** An alternative to sending the logs directly to Splunk, it is common to send logs to a syslog-ng or other intermediate syslog server, then forward the logs from there with a Splunk Universal Forwarder. For instruction on how to do this, please skip this article and go to the [Syslog-ng and Universal Forwarder Guide](universal-forwarder.md).
 
@@ -21,6 +21,16 @@
 | Panorama | UDP, TCP, or SSL |
 | Traps Endpoint Security &gt;= 3.3 | UDP, TCP, or SSL |
 | Traps Endpoint Security 3.2 | UDP |
+
+## Enable datamodel acceleration
+
+If using the Palo Alto Networks App, you **must** enable datamodel acceleration to see data in the dashboards. Acceleration is on by default in App 6.0 and lower, and off by default in App 6.1 and higher (due to new Splunk app certification rules).
+
+Enable it now by navigating to **Settings** -> **Datamodels**, then select each **Palo Alto Networks** datamodel and enable acceleration for a time period of your choice.
+
+The time period represents how much data will show in the dashboards, and has a significant impact on storage usage. If unsure, set the acceleration time period to 7 days.
+
+Datamodel acceleration is not required if using the Add-on only.
 
 ## Create a data input
 

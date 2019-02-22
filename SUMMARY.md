@@ -15,6 +15,7 @@
 * [Installation](installation.md)
 * [Getting Data Into Splunk](getting-data-in.md)
   * [Firewalls, Panorama, and Traps](firewalls-panorama-and-traps.md)
+  * [Logging Service](logging-service.md)
   * [Aperture](aperture.md)
   * [AutoFocus and MineMeld](autofocus-and-minemeld.md)
   * [WildFire](wildfire.md)
