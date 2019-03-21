@@ -16,7 +16,7 @@ Perform a search for `eventtype=pan` with 'All time' as the timeframe. If logs s
 
 **Only 'Overview' or 'Real-time Event Feed' dashboard has data**
 
-The 'Overview' dashboard has data, but other dashboards do not, usually the datamodel is not fully built. This can happen on a Splunk server with not enough resources to summary index the data as it comes in. Increase the time range on the dashbaords with no data to 'All Time' to see if data shows up. Check the datamodel to see if it is 100% built. See Troubleshooting Step 4 below for more detail.
+The 'Overview' dashboard has data, but other dashboards do not, usually datamodel acceleration is disabled or the datamodel is not fully built. This can happen on a Splunk server with not enough resources to summary index the data as it comes in. Increase the time range on the dashbaords with no data to 'All Time' to see if data shows up. Check the datamodel to see if it is 100% built. See Troubleshooting Step 4 below for more detail.
 
 **'Overview' or 'Real-time Event Feed' dashboard has no data**
 
@@ -136,19 +136,10 @@ If logs showed in step 2, but no logs show up now, then the logs are not getting
 
 Check that the dashboards are populating with data. The Overview \(pre-6.0\) and Realtime Event Feed \(6.0+\) dashboards don't use datamodel acceleration, so it should work at this point. If it doesn't, then go back to the previous troubleshooting steps. For all the other dashboards, after 5-8 minutes of syslogging to the Splunk server, the dashboards should populate with data. If the dashboards are populating, then acceleration and summary indexing are working. If not, check the following:
 
-App Version 4.0 and earlier:  
-Uses TSIDX for acceleration.
-
-* Verify that saved searches for log collection are in the savedsearches.conf  
-  file. Check that they haven't been changed or overwritten.
-
-App Version 4.1 and later:  
-Uses Data Model for acceleration.
-
 * Check acceleration settings in the data model under Settings &gt; Data Model &gt;  
   and find the Palo Alto Networks datamodels. \(There may be 1, 3, or 4 datamodels depending on the App version\)
 
-* Verify that acceleration is enabled for all Palo Alto Networks datamodels.
+* Verify that acceleration is enabled for all Palo Alto Networks datamodels.  See [Enable Datamodel Acceleration](/installation.md#enable-datamodel-acceleration) for guidance to enable the datamodels.
 
 * Click the arrow next to the Palo Alto Networks data models and check the data model build percentage. It should be 100% or very close to it.
 

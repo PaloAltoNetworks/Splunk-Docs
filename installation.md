@@ -34,6 +34,16 @@ Install the Palo Alto Networks App by downloading it from the App homepage, or b
 
 ![Downloading the App and Add-on from within Splunk Enterprise.](assets/download_app.png)
 
+### Enable datamodel acceleration
+
+If using the Palo Alto Networks App, you **must** enable datamodel acceleration to see data in the dashboards. Acceleration is on by default in App 6.0 and lower, and off by default in App 6.1 and higher (due to new Splunk app certification rules)
+
+Enable it now by navigating to **Settings** -> **Datamodels**, then select each **Palo Alto Networks** datamodel and enable acceleration for a time period of your choice.
+
+The time period represents how much data will show in the dashboards, and has a significant impact on storage usage. If unsure, set the acceleration time period to 7 days.
+
+Datamodel acceleration is not required if using the Add-on only.
+
 ## Alternative: Install from Github
 
 This App is available on [SplunkBase](https://splunkbase.splunk.com/app/491) and [Github](https://github.com/PaloAltoNetworks-BD/SplunkforPaloAltoNetworks). Optionally, you can clone the GitHub repository to install the App. Please feel free to submit contributions to the App using pull requests on GitHub.
