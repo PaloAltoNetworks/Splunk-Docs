@@ -1,2 +1,2 @@
-# Loggin Service
+# Logging Service
 

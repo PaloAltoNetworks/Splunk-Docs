@@ -37,11 +37,17 @@ Correlation logs are supported from PAN-OS 7.1.10 and higher. Prior to 7.1.10, t
 
 | Traps | App / Add-on |
 | --- | --- |
-| Traps 5.x | Coming soon |
+| Traps 5.x | Add-on 6.1 and higher |
 | Traps 3.4 and 4.x | Add-on 3.8 and higher |
 | Traps 3.3.2 and higher | Add-on 3.6 and higher |
 | Traps 3.3.0 and 3.3.1 | Not supported |
 | Traps 3.2.x | App 4.2 or Add-on 3.5.x with App 5.0 |
+
+## Cortex Data Lake
+
+Logs can be forwarded from Cortex Data Lake to Splunk Enterprise or Splunk Cloud by using the Log Forwarding App in Cortex.
+
+More information in the [Log Forwarding App Documentation](https://docs.paloaltonetworks.com/cloud-services/apps/log-forwarding/log-forwarding-app-getting-started/get-started-with-log-fowarding-app/forward-logs-from-logging-service-to-syslog-server)
 
 ## MineMeld Support
 

@@ -109,6 +109,13 @@ The Palo Alto Networks syslog documentation describes each option in detail:
 > Firewall and Panorama logs must be sent in the default format.  
 > Traps 4.x logs must be in CEF format \(CEF is the default on ESM\).
 
+## Configure the Log Forwarding App for Cortex
+
+To forward logs from Cortex Data Lake to Splunk, configure the Log Forwarding App in Cortex to forward logs to the Splunk data input.
+
+**Log Forwarding App Configuration:**
+https://docs.paloaltonetworks.com/cloud-services/apps/log-forwarding/log-forwarding-app-getting-started/get-started-with-log-fowarding-app/forward-logs-from-logging-service-to-syslog-server#
+
 ## Test the configuration
 
 The easiest way to test that everything is working is to configure the firewall to syslog all config events. On the firewall or Panorama, navigate to the **Device** tab, then **Log Settings**. Enable config logs and commit the configuration.
