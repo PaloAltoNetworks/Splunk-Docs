@@ -59,7 +59,7 @@ URL data and Traffic data are pulled in one tstats command, so there is only one
 
 Each of the examples above use the `session_id` field as the correlation point. Session ID is the obvious choice to correlated logs from the firewall. All logs from a specific TCP session will have the same `session_id`, so Traffic and Threat logs can correlate by this field in many cases.
 
-However, a firewall will run out of session ID's eventually and start to reuse them. For a firewall processing a huge amount of traffic in a vast network, this can happen pretty quickly. Also, there is no gauranteed that two firewalls won't pick the same session ID at the same time to refer to differen sessions, since session ID's are not globally unique across all firewalls.
+However, a firewall will run out of session ID's eventually and start to reuse them. For a firewall processing a huge amount of traffic in a vast network, this can happen pretty quickly. Also, there is no gauranteed that two firewalls won't pick the same session ID at the same time to refer to different sessions, since session ID's are not globally unique across all firewalls.
 
 So, while session ID is a reasonable correlation point, there exist situations where you might correlate logs together that actually aren't related.
 
