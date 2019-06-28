@@ -21,7 +21,7 @@ sourcetype="pan:threat" log_subtype="url"
 
 In this example, we search for all URL logs (which contains the FQDN), then join them with traffic logs generated at the end of a session (which contains the total bytes in and out). The field we join on is `session_id`. All logs from a specific TCP session will have the same `session_id`, so it makes a decent correlation point.  See [Note on session ID](#note-on-session-id) below for examples where session ID is not enough to correlate logs.
 
-### Correlation technique 2: Side-by-side correlation
+### Correlation technique 2: Stats correlation
 
 This technique isn't talked about much, but is very useful. It's faster than a join because it reduces the number of searches required, but not much faster because it still pulls from the index.
 
