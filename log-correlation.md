@@ -14,7 +14,7 @@ Join and Transaction commands are expensive, but conceptually familiar to most p
 
 ```
 sourcetype="pan:threat" log_subtype="url"
-  | join type=left session_id [ search sourcetype="pan:traffic" log_subtype="end" 
+  | join type=left session_id [ search sourcetype="pan:traffic" log_subtype="end" ]
   | stats count, sum(bytes_in), sum(bytes_out) BY dest_name
   | sort -sum(bytes_out)
 ```
