@@ -19,6 +19,7 @@
   * [AutoFocus and MineMeld](autofocus-and-minemeld.md)
   * [WildFire](wildfire.md)
   * [Syslog-ng and Universal Forwarder](universal-forwarder.md)
+* [Log Correlation](log-correlation.md)
 
 ## Configuration
 
