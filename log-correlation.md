@@ -6,7 +6,7 @@ A common use of Splunk is to correlate different kinds of logs together. In fact
 
 Each of these techniques can be used to perform the same correlation, however, each has a different performance profile. They are listed here in order of increasing search complexity and decreasing time cost. In other words the last technique is the most efficient for Splunk, but the hardest for a human to read.
 
-Each example will correlate `traffic` logs and `url` logs to determine how many bytes have been transferred between each FQDN in the time period. The URL log has a `dest_name` field with the FQDN and the Traffic log has a `bytes out` field, so we need to correlate them to know how many bytes went out for each FQDN. The goal is to visualize possible data exfiltration by showing the total `bytes_out` for each FQDN.
+Each example will correlate `traffic` logs and `url` logs to determine how many bytes have been transferred between each FQDN in the time period. The URL log has a `dest_name` field with the FQDN and the Traffic log has a `bytes_out` field, so we need to correlate them to know how many bytes went out for each FQDN. The goal is to visualize possible data exfiltration by showing the total `bytes_out` for each FQDN.
 
 ### Correlation technique 1: Use a 'join' or 'transaction'
 
