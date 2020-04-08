@@ -1,0 +1,802 @@
+
+<!DOCTYPE HTML>
+<html lang="">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Dashboard Reference &#xB7; GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-bootstrap-callout/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-collapsible-chapters/collapsible-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="commands.html">
+    
+
+    </head>
+    <body>
+        
+<div class="book"><nav class="navbar navbar-default hidden-xs hidden-sm">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href=".">
+                Palo Alto Networks App for Splunk
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav navbar-left" style="margin-left: 30px;">
+                <li><a href="https://splunkbase.splunk.com/app/491">Download App</a></li>
+                <li><a href="https://splunkbase.splunk.com/app/2757/">Download Add-on</a></li>
+                <li><a href="/faq.html">FAQ</a></li>
+                <li><a href="https://www.paloaltonetworks.com/partners/strategic-partners/splunk">Splunk Partnership</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Overview</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="webinars-and-videos.html">
+            
+                <a href="webinars-and-videos.html">
+            
+                    
+                    Webinars and Videos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="faq.html">
+            
+                <a href="faq.html">
+            
+                    
+                    Frequently Asked Questions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="troubleshoot.html">
+            
+                <a href="troubleshoot.html">
+            
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="support.html">
+            
+                <a href="support.html">
+            
+                    
+                    Get Support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="release-notes.html">
+            
+                <a href="release-notes.html">
+            
+                    
+                    Release Notes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Getting Started</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="compatibility.html">
+            
+                <a href="compatibility.html">
+            
+                    
+                    Compatibility
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="getting-data-in.html">
+            
+                <a href="getting-data-in.html">
+            
+                    
+                    Getting Data Into Splunk
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="firewalls-panorama-and-traps.html">
+            
+                <a href="firewalls-panorama-and-traps.html">
+            
+                    
+                    Firewalls, Panorama, and Traps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="aperture.html">
+            
+                <a href="aperture.html">
+            
+                    
+                    Aperture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="autofocus-and-minemeld.html">
+            
+                <a href="autofocus-and-minemeld.html">
+            
+                    
+                    AutoFocus and MineMeld
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="wildfire.html">
+            
+                <a href="wildfire.html">
+            
+                    
+                    WildFire
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="universal-forwarder.html">
+            
+                <a href="universal-forwarder.html">
+            
+                    
+                    Syslog-ng and Universal Forwarder
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="log-correlation.html">
+            
+                <a href="log-correlation.html">
+            
+                    
+                    Log Correlation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Configuration</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="upgrade.html">
+            
+                <a href="upgrade.html">
+            
+                    
+                    Upgrade the App/Add-on
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="tune-or-reduce-firewall-logs.html">
+            
+                <a href="tune-or-reduce-firewall-logs.html">
+            
+                    
+                    Tune or Reduce Firewall Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="enterprise-security.html">
+            
+                <a href="enterprise-security.html">
+            
+                    
+                    Splunk Enterprise Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="lookups.html">
+            
+                <a href="lookups.html">
+            
+                    
+                    Add Context to Searches
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Advanced Features</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="adaptive-response.html">
+            
+                <a href="adaptive-response.html">
+            
+                    
+                    Adaptive Response
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="threat-intelligence.html">
+            
+                <a href="threat-intelligence.html">
+            
+                    
+                    Threat Intelligence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="external-search.html">
+            
+                <a href="external-search.html">
+            
+                    
+                    External Search
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="userid.html">
+            
+                <a href="userid.html">
+            
+                    
+                    User-ID with Splunk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="commands.html">
+            
+                <a href="commands.html">
+            
+                    
+                    Searchbar Command Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="4.6" data-path="dashboards.html">
+            
+                <a href="dashboards.html">
+            
+                    
+                    Dashboard Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".">Dashboard Reference</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="dashboard-reference">Dashboard Reference</h1>
+<p>This reference is intended to help you get the most out of the more complex dashboards. Not all dashboards are shown here.</p>
+<h2 id="incidents">All Incidents </h2>
+<h6 id="overview">Overview</h6>
+<p>The Incident Feed displays all incidents across all the products in the Palo Alto Networks security platform. An <em>incident</em> is any event that may need attention or investigation. For example, a vulnerability exploit attempt, command and control channel, malicious payload execution on an endpoint, or match on an indicator of compromise are all considered incidents.</p>
+<p>The All Incidents dashboard summarizes all the incidents from all other dashboards in one place. Incidents displayed here may also be displayed in other dashboards.</p>
+<h6 id="prioritize-investigations">Prioritize Investigations</h6>
+<p>Most organizations get more incidents than can feasably be investigated so prioritization is crucial. The incident feed offers methods to prioritize incidents by severity, action taken, and AutoFocus tag. An incident tagged by AutoFocus threat intelligence is a critical attack from a known threat actor, campaign, or malware family. Incidents with an AutoFocus tag should be investigated.</p>
+<h6 id="take-action">Take Action</h6>
+<ul>
+<li>Filter results by selecting a log type or severity from the time charts or using the filters at the top.</li>
+<li>Click a table row in the incident feed to see the details and context of that incident.</li>
+</ul>
+<h6 id="incident-trend-graphs">Incident Trend Graphs</h6>
+<p>Each of the &apos;per hour&apos; incident trendlines at the top of the All Incidents dashboard pulls from a different kind of log or product.  To populate all the trendlines and thus see all possible incidents, ensure you&apos;re sending the needed logs from the right product to populate each incident trend. The following table shows the product and log required for each incident trend, and the Splunk search to bring up these kinds of logs. You can use this search to determine if these logs are in your Splunk index.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Incident Trend (per hour)</th>
+<th style="text-align:left">Product Required</th>
+<th style="text-align:left">Splunk Search Macros</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Correlated Incidents</td>
+<td style="text-align:left"><a href="https://www.paloaltonetworks.com/products/secure-the-network/next-generation-firewall" target="_blank">Firewall</a> or <a href="https://www.paloaltonetworks.com/products/management/panorama" target="_blank">Panorama</a> sending correlation logs</td>
+<td style="text-align:left">`pan_correlation`</td>
+</tr>
+<tr>
+<td style="text-align:left">Network Incidents</td>
+<td style="text-align:left"><a href="https://www.paloaltonetworks.com/products/secure-the-network/next-generation-firewall" target="_blank">Firewall</a> or <a href="https://www.paloaltonetworks.com/products/management/panorama" target="_blank">Panorama</a> sending threat logs</td>
+<td style="text-align:left">`pan_threat`</td>
+</tr>
+<tr>
+<td style="text-align:left">Endpoint Incidents</td>
+<td style="text-align:left"><a href="https://www.paloaltonetworks.com/products/secure-the-endpoint/traps" target="_blank">Traps Endpoint Protection</a></td>
+<td style="text-align:left">`pan_endpoint`</td>
+</tr>
+<tr>
+<td style="text-align:left">Aperture SaaS Incidents</td>
+<td style="text-align:left"><a href="https://www.paloaltonetworks.com/products/secure-the-cloud/aperture" target="_blank">Aperture Enterprise SaaS Security</a></td>
+<td style="text-align:left">`pan_aperture`</td>
+</tr>
+<tr>
+<td style="text-align:left">Malicious WildFire Submissions</td>
+<td style="text-align:left"><a href="https://www.paloaltonetworks.com/products/secure-the-network/subscriptions/wildfire" target="_blank">WildFire Malware Analysis</a> and a <a href="https://www.paloaltonetworks.com/products/secure-the-network/next-generation-firewall" target="_blank">Firewall</a> or <a href="https://www.paloaltonetworks.com/products/management/panorama" target="_blank">Panorama</a> sending WildFire logs</td>
+<td style="text-align:left">`pan_wildfire` verdict=&quot;malicious&quot;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="adversary">Adversary Scoreboard </h2>
+<h6 id="overview">Overview</h6>
+<p>The Adversary Scoreboard offers a broad view of the threats to your organization. Threats are displayed by the Threat Actor, Attack Campaign, or Malware Family responsible. Each adversary indicates the scope of the attack and the stage of the attack lifecycle reached by that adversary. Note: AutoFocus Threat Intelligence is required for the Adversary Scoreboard to display information.</p>
+<h6 id="take-action">Take Action</h6>
+<p>Click a table row to see the incidents attributed to an actor, campaign, or malware family. From there you can click an incident to see its details and context.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Product Required</th>
+<th style="text-align:left">Splunk Search</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Firewall or Panorama</td>
+<td style="text-align:left">`pan_threat`</td>
+</tr>
+<tr>
+<td style="text-align:left">AutoFocus</td>
+<td style="text-align:left">`pan_autofocus_tags`</td>
+</tr>
+<tr>
+<td style="text-align:left">Minemeld</td>
+<td style="text-align:left">`mm_indicators`</td>
+</tr>
+<tr>
+<td style="text-align:left">Endpoint Incidents</td>
+<td style="text-align:left">`pan_endpoint`</td>
+</tr>
+</tbody>
+</table>
+<h2 id="incident-context">Incident Context View </h2>
+<h6 id="overview">Overview</h6>
+<p>The Incident Context view shows all the details and context for the incident that was clicked on in the All Incidents Feed. The dashboard will morph and change depending on the event that was clicked and the context discovered for the event to show the most important information you need about this incident.</p>
+<p>See similar events, related user activity, malicious files, the source of the attack, and the campaign or threat actor behind it, for actionable intelligence you can use to immediately eliminate the threat.</p>
+<h6 id="take-action">Take Action</h6>
+<p>Click fields in the similar logs to get more information about the IP addresses and users in those fields.  Click the <em>Open In...</em> field on the right side for a context-aware menu of actions to take. You can open a threat in Threat Vault, AutoFocus, or VirusTotal for more context, and even download the PCAP for the threat from the firewall.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Product Required</th>
+<th style="text-align:left">Splunk Search</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Firewall or Panorama</td>
+<td style="text-align:left">`pan_threat`</td>
+</tr>
+<tr>
+<td style="text-align:left">Endpoint Incidents</td>
+<td style="text-align:left">`pan_endpoint</td>
+</tr>
+<tr>
+<td style="text-align:left">AutoFocus</td>
+<td style="text-align:left">`pan_autofocus_tags`</td>
+</tr>
+<tr>
+<td style="text-align:left">Endpoint Incidents</td>
+<td style="text-align:left">`pan_endpoint`</td>
+</tr>
+<tr>
+<td style="text-align:left">Wildfire</td>
+<td style="text-align:left">`pan_wildfire`</td>
+</tr>
+</tbody>
+</table>
+<h2 id="malware">Malware </h2>
+<p>The Malware dashboard presents information about malicious files across all the products in the Palo Alto Networks security platform. For example, information will show here for any malicious file transferred across a firewall, executed on an endpoint, or stored in a organization&apos;s SaaS account.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Product Required</th>
+<th style="text-align:left">Splunk Search</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Firewall or Panorama</td>
+<td style="text-align:left">`pan_threat`</td>
+</tr>
+<tr>
+<td style="text-align:left">Endpoint Incidents</td>
+<td style="text-align:left">`pan_endpoint`</td>
+</tr>
+</tbody>
+</table>
+<h2 id="wildfire">WildFire Submissions </h2>
+<p>WildFire cloud-based threat analysis and prevention engine for highly evasive zero-day exploits and malware employs a unique multi-technique approach combining dynamic and static analysis, innovative machine learning techniques, and a groundbreaking bare metal analysis environment to detect and prevent even the most evasive threats.</p>
+<p>The WildFire Submissions dashboard enables you to track submission of new samples to WildFire and the results of that analysis. Any samples that are determined as <em>malicious</em> are actionable and should be remediated.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Product Required</th>
+<th style="text-align:left">Splunk Search</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">WildFire</td>
+<td style="text-align:left">`pan_wildfire`</td>
+</tr>
+</tbody>
+</table>
+<h2 id="user">User Behavior </h2>
+<p>Track anamalous user behavior such as unacceptable web browsing, protocol tunneling, data leakage, and non-standard application usage. Use filters to create a report for a specific user.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Product Required</th>
+<th style="text-align:left"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="saas-activity">SaaS Activity </h2>
+<p>Track sanctioned and unsanctionend SaaS activity. Know who is storing critical data in unsanctioned SaaS applications in your organization, and track activity in sanctioned SaaS applications with Aperture.</p>
+<p>To declare SaaS Applications as sanctioned or unsanctioned, <a href="lookups.html#saas">set the sanctioned apps</a> in the <code>lookups/sanctioned_saas.csv</code> lookup table in the Palo Alto Networks Add-on.</p>
+<h2 id="saas-security">SaaS Security </h2>
+<p>Threats related to Sanctioned and Unsanctioned SaaS application usage including network threats and threats residing within enterprise SaaS applications. These threats can include compliance violations such as HIPAA and PCI, malicious files detected with WildFire, or accidental over-share of critical data.</p>
+<p>To declare SaaS Applications as sanctioned or unsanctioned, <a href="lookups.html#saas">set the sanctioned apps</a> in the <code>lookups/sanctioned_saas.csv</code> lookup table in the Palo Alto Networks Add-on.</p>
+<h2 id="network-security">Network Security </h2>
+<p>Network Security data is displayed from Palo Alto Networks next-generation firewalls and Panorama. All network-related threats are shown including Threat Prevention signatures, network floods, spyware, viruses, and more.</p>
+<h2 id="minemeld">Threat Intelligence </h2>
+<p>Threat Intelligence provides insight into the threat indicators being retrieved from MineMeld.  Threat indicators are used within the Palo Alto Networks Splunk app, and can also be exported to Splunk Enterprise Security. This dashboard shows the threat indicators pulled from MineMeld over time for each MineMeld Modular Input.</p>
+<p>To create a MineMeld Modular Input, see <a href="autofocus-and-minemeld.html">Getting Data Into Splunk from AutoFocus and MineMeld</a></p>
+<h2 id="realtime">Real-time Event Feed </h2>
+<h6 id="overview">Overview</h6>
+<p>This is the only real-time dashboard in the entire App and is used primarily for an immediate view of what is coming into Splunk, often for troubleshooting purposes. The default timeframe is realtime over the last 5 minutes.</p>
+<h6 id="disable-real-time-searches">Disable Real-time Searches</h6>
+<p>Some organizations do not allow real-time searches in their Splunk environment. If this is the case, you have a few options to disabled or remove the real-time search in this dashboard:</p>
+<p><strong>Option 1:</strong> Turn on <a href="http://docs.splunk.com/Documentation/Splunk/7.0.0/Search/Aboutrealtimesearches#Indexed_real-time_search" target="_blank">Indexed Real-time Searches</a><br>This is a setting in the Splunk server that can be enabled for all Apps.</p>
+<p><strong>Option 2:</strong> Change the timeframe in this dashboard<br>In the dashboard XML, change earliest from <code>rt-5m</code> to <code>-5m@m</code> and change latest from <code>rt</code> to <code>now</code>.</p>
+<p><strong>Option 3:</strong> Remove the <em>Real-time Event Feed</em> dashboard<br>Do this by deleting the file <code>$SPLUNK_HOME/etc/apps/SplunkforPaloAltoNetworks/default/data/ui/views/realtime_event_feed.xml</code>.</p>
+<h2 id="datamodel">Datamodel Audit </h2>
+<p>Monitor the size, health, and acceleration of the Palo Alto Networks datamodels. This is an excellent tool for troubleshooting dashboards to see why data isn&apos;t showing up. All the dashboards except the Real-time Event Feed leverage the datamodel.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> results matching &quot;<span class="search-query"></span>&quot;</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching &quot;<span class="search-query"></span>&quot;</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="commands.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Searchbar Command Reference">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Dashboard Reference","level":"4.6","depth":1,"previous":{"title":"Searchbar Command Reference","level":"4.5","depth":1,"path":"commands.md","ref":"commands.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"_pictures":[{"backlink":"installation.html#fig2.2.1","level":"2.2","list_caption":"Figure: Downloading the App and Add-on from within Splunk Enterprise.","alt":"Downloading the App and Add-on from within Splunk Enterprise.","nro":1,"url":"assets/download_app.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Downloading the App and Add-on from within Splunk Enterprise.","attributes":{},"skip":false,"key":"2.2.1"},{"backlink":"getting-data-in.html#fig2.3.1","level":"2.3","list_caption":"Figure: Architecture Diagram","alt":"Architecture Diagram","nro":2,"url":"/assets/architecture.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Architecture Diagram","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"firewalls-panorama-and-traps.html#fig2.3.1.1","level":"2.3.1","list_caption":"Figure: The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","alt":"","nro":3,"url":"https://splunk.paloaltonetworks.com/assets/firewall-credentials.png","index":1,"caption_template":"Figure: _CAPTION_","label":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","attributes":{},"title":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","skip":false,"key":"2.3.1.1"},{"backlink":"autofocus-and-minemeld.html#fig2.3.3.1","level":"2.3.3","list_caption":"Figure: Example of MineMeld nodes (Left to Right: miners, processors, outputs","alt":"Example of MineMeld nodes (Left to Right: miners, processors, outputs","nro":4,"url":"/assets/minemeld-nodes.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Example of MineMeld nodes (Left to Right: miners, processors, outputs","attributes":{},"skip":false,"key":"2.3.3.1"},{"backlink":"autofocus-and-minemeld.html#fig2.3.3.2","level":"2.3.3","list_caption":"Figure: MineMeld Feed URL needed for Splunk","alt":"MineMeld Feed URL needed for Splunk","nro":5,"url":"/assets/minemeld-feed-url.png","index":2,"caption_template":"Figure: _CAPTION_","label":"MineMeld Feed URL needed for Splunk","attributes":{},"skip":false,"key":"2.3.3.2"},{"backlink":"autofocus-and-minemeld.html#fig2.3.3.3","level":"2.3.3","list_caption":"Figure: Enter an AutoFocus API Key to collect information about AutoFocus tags in MineMeld data","alt":"Enter an AutoFocus API Key to collect information about AutoFocus tags in MineMeld data","nro":6,"url":"/assets/autofocus-api-key.png","index":3,"caption_template":"Figure: _CAPTION_","label":"Enter an AutoFocus API Key to collect information about AutoFocus tags in MineMeld data","attributes":{},"skip":false,"key":"2.3.3.3"},{"backlink":"wildfire.html#fig2.3.4.1","level":"2.3.4","list_caption":"Figure: WildFire dashboard with data","alt":"WildFire dashboard with data","nro":7,"url":"/assets/wildfire_dashboard.png","index":1,"caption_template":"Figure: _CAPTION_","label":"WildFire dashboard with data","attributes":{},"skip":false,"key":"2.3.4.1"},{"backlink":"upgrade.html#fig3.1.1","level":"3.1","list_caption":"Figure: The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","alt":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","nro":8,"url":"/assets/firewall-credentials.png","index":1,"caption_template":"Figure: _CAPTION_","label":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","attributes":{},"skip":false,"key":"3.1.1"},{"backlink":"adaptive-response.html#fig4.1.1","level":"4.1","list_caption":"Figure: The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","alt":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","nro":9,"url":"/assets/firewall-credentials.png","index":1,"caption_template":"Figure: _CAPTION_","label":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","attributes":{},"skip":false,"key":"4.1.1"},{"backlink":"adaptive-response.html#fig4.1.2","level":"4.1","list_caption":"Figure: Firewall permissions required for App special features","alt":"Firewall permissions required for App special features","nro":10,"url":"/assets/admin_role.png","index":2,"caption_template":"Figure: _CAPTION_","label":"Firewall permissions required for App special features","attributes":{},"skip":false,"key":"4.1.2"}]},"plugins":["image-captions","bootstrap-callout","header","collapsible-chapters","ga"],"pluginsConfig":{"scripts":{"files":[]},"search":{},"collapsible-chapters":{},"layout":{"headerPath":"layouts/header.html"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"header":{},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":{"cookieDomain":"splunk.paloaltonetworks.com"},"token":"UA-44897305-6"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"dashboards.md","mtime":"2020-04-08T20:02:52.548Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-08T20:03:28.713Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-collapsible-chapters/collapsible-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"></script>
+    <script src="js/anchorsettings.js"></script>
+
+    </body>
+</html>
+

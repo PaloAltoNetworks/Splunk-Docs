@@ -1,0 +1,688 @@
+
+<!DOCTYPE HTML>
+<html lang="">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>AutoFocus and MineMeld &#xB7; GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-bootstrap-callout/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-collapsible-chapters/collapsible-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="wildfire.html">
+    
+    
+    <link rel="prev" href="aperture.html">
+    
+
+    </head>
+    <body>
+        
+<div class="book"><nav class="navbar navbar-default hidden-xs hidden-sm">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href=".">
+                Palo Alto Networks App for Splunk
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav navbar-left" style="margin-left: 30px;">
+                <li><a href="https://splunkbase.splunk.com/app/491">Download App</a></li>
+                <li><a href="https://splunkbase.splunk.com/app/2757/">Download Add-on</a></li>
+                <li><a href="/faq.html">FAQ</a></li>
+                <li><a href="https://www.paloaltonetworks.com/partners/strategic-partners/splunk">Splunk Partnership</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Overview</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="webinars-and-videos.html">
+            
+                <a href="webinars-and-videos.html">
+            
+                    
+                    Webinars and Videos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="faq.html">
+            
+                <a href="faq.html">
+            
+                    
+                    Frequently Asked Questions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="troubleshoot.html">
+            
+                <a href="troubleshoot.html">
+            
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="support.html">
+            
+                <a href="support.html">
+            
+                    
+                    Get Support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="release-notes.html">
+            
+                <a href="release-notes.html">
+            
+                    
+                    Release Notes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Getting Started</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="compatibility.html">
+            
+                <a href="compatibility.html">
+            
+                    
+                    Compatibility
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="getting-data-in.html">
+            
+                <a href="getting-data-in.html">
+            
+                    
+                    Getting Data Into Splunk
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="firewalls-panorama-and-traps.html">
+            
+                <a href="firewalls-panorama-and-traps.html">
+            
+                    
+                    Firewalls, Panorama, and Traps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="aperture.html">
+            
+                <a href="aperture.html">
+            
+                    
+                    Aperture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3.3" data-path="autofocus-and-minemeld.html">
+            
+                <a href="autofocus-and-minemeld.html">
+            
+                    
+                    AutoFocus and MineMeld
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="wildfire.html">
+            
+                <a href="wildfire.html">
+            
+                    
+                    WildFire
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="universal-forwarder.html">
+            
+                <a href="universal-forwarder.html">
+            
+                    
+                    Syslog-ng and Universal Forwarder
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="log-correlation.html">
+            
+                <a href="log-correlation.html">
+            
+                    
+                    Log Correlation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Configuration</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="upgrade.html">
+            
+                <a href="upgrade.html">
+            
+                    
+                    Upgrade the App/Add-on
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="tune-or-reduce-firewall-logs.html">
+            
+                <a href="tune-or-reduce-firewall-logs.html">
+            
+                    
+                    Tune or Reduce Firewall Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="enterprise-security.html">
+            
+                <a href="enterprise-security.html">
+            
+                    
+                    Splunk Enterprise Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="lookups.html">
+            
+                <a href="lookups.html">
+            
+                    
+                    Add Context to Searches
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Advanced Features</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="adaptive-response.html">
+            
+                <a href="adaptive-response.html">
+            
+                    
+                    Adaptive Response
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="threat-intelligence.html">
+            
+                <a href="threat-intelligence.html">
+            
+                    
+                    Threat Intelligence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="external-search.html">
+            
+                <a href="external-search.html">
+            
+                    
+                    External Search
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="userid.html">
+            
+                <a href="userid.html">
+            
+                    
+                    User-ID with Splunk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="commands.html">
+            
+                <a href="commands.html">
+            
+                    
+                    Searchbar Command Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="dashboards.html">
+            
+                <a href="dashboards.html">
+            
+                    
+                    Dashboard Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".">AutoFocus and MineMeld</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="autofocus-and-minemeld">AutoFocus and MineMeld</h1>
+<p>Threat Intelligence can be leveraged in Splunk to correlate and tag logs as coming from a specific threat actor or campaign. This gives attribution and context to the events in Splunk.</p>
+<p><a href="https://www.paloaltonetworks.com/products/secure-the-network/subscriptions/minemeld" target="_blank">MineMeld</a> and <a href="https://www.paloaltonetworks.com/products/secure-the-network/subscriptions/autofocus" target="_blank">AutoFocus</a> are often used together to deliver Threat Intelligence. MineMeld is the delivery vehicle which can send Threat Intelligence from many sources into Splunk.  AutoFocus is one of those possible sources of threat intelligence. Therefor, you can use MineMeld without AutoFocus to send 3rd party threat intelligence into Splunk.</p>
+<p>You can use MineMeld on-premise or MineMeld hosted in AutoFocus.</p>
+<figure id="fig2.3.3.1"><img alt="Example of MineMeld nodes (Left to Right: miners, processors, outputs" src="assets/minemeld-nodes.png" class="no-shadow"><figcaption>Figure: Example of MineMeld nodes (Left to Right: miners, processors, outputs</figcaption></figure>
+<h2 id="configure-minemeld-output-node">Configure MineMeld output node</h2>
+<p>To send threat intelligence to Splunk, you have to tell MineMeld what indicators to send. This guide explains the basics of MineMeld:
+<a href="https://live.paloaltonetworks.com/t5/MineMeld-Articles/Quick-tour-of-MineMeld-default-config/ta-p/72042" target="_blank">https://live.paloaltonetworks.com/t5/MineMeld-Articles/Quick-tour-of-MineMeld-default-config/ta-p/72042</a></p>
+<p>Use MineMeld to mine data sources, aggregate those sources, then output to a standard output node. Configuration of the miners, processors, and output nodes is in the <a href="https://live.paloaltonetworks.com/t5/MineMeld-Articles/What-is-in-a-MineMeld-node/ta-p/72046" target="_blank">MineMeld documentation</a>.</p>
+<p>Once you&apos;ve created an output node with indicators feeding to it, you&apos;ll need to get the output node&apos;s feed URL.</p>
+<figure id="fig2.3.3.2"><img src="assets/minemeld-feed-url.png" alt="MineMeld Feed URL needed for Splunk"><figcaption>Figure: MineMeld Feed URL needed for Splunk</figcaption></figure>
+<h2 id="create-a-minemeld-input-in-splunk">Create a MineMeld input in Splunk</h2>
+<p>Navigate to the <strong>Palo Alto Networks Add-on</strong></p>
+<p><img src="assets/add-on.png" alt=""></p>
+<p>Within the Add-on, click the <strong>Inputs</strong> tab at the top left. Then click <strong>Create New Input</strong> and then select <strong>MineMeld Feed</strong>.</p>
+<p><img src="assets/minemeld-mod-input.png" alt=""></p>
+<div class="callout callout-primary"><h4 id="note">Note</h4><div><p><strong>AutoFocus Export</strong> is another way to bring AutoFocus indicators into Splunk without MineMeld, using AutoFocus Export Lists which are manually curated lists of indicators. MineMeld Feeds convey the same information to Splunk, but automatically collect indicators from AutoFocus instead of using manually created export lists. It is recommended to use MineMeld instead of Export Lists.</p></div></div>
+<p><img src="assets/minemeld-feed-settings-6-1.png" alt=""></p>
+<p>Enter the settings for the MineMeld feed input:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field</th>
+<th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Name</td>
+<td style="text-align:left">Any friendly name (eg. &quot;Autofocus_Threat_Intelligence&quot;)</td>
+</tr>
+<tr>
+<td style="text-align:left">Interval</td>
+<td style="text-align:left">Frequency in seconds to check for new logs (60 seconds recommended)</td>
+</tr>
+<tr>
+<td style="text-align:left">Index</td>
+<td style="text-align:left">This setting is ignored because the KVStore is used</td>
+</tr>
+<tr>
+<td style="text-align:left">Output Node Feed URL</td>
+<td style="text-align:left">The Feed URL from the previous step</td>
+</tr>
+<tr>
+<td style="text-align:left">Indicator Timeout</td>
+<td style="text-align:left">How long to retain indicators (in hours)</td>
+</tr>
+<tr>
+<td style="text-align:left">Global Account</td>
+<td style="text-align:left">Credentials for the Feed URL (optional)</td>
+</tr>
+</tbody>
+</table>
+<p>Click <strong>Add</strong> to save the MineMeld Feed input.</p>
+<h2 id="verify-minemeld">Verify MineMeld</h2>
+<p>Wait the interval time entered in the previous step, then click the <strong>Search</strong> tab at the top and enter the following search:</p>
+<pre><code>| `mm_indicators`
+</code></pre><p>This should come up with a table full of indicators and data about those indicators.</p>
+<h2 id="autofocus-tags">AutoFocus Tags</h2>
+<p>AutoFocus categorizes threat indicators using tags including threat actors, malicious behaviors, campaigns, and malware families. These tags are part of the indicators from MineMeld above.  This feature brings the tag metadata into Splunk, to get the complete picture of what each tag means.</p>
+<div class="callout callout-primary"><h4 id="note">Note</h4><div><p><strong>Requires MineMeld</strong> This feature does nothing without configuring a MineMeld input using the instructions above. The AutoFocus Tags collected by this AutoFocus API key consists of metadata about the tags retrieved from MineMeld. This metadata is not useful on its own without MineMeld.</p></div></div>
+<p>AutoFocus tag metadata is easily collected by entering your AutoFocus API key into Splunk.</p>
+<p>First, get the AutoFocus API key at <a href="https://autofocus.paloaltonetworks.com/#/settings" target="_blank">https://autofocus.paloaltonetworks.com/#/settings</a>.</p>
+<p>Then, navigate to the <strong>Palo Alto Networks Add-on</strong>, then click the <strong>Configuration</strong> tab at the top.  Click the <strong>Add-on Settings</strong> tab. Enter your AutoFocus API key into the field.</p>
+<figure id="fig2.3.3.3"><img src="assets/autofocus-api-key.png" alt="Enter an AutoFocus API Key to collect information about AutoFocus tags in MineMeld data"><figcaption>Figure: Enter an AutoFocus API Key to collect information about AutoFocus tags in MineMeld data</figcaption></figure>
+<h2 id="verify-autofocus-tags">Verify AutoFocus Tags</h2>
+<p>AutoFocus tags are pulled at midnight every night by default. You can manually trigger a tag retrieval with this search:</p>
+<pre><code>| panautofocustags
+</code></pre><p>To verify the tags have downloaded use this search:</p>
+<pre><code>| `pan_autofocus_tags`
+</code></pre><p>This should come up with a table full of AutoFocus tags and data about those tags.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> results matching &quot;<span class="search-query"></span>&quot;</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching &quot;<span class="search-query"></span>&quot;</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="aperture.html" class="navigation navigation-prev " aria-label="Previous page: Aperture">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="wildfire.html" class="navigation navigation-next " aria-label="Next page: WildFire">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"AutoFocus and MineMeld","level":"2.3.3","depth":2,"next":{"title":"WildFire","level":"2.3.4","depth":2,"path":"wildfire.md","ref":"wildfire.md","articles":[]},"previous":{"title":"Aperture","level":"2.3.2","depth":2,"path":"aperture.md","ref":"aperture.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"_pictures":[{"backlink":"installation.html#fig2.2.1","level":"2.2","list_caption":"Figure: Downloading the App and Add-on from within Splunk Enterprise.","alt":"Downloading the App and Add-on from within Splunk Enterprise.","nro":1,"url":"assets/download_app.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Downloading the App and Add-on from within Splunk Enterprise.","attributes":{},"skip":false,"key":"2.2.1"},{"backlink":"getting-data-in.html#fig2.3.1","level":"2.3","list_caption":"Figure: Architecture Diagram","alt":"Architecture Diagram","nro":2,"url":"/assets/architecture.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Architecture Diagram","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"firewalls-panorama-and-traps.html#fig2.3.1.1","level":"2.3.1","list_caption":"Figure: The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","alt":"","nro":3,"url":"https://splunk.paloaltonetworks.com/assets/firewall-credentials.png","index":1,"caption_template":"Figure: _CAPTION_","label":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","attributes":{},"title":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","skip":false,"key":"2.3.1.1"},{"backlink":"autofocus-and-minemeld.html#fig2.3.3.1","level":"2.3.3","list_caption":"Figure: Example of MineMeld nodes (Left to Right: miners, processors, outputs","alt":"Example of MineMeld nodes (Left to Right: miners, processors, outputs","nro":4,"url":"/assets/minemeld-nodes.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Example of MineMeld nodes (Left to Right: miners, processors, outputs","attributes":{},"skip":false,"key":"2.3.3.1"},{"backlink":"autofocus-and-minemeld.html#fig2.3.3.2","level":"2.3.3","list_caption":"Figure: MineMeld Feed URL needed for Splunk","alt":"MineMeld Feed URL needed for Splunk","nro":5,"url":"/assets/minemeld-feed-url.png","index":2,"caption_template":"Figure: _CAPTION_","label":"MineMeld Feed URL needed for Splunk","attributes":{},"skip":false,"key":"2.3.3.2"},{"backlink":"autofocus-and-minemeld.html#fig2.3.3.3","level":"2.3.3","list_caption":"Figure: Enter an AutoFocus API Key to collect information about AutoFocus tags in MineMeld data","alt":"Enter an AutoFocus API Key to collect information about AutoFocus tags in MineMeld data","nro":6,"url":"/assets/autofocus-api-key.png","index":3,"caption_template":"Figure: _CAPTION_","label":"Enter an AutoFocus API Key to collect information about AutoFocus tags in MineMeld data","attributes":{},"skip":false,"key":"2.3.3.3"},{"backlink":"wildfire.html#fig2.3.4.1","level":"2.3.4","list_caption":"Figure: WildFire dashboard with data","alt":"WildFire dashboard with data","nro":7,"url":"/assets/wildfire_dashboard.png","index":1,"caption_template":"Figure: _CAPTION_","label":"WildFire dashboard with data","attributes":{},"skip":false,"key":"2.3.4.1"},{"backlink":"upgrade.html#fig3.1.1","level":"3.1","list_caption":"Figure: The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","alt":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","nro":8,"url":"/assets/firewall-credentials.png","index":1,"caption_template":"Figure: _CAPTION_","label":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","attributes":{},"skip":false,"key":"3.1.1"},{"backlink":"adaptive-response.html#fig4.1.1","level":"4.1","list_caption":"Figure: The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","alt":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","nro":9,"url":"/assets/firewall-credentials.png","index":1,"caption_template":"Figure: _CAPTION_","label":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","attributes":{},"skip":false,"key":"4.1.1"},{"backlink":"adaptive-response.html#fig4.1.2","level":"4.1","list_caption":"Figure: Firewall permissions required for App special features","alt":"Firewall permissions required for App special features","nro":10,"url":"/assets/admin_role.png","index":2,"caption_template":"Figure: _CAPTION_","label":"Firewall permissions required for App special features","attributes":{},"skip":false,"key":"4.1.2"}]},"plugins":["image-captions","bootstrap-callout","header","collapsible-chapters","ga"],"pluginsConfig":{"scripts":{"files":[]},"search":{},"collapsible-chapters":{},"layout":{"headerPath":"layouts/header.html"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"header":{},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":{"cookieDomain":"splunk.paloaltonetworks.com"},"token":"UA-44897305-6"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"autofocus-and-minemeld.md","mtime":"2020-04-08T20:02:52.548Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-08T20:03:28.713Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-collapsible-chapters/collapsible-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"></script>
+    <script src="js/anchorsettings.js"></script>
+
+    </body>
+</html>
+

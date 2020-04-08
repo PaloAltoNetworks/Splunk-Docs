@@ -1,0 +1,688 @@
+
+<!DOCTYPE HTML>
+<html lang="">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Aperture &#xB7; GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-bootstrap-callout/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-collapsible-chapters/collapsible-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="autofocus-and-minemeld.html">
+    
+    
+    <link rel="prev" href="firewalls-panorama-and-traps.html">
+    
+
+    </head>
+    <body>
+        
+<div class="book"><nav class="navbar navbar-default hidden-xs hidden-sm">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href=".">
+                Palo Alto Networks App for Splunk
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav navbar-left" style="margin-left: 30px;">
+                <li><a href="https://splunkbase.splunk.com/app/491">Download App</a></li>
+                <li><a href="https://splunkbase.splunk.com/app/2757/">Download Add-on</a></li>
+                <li><a href="/faq.html">FAQ</a></li>
+                <li><a href="https://www.paloaltonetworks.com/partners/strategic-partners/splunk">Splunk Partnership</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Overview</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="webinars-and-videos.html">
+            
+                <a href="webinars-and-videos.html">
+            
+                    
+                    Webinars and Videos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="faq.html">
+            
+                <a href="faq.html">
+            
+                    
+                    Frequently Asked Questions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="troubleshoot.html">
+            
+                <a href="troubleshoot.html">
+            
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="support.html">
+            
+                <a href="support.html">
+            
+                    
+                    Get Support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="release-notes.html">
+            
+                <a href="release-notes.html">
+            
+                    
+                    Release Notes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Getting Started</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="compatibility.html">
+            
+                <a href="compatibility.html">
+            
+                    
+                    Compatibility
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="getting-data-in.html">
+            
+                <a href="getting-data-in.html">
+            
+                    
+                    Getting Data Into Splunk
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="firewalls-panorama-and-traps.html">
+            
+                <a href="firewalls-panorama-and-traps.html">
+            
+                    
+                    Firewalls, Panorama, and Traps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.3.2" data-path="aperture.html">
+            
+                <a href="aperture.html">
+            
+                    
+                    Aperture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="autofocus-and-minemeld.html">
+            
+                <a href="autofocus-and-minemeld.html">
+            
+                    
+                    AutoFocus and MineMeld
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="wildfire.html">
+            
+                <a href="wildfire.html">
+            
+                    
+                    WildFire
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="universal-forwarder.html">
+            
+                <a href="universal-forwarder.html">
+            
+                    
+                    Syslog-ng and Universal Forwarder
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="log-correlation.html">
+            
+                <a href="log-correlation.html">
+            
+                    
+                    Log Correlation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Configuration</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="upgrade.html">
+            
+                <a href="upgrade.html">
+            
+                    
+                    Upgrade the App/Add-on
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="tune-or-reduce-firewall-logs.html">
+            
+                <a href="tune-or-reduce-firewall-logs.html">
+            
+                    
+                    Tune or Reduce Firewall Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="enterprise-security.html">
+            
+                <a href="enterprise-security.html">
+            
+                    
+                    Splunk Enterprise Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="lookups.html">
+            
+                <a href="lookups.html">
+            
+                    
+                    Add Context to Searches
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Advanced Features</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="adaptive-response.html">
+            
+                <a href="adaptive-response.html">
+            
+                    
+                    Adaptive Response
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="threat-intelligence.html">
+            
+                <a href="threat-intelligence.html">
+            
+                    
+                    Threat Intelligence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="external-search.html">
+            
+                <a href="external-search.html">
+            
+                    
+                    External Search
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="userid.html">
+            
+                <a href="userid.html">
+            
+                    
+                    User-ID with Splunk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="commands.html">
+            
+                <a href="commands.html">
+            
+                    
+                    Searchbar Command Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="dashboards.html">
+            
+                <a href="dashboards.html">
+            
+                    
+                    Dashboard Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".">Aperture</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="aperture">Aperture</h1>
+<p>Aperture SaaS Security is supported starting with App/Add-on 6.0.0.</p>
+<p>Aperture is cloud-hosted so logs are retrieved by Splunk using the Aperture logging API. Logs are pulled down in JSON format with sourcetype=&quot;pan:aperture&quot; and eventtype=&quot;pan_aperture&quot;.</p>
+<h2 id="create-a-client-app-in-aperture">Create a Client App in Aperture</h2>
+<p>Use the instruction in the Aperture Administrator&apos;s Guide to create a Client App in your Aperture instance:</p>
+<p><a href="https://www.paloaltonetworks.com/documentation/aperture/aperture/aperture_guide/aperture-syslog-and-api-integration/add-your-api-client-app-to-the-aperture-service" target="_blank">https://www.paloaltonetworks.com/documentation/aperture/aperture/aperture_guide/aperture-syslog-and-api-integration/add-your-api-client-app-to-the-aperture-service</a></p>
+<p>This action will provide you a <strong>Client ID</strong> and <strong>Client Secret</strong>.  The Client Secret will be shown only once, so make sure to record it or you&apos;ll need to re-create the Client App to get a new Client Secret.</p>
+<h2 id="add-the-credentials-to-splunk">Add the credentials to Splunk</h2>
+<p>In Splunk, navigate to the <strong>Palo Alto Networks Add-on</strong>.</p>
+<p><img src="assets/add-on.png" alt=""></p>
+<p>Once inside the Add-on, click the <strong>Configuration</strong> tab, and ensure you&apos;re on the <strong>Account</strong> tab.  Click <strong>Add</strong> in the top right corner to add new credentials.</p>
+<p>In the dialog window, enter the following:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field</th>
+<th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Account name</td>
+<td style="text-align:left">Any friendly account name (eg. &quot;Aperture_creds&quot;)</td>
+</tr>
+<tr>
+<td style="text-align:left">Username</td>
+<td style="text-align:left">The Client ID</td>
+</tr>
+<tr>
+<td style="text-align:left">Password</td>
+<td style="text-align:left">The Client Secret</td>
+</tr>
+</tbody>
+</table>
+<p>Then click <strong>Add</strong> to save these credentials.</p>
+<h2 id="create-an-aperture-input-in-splunk">Create an Aperture input in Splunk</h2>
+<p>Within the Add-on, click the <strong>Inputs</strong> tab at the top left. Then click <strong>Create New Input</strong> and then select <strong>Aperture</strong>.</p>
+<p><img src="assets/aperture-mod-input.png" alt=""></p>
+<p><img src="assets/aperture-settings.png" alt=""></p>
+<p>Enter the settings for the Aperture input:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Field</th>
+<th style="text-align:left">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Name</td>
+<td style="text-align:left">Any friendly name (eg. &quot;Aperture&quot;)</td>
+</tr>
+<tr>
+<td style="text-align:left">Interval</td>
+<td style="text-align:left">Frequency in seconds to check for new logs (60 seconds recommended)</td>
+</tr>
+<tr>
+<td style="text-align:left">Index</td>
+<td style="text-align:left">The index in which to put the Aperture logs</td>
+</tr>
+<tr>
+<td style="text-align:left">Global Account</td>
+<td style="text-align:left">The account you created in the previous step</td>
+</tr>
+</tbody>
+</table>
+<p>Click <strong>Add</strong> to save the Aperture input.</p>
+<h2 id="verify">Verify</h2>
+<p>After waiting the interval time, check that logs are coming into Splunk by clicking <strong>Search</strong> at the top and entering this search:</p>
+<pre><code>eventtype=&quot;pan_aperture&quot;
+</code></pre><p>You should see some JSON formatted logs show up. If nothing shows up, wait a little longer, ensure there is activity in Aperture to generate logs, and try the <a href="troubleshoot.html#aperture">Troubleshooting Guide</a>.</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> results matching &quot;<span class="search-query"></span>&quot;</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching &quot;<span class="search-query"></span>&quot;</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="firewalls-panorama-and-traps.html" class="navigation navigation-prev " aria-label="Previous page: Firewalls, Panorama, and Traps">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="autofocus-and-minemeld.html" class="navigation navigation-next " aria-label="Next page: AutoFocus and MineMeld">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Aperture","level":"2.3.2","depth":2,"next":{"title":"AutoFocus and MineMeld","level":"2.3.3","depth":2,"path":"autofocus-and-minemeld.md","ref":"autofocus-and-minemeld.md","articles":[]},"previous":{"title":"Firewalls, Panorama, and Traps","level":"2.3.1","depth":2,"path":"firewalls-panorama-and-traps.md","ref":"firewalls-panorama-and-traps.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"_pictures":[{"backlink":"installation.html#fig2.2.1","level":"2.2","list_caption":"Figure: Downloading the App and Add-on from within Splunk Enterprise.","alt":"Downloading the App and Add-on from within Splunk Enterprise.","nro":1,"url":"assets/download_app.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Downloading the App and Add-on from within Splunk Enterprise.","attributes":{},"skip":false,"key":"2.2.1"},{"backlink":"getting-data-in.html#fig2.3.1","level":"2.3","list_caption":"Figure: Architecture Diagram","alt":"Architecture Diagram","nro":2,"url":"/assets/architecture.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Architecture Diagram","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"firewalls-panorama-and-traps.html#fig2.3.1.1","level":"2.3.1","list_caption":"Figure: The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","alt":"","nro":3,"url":"https://splunk.paloaltonetworks.com/assets/firewall-credentials.png","index":1,"caption_template":"Figure: _CAPTION_","label":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","attributes":{},"title":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","skip":false,"key":"2.3.1.1"},{"backlink":"autofocus-and-minemeld.html#fig2.3.3.1","level":"2.3.3","list_caption":"Figure: Example of MineMeld nodes (Left to Right: miners, processors, outputs","alt":"Example of MineMeld nodes (Left to Right: miners, processors, outputs","nro":4,"url":"/assets/minemeld-nodes.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Example of MineMeld nodes (Left to Right: miners, processors, outputs","attributes":{},"skip":false,"key":"2.3.3.1"},{"backlink":"autofocus-and-minemeld.html#fig2.3.3.2","level":"2.3.3","list_caption":"Figure: MineMeld Feed URL needed for Splunk","alt":"MineMeld Feed URL needed for Splunk","nro":5,"url":"/assets/minemeld-feed-url.png","index":2,"caption_template":"Figure: _CAPTION_","label":"MineMeld Feed URL needed for Splunk","attributes":{},"skip":false,"key":"2.3.3.2"},{"backlink":"autofocus-and-minemeld.html#fig2.3.3.3","level":"2.3.3","list_caption":"Figure: Enter an AutoFocus API Key to collect information about AutoFocus tags in MineMeld data","alt":"Enter an AutoFocus API Key to collect information about AutoFocus tags in MineMeld data","nro":6,"url":"/assets/autofocus-api-key.png","index":3,"caption_template":"Figure: _CAPTION_","label":"Enter an AutoFocus API Key to collect information about AutoFocus tags in MineMeld data","attributes":{},"skip":false,"key":"2.3.3.3"},{"backlink":"wildfire.html#fig2.3.4.1","level":"2.3.4","list_caption":"Figure: WildFire dashboard with data","alt":"WildFire dashboard with data","nro":7,"url":"/assets/wildfire_dashboard.png","index":1,"caption_template":"Figure: _CAPTION_","label":"WildFire dashboard with data","attributes":{},"skip":false,"key":"2.3.4.1"},{"backlink":"upgrade.html#fig3.1.1","level":"3.1","list_caption":"Figure: The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","alt":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","nro":8,"url":"/assets/firewall-credentials.png","index":1,"caption_template":"Figure: _CAPTION_","label":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","attributes":{},"skip":false,"key":"3.1.1"},{"backlink":"adaptive-response.html#fig4.1.1","level":"4.1","list_caption":"Figure: The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","alt":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","nro":9,"url":"/assets/firewall-credentials.png","index":1,"caption_template":"Figure: _CAPTION_","label":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","attributes":{},"skip":false,"key":"4.1.1"},{"backlink":"adaptive-response.html#fig4.1.2","level":"4.1","list_caption":"Figure: Firewall permissions required for App special features","alt":"Firewall permissions required for App special features","nro":10,"url":"/assets/admin_role.png","index":2,"caption_template":"Figure: _CAPTION_","label":"Firewall permissions required for App special features","attributes":{},"skip":false,"key":"4.1.2"}]},"plugins":["image-captions","bootstrap-callout","header","collapsible-chapters","ga"],"pluginsConfig":{"scripts":{"files":[]},"search":{},"collapsible-chapters":{},"layout":{"headerPath":"layouts/header.html"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"header":{},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":{"cookieDomain":"splunk.paloaltonetworks.com"},"token":"UA-44897305-6"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"aperture.md","mtime":"2020-04-08T20:02:52.516Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-08T20:03:28.713Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-collapsible-chapters/collapsible-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"></script>
+    <script src="js/anchorsettings.js"></script>
+
+    </body>
+</html>
+

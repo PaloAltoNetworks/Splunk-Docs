@@ -1,0 +1,748 @@
+
+<!DOCTYPE HTML>
+<html lang="">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Upgrade the App/Add-on &#xB7; GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-image-captions/image-captions.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-bootstrap-callout/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-collapsible-chapters/collapsible-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="tune-or-reduce-firewall-logs.html">
+    
+    
+    <link rel="prev" href="log-correlation.html">
+    
+
+    </head>
+    <body>
+        
+<div class="book"><nav class="navbar navbar-default hidden-xs hidden-sm">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href=".">
+                Palo Alto Networks App for Splunk
+            </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="nav navbar-nav navbar-left" style="margin-left: 30px;">
+                <li><a href="https://splunkbase.splunk.com/app/491">Download App</a></li>
+                <li><a href="https://splunkbase.splunk.com/app/2757/">Download Add-on</a></li>
+                <li><a href="/faq.html">FAQ</a></li>
+                <li><a href="https://www.paloaltonetworks.com/partners/strategic-partners/splunk">Splunk Partnership</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Overview</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="webinars-and-videos.html">
+            
+                <a href="webinars-and-videos.html">
+            
+                    
+                    Webinars and Videos
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="faq.html">
+            
+                <a href="faq.html">
+            
+                    
+                    Frequently Asked Questions
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="troubleshoot.html">
+            
+                <a href="troubleshoot.html">
+            
+                    
+                    Troubleshooting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="support.html">
+            
+                <a href="support.html">
+            
+                    
+                    Get Support
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="release-notes.html">
+            
+                <a href="release-notes.html">
+            
+                    
+                    Release Notes
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Getting Started</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="compatibility.html">
+            
+                <a href="compatibility.html">
+            
+                    
+                    Compatibility
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="installation.html">
+            
+                <a href="installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="getting-data-in.html">
+            
+                <a href="getting-data-in.html">
+            
+                    
+                    Getting Data Into Splunk
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.3.1" data-path="firewalls-panorama-and-traps.html">
+            
+                <a href="firewalls-panorama-and-traps.html">
+            
+                    
+                    Firewalls, Panorama, and Traps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.2" data-path="aperture.html">
+            
+                <a href="aperture.html">
+            
+                    
+                    Aperture
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.3" data-path="autofocus-and-minemeld.html">
+            
+                <a href="autofocus-and-minemeld.html">
+            
+                    
+                    AutoFocus and MineMeld
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.4" data-path="wildfire.html">
+            
+                <a href="wildfire.html">
+            
+                    
+                    WildFire
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3.5" data-path="universal-forwarder.html">
+            
+                <a href="universal-forwarder.html">
+            
+                    
+                    Syslog-ng and Universal Forwarder
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="log-correlation.html">
+            
+                <a href="log-correlation.html">
+            
+                    
+                    Log Correlation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Configuration</li>
+        
+        
+    
+        <li class="chapter active" data-level="3.1" data-path="upgrade.html">
+            
+                <a href="upgrade.html">
+            
+                    
+                    Upgrade the App/Add-on
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="tune-or-reduce-firewall-logs.html">
+            
+                <a href="tune-or-reduce-firewall-logs.html">
+            
+                    
+                    Tune or Reduce Firewall Logs
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="enterprise-security.html">
+            
+                <a href="enterprise-security.html">
+            
+                    
+                    Splunk Enterprise Security
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="lookups.html">
+            
+                <a href="lookups.html">
+            
+                    
+                    Add Context to Searches
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Advanced Features</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="adaptive-response.html">
+            
+                <a href="adaptive-response.html">
+            
+                    
+                    Adaptive Response
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="threat-intelligence.html">
+            
+                <a href="threat-intelligence.html">
+            
+                    
+                    Threat Intelligence
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="external-search.html">
+            
+                <a href="external-search.html">
+            
+                    
+                    External Search
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="userid.html">
+            
+                <a href="userid.html">
+            
+                    
+                    User-ID with Splunk
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="commands.html">
+            
+                <a href="commands.html">
+            
+                    
+                    Searchbar Command Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="dashboards.html">
+            
+                <a href="dashboards.html">
+            
+                    
+                    Dashboard Reference
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".">Upgrade the App/Add-on</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="upgrade-to-appadd-on-version-60">Upgrade to App/Add-on Version 6.0</h1>
+<p><strong>No action is required</strong> to upgrade App 5.x or Add-on 3.x to App/Add-on 6.0. All configuration will be migrated to 6.0 and all logs prior to the upgrade will still be available. If you have made customizations to the App or Add-on such as creating your own dashboards, then please consider the following significant changes in App/Add-on 6.0.</p>
+<h3 id="dashboard-changes">Dashboard changes</h3>
+<p>Most dashboards have been changed, so if you have customized one of the stock dashboards, you may need to restore your customizations after the upgrade onto the new dashboards. All dashboards within the App can be found at:</p>
+<p><code>http(s)://your-splunk-server:8000/app/SplunkforPaloAltoNetworks/dashboards</code></p>
+<h3 id="firewallpanorama-credential-changes">Firewall/Panorama credential changes</h3>
+<p>In previous versions, the firewall credential was added with a username and password separate from other credentials such as WildFire API key.</p>
+<p>In 6.0, credentials are used for Firewall/Panorama, Aperture, and MineMeld, so there is a new credential store where you can store credentials for each purpose. Aperture and MineMeld credentials are leveraged in an Aperture or MineMeld modular input.</p>
+<p>Firewall/Panorama credentials are now designated as whichever credential has the name &quot;Firewall&quot;</p>
+<figure id="fig3.1.1"><img src="assets/firewall-credentials.png" alt="The credentials name &quot;Firewall&quot; will be used for connection to Firewalls or Panorama"><figcaption>Figure: The credentials name &quot;Firewall&quot; will be used for connection to Firewalls or Panorama</figcaption></figure>
+<h3 id="datamodel-changes">Datamodel changes</h3>
+<p>The datamodel has been optimized for size and speed efficiency and updated for the latest CIM compliance. This means removing uncommonly used fields and renaming other fields. These changes do not affect the search-time fields, only the datamodel fields.</p>
+<p><strong>The following datamodel fields have changed in App 6.0:</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Old Field</th>
+<th style="text-align:left">New Field</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">cmd, serial, virtual_system, rule_name, tag, bytes, packets, src, dest, src_class, dest_class, dvc, misc, major_content_type, protocol, app: capable of file transfer, app: evasive, app: excessive bandwidth, app: has known vulnerability, app: pervasive use, app: prone to misuse, app: tunnels other apps, app: used by malware</td>
+<td style="text-align:left">[removed]</td>
+</tr>
+<tr>
+<td style="text-align:left">file_digest</td>
+<td style="text-align:left">file_hash</td>
+</tr>
+<tr>
+<td style="text-align:left">filename</td>
+<td style="text-align:left">file_name</td>
+</tr>
+<tr>
+<td style="text-align:left">filetype</td>
+<td style="text-align:left">file_type</td>
+</tr>
+<tr>
+<td style="text-align:left">dest_hostname</td>
+<td style="text-align:left">dest_name</td>
+</tr>
+<tr>
+<td style="text-align:left">category for threat logs</td>
+<td style="text-align:left">threat_category</td>
+</tr>
+<tr>
+<td style="text-align:left">category for url logs</td>
+<td style="text-align:left">http_category</td>
+</tr>
+<tr>
+<td style="text-align:left">category for wildfire logs</td>
+<td style="text-align:left">verdict</td>
+</tr>
+<tr>
+<td style="text-align:left">dvc_host for firewall logs</td>
+<td style="text-align:left">dvc_name</td>
+</tr>
+</tbody>
+</table>
+<h1 id="upgrade-to-app-version-50">Upgrade to App Version 5.0</h1>
+<p>This applies only if upgrading from a pre-5.0 version of this App to 5.0.0 or higher.</p>
+<p>Most upgrades don&apos;t require any special action so you can just upgrade like any other Splunk app. For upgrades to 5.0.0 or higher from a pre-5.0 version, there are some actions needed to migrate to the new version.</p>
+<h3 id="add-on-ta">Add-on (TA)</h3>
+<p>Starting with App v5.0.0, the App now requires the <a href="https://splunkbase.splunk.com/app/2757" target="_blank">Palo Alto Networks Add-on for Splunk</a>. The required version of the TA is always listed in the <a href="https://github.com/PaloAltoNetworks-BD/SplunkforPaloAltoNetworks/blob/master/README.md" target="_blank">README.md</a> file in the Palo Alto Networks App.</p>
+<p><strong>ACTION REQUIRED</strong>: You must remove the deprecated TA if it exists, called TA_paloalto. This usually applies if you use Splunk Enterprise Security version 3.x because it comes with TA_paloalto. Recreate any inputs from the old TA in the new TA using the instructions in the <a href="firewalls-panorama-and-traps.html">Getting Started</a> guide. Check the <strong>apps</strong> directory in Splunk and take the necessary action according to the table:</p>
+<table>
+<thead>
+<tr>
+<th>Existing TA</th>
+<th>Action Needed</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TA_paloalto</td>
+<td>Delete this TA directory, recreate data inputs in new TA</td>
+</tr>
+<tr>
+<td>Splunk_TA_paloalto</td>
+<td>No action required, TA is upgraded automatically by App</td>
+</tr>
+<tr>
+<td>No TA installed</td>
+<td>No action required, TA is installed automatically by App</td>
+</tr>
+</tbody>
+</table>
+<h3 id="index">Index</h3>
+<p>The new App 5.0 and Add-on 3.5 do not use the <code>pan_logs</code> index that previous versions used. Now, logs can be stored in any index. Since the App no longer specifies the pan_logs index, if you are upgrading, you will need to specify the index yourself.</p>
+<p><strong>ACTION REQUIRED</strong>: Create a new index called <code>pan_logs</code> using the Splunk GUI or on the command line. Also, in your Splunk role settings, add the <code>pan_logs</code> index to the list of <strong>Indexes searched by default</strong>.</p>
+<p>Splunk will not overwrite the data previously indexed, and you will have access to all the data indexed before the upgrade. Logs will continue to be stored in the <code>pan_logs</code> index according to the data inputs from the previous App version, unless otherwise specified. The data input can optionally be changed to store logs in a different index.</p>
+<p>Results still might not show up during a search. This is because the <code>pan_logs</code> index is not searched by default. To add the <code>pan_logs</code> index to the list of indexes searched by default, in your Splunk settings, navigate to <strong>Access controls</strong> -&gt; <strong>Roles</strong> -&gt; <strong><your role=""></your></strong>. Scroll down to the section <strong>Indexes searched by default</strong>. Move <code>pan_logs</code> (or <code>All non-internal indexes</code>) to the right column.</p>
+<h3 id="lookups">Lookups</h3>
+<p>The lookups have been moved to the Add-on (TA). However, Splunk Enterprise does not remove lookup tables during the upgrade process. So you must remove the lookup tables from the App after the upgrade, or you will see errors while searching within the App.</p>
+<p><strong>ACTION REQUIRED</strong>: Delete any lookups in the App that you did not create. If you did not create any lookups in the App directory, then you can safely delete the entire lookup directory from the App. The path to the lookup directory is <code>$SPLUNK_HOME/etc/apps/SplunkforPaloAltoNetworks/lookups</code></p>
+<p>For example:</p>
+<pre><code>rm -rf $SPLUNK_HOME/etc/apps/SplunkforPaloAltoNetworks/lookups
+</code></pre><h3 id="sourcetype">Sourcetype</h3>
+<p>The sourcetype format has changed:</p>
+<table>
+<thead>
+<tr>
+<th>Old sourcetype</th>
+<th>New sourcetype</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>pan_log</td>
+<td>pan:log</td>
+</tr>
+<tr>
+<td>pan_traffic</td>
+<td>pan:traffic</td>
+</tr>
+<tr>
+<td>pan_threat</td>
+<td>pan:threat</td>
+</tr>
+<tr>
+<td>pan_config</td>
+<td>pan:config</td>
+</tr>
+<tr>
+<td>pan_system</td>
+<td>pan:system</td>
+</tr>
+</tbody>
+</table>
+<p>No action is required. The old sourcetypes will be interpreted as the new sourcetype automatically. Optionally the data input can be changed to store logs with the sourcetype <code>pan:log</code> instead of <code>pan_log</code>. This is more correct, but will not change the way logs are retrieved from the index.</p>
+<div class="callout callout-primary"><h4 id="note">Note</h4><div><p>The data input should only specify pan:log or pan_log for the sourcetype. The logs are automatically parsed into the other sourcetypes (pan_traffic, pan_threat, etc) by the Add-on, so they should not be referenced in the data input.</p></div></div>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class="search-results-count"></span> results matching &quot;<span class="search-query"></span>&quot;</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching &quot;<span class="search-query"></span>&quot;</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="log-correlation.html" class="navigation navigation-prev " aria-label="Previous page: Log Correlation">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="tune-or-reduce-firewall-logs.html" class="navigation navigation-next " aria-label="Next page: Tune or Reduce Firewall Logs">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Upgrade the App/Add-on","level":"3.1","depth":1,"next":{"title":"Tune or Reduce Firewall Logs","level":"3.2","depth":1,"path":"tune-or-reduce-firewall-logs.md","ref":"tune-or-reduce-firewall-logs.md","articles":[]},"previous":{"title":"Log Correlation","level":"2.4","depth":1,"path":"log-correlation.md","ref":"log-correlation.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"_pictures":[{"backlink":"installation.html#fig2.2.1","level":"2.2","list_caption":"Figure: Downloading the App and Add-on from within Splunk Enterprise.","alt":"Downloading the App and Add-on from within Splunk Enterprise.","nro":1,"url":"assets/download_app.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Downloading the App and Add-on from within Splunk Enterprise.","attributes":{},"skip":false,"key":"2.2.1"},{"backlink":"getting-data-in.html#fig2.3.1","level":"2.3","list_caption":"Figure: Architecture Diagram","alt":"Architecture Diagram","nro":2,"url":"/assets/architecture.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Architecture Diagram","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"firewalls-panorama-and-traps.html#fig2.3.1.1","level":"2.3.1","list_caption":"Figure: The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","alt":"","nro":3,"url":"https://splunk.paloaltonetworks.com/assets/firewall-credentials.png","index":1,"caption_template":"Figure: _CAPTION_","label":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","attributes":{},"title":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","skip":false,"key":"2.3.1.1"},{"backlink":"autofocus-and-minemeld.html#fig2.3.3.1","level":"2.3.3","list_caption":"Figure: Example of MineMeld nodes (Left to Right: miners, processors, outputs","alt":"Example of MineMeld nodes (Left to Right: miners, processors, outputs","nro":4,"url":"/assets/minemeld-nodes.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Example of MineMeld nodes (Left to Right: miners, processors, outputs","attributes":{},"skip":false,"key":"2.3.3.1"},{"backlink":"autofocus-and-minemeld.html#fig2.3.3.2","level":"2.3.3","list_caption":"Figure: MineMeld Feed URL needed for Splunk","alt":"MineMeld Feed URL needed for Splunk","nro":5,"url":"/assets/minemeld-feed-url.png","index":2,"caption_template":"Figure: _CAPTION_","label":"MineMeld Feed URL needed for Splunk","attributes":{},"skip":false,"key":"2.3.3.2"},{"backlink":"autofocus-and-minemeld.html#fig2.3.3.3","level":"2.3.3","list_caption":"Figure: Enter an AutoFocus API Key to collect information about AutoFocus tags in MineMeld data","alt":"Enter an AutoFocus API Key to collect information about AutoFocus tags in MineMeld data","nro":6,"url":"/assets/autofocus-api-key.png","index":3,"caption_template":"Figure: _CAPTION_","label":"Enter an AutoFocus API Key to collect information about AutoFocus tags in MineMeld data","attributes":{},"skip":false,"key":"2.3.3.3"},{"backlink":"wildfire.html#fig2.3.4.1","level":"2.3.4","list_caption":"Figure: WildFire dashboard with data","alt":"WildFire dashboard with data","nro":7,"url":"/assets/wildfire_dashboard.png","index":1,"caption_template":"Figure: _CAPTION_","label":"WildFire dashboard with data","attributes":{},"skip":false,"key":"2.3.4.1"},{"backlink":"upgrade.html#fig3.1.1","level":"3.1","list_caption":"Figure: The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","alt":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","nro":8,"url":"/assets/firewall-credentials.png","index":1,"caption_template":"Figure: _CAPTION_","label":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","attributes":{},"skip":false,"key":"3.1.1"},{"backlink":"adaptive-response.html#fig4.1.1","level":"4.1","list_caption":"Figure: The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","alt":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","nro":9,"url":"/assets/firewall-credentials.png","index":1,"caption_template":"Figure: _CAPTION_","label":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","attributes":{},"skip":false,"key":"4.1.1"},{"backlink":"adaptive-response.html#fig4.1.2","level":"4.1","list_caption":"Figure: Firewall permissions required for App special features","alt":"Firewall permissions required for App special features","nro":10,"url":"/assets/admin_role.png","index":2,"caption_template":"Figure: _CAPTION_","label":"Firewall permissions required for App special features","attributes":{},"skip":false,"key":"4.1.2"}]},"plugins":["image-captions","bootstrap-callout","header","collapsible-chapters","ga"],"pluginsConfig":{"scripts":{"files":[]},"search":{},"collapsible-chapters":{},"layout":{"headerPath":"layouts/header.html"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"header":{},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":{"cookieDomain":"splunk.paloaltonetworks.com"},"token":"UA-44897305-6"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"upgrade.md","mtime":"2020-04-08T20:02:52.552Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-08T20:03:28.713Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-collapsible-chapters/collapsible-chapters.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-ga/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js"></script>
+    <script src="js/anchorsettings.js"></script>
+
+    </body>
+</html>
+
