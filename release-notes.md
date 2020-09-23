@@ -2,6 +2,8 @@
 
 # Latest
 
+> Release notes have moved to GitHub: https://github.com/PaloAltoNetworks/Splunk-Apps/releases
+
 ### App 6.1.1
 
 * New: Dark mode supported
