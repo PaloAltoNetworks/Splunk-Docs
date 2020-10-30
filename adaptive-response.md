@@ -8,11 +8,11 @@ This webinar explains the concept of automated remediation and demonstrates a ca
 
 Webinar: [Defeat APT with Automated Remediation in Splunk](https://www.paloaltonetworks.com/resources/webcasts/defeat-apts-improve-security-posture-real-time.html)
 
-## Share context with Dynamic Address Groups
+## Share context with Dynamic Address/User Groups
 
-Tagging an IP address means setting metadata or context on the firewall for that IP, which causes it to be added to corresponding Dynamic Address Groups in the firewall security policy. For example, you could create a rule in the security policy that blocks any IP address with the tag 'bad-actor'. Initially, no IP addresses would be blocked, but you can create a search in Splunk for criteria that represents a problem device, and trigger a tagging of that IP address with the 'bad-actor' tag. The firewall would add the IP address to the Dynamic Address Group in the policy automatically and begin blocking the IP.
+Tagging an IP address/User means setting metadata or context on the firewall for that IP/User, which causes it to be added to corresponding Dynamic Address/User Groups in the firewall security policy. For example, you could create a rule in the security policy that blocks any IP address with the tag 'bad-actor'. Initially, no IP addresses would be blocked, but you can create a search in Splunk for criteria that represents a problem device, and trigger a tagging of that IP address with the 'bad-actor' tag. The firewall would add the IP address to the Dynamic Address Group in the policy automatically and begin blocking the IP.
 
-Blocking a bad actor is just the beginning, and you aren't limited to allow or deny as your options. You could tag an IP address for additional scrutiny by the Threat Prevention engine, or as a known trusted server to be given additional permissions. The behaviors are defined by your security policy, and how you treat IP addresses with specific tags.
+Blocking a bad actor is just the beginning, and you aren't limited to allow or deny as your options. You could tag an IP address/User for additional scrutiny by the Threat Prevention engine, or as a known trusted server to be given additional permissions. The behaviors are defined by your security policy, and how you treat IP addresses with specific tags.
 
 **See also:**
 

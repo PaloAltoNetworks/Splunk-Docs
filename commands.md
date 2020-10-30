@@ -72,9 +72,10 @@ Command added in App version 4.1. New parameters added in App version 5.0.
 | panorama   |         | 5.0      | IP or hostname of Panorama                                     |
 | serial     |         | 5.0      | Serial of firewall (required if using panorama parameter       |
 | vsys       | vsys1   | 5.0      | VSYS ID (eg. vsys2)                                            |
-| action     | add     | 4.1      | Add or remove the tag                                          |
+| action     | addip   | 4.1      | addip, removeip, adduser, removeuser                           |
 | field      | src_ip | 4.1      | Same as ip_field parameter (deprecated in 5.0, use ip_field) |
 | ip_field  | src_ip | 5.0      | Log field containing IP address to tag                         |
+| user_field  | src_ip | 6.5.0      | Log field containing user to tag                         |
 | tag        |         | 4.1      | Tag for the IP, referenced in the Dynamic Address Group        |
 | tag_field |         | 5.0      | Log field containing the tag for IP address in the same log    |
 
