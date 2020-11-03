@@ -4,6 +4,8 @@
 
 > Release notes have moved to GitHub: https://github.com/PaloAltoNetworks/Splunk-Apps/releases
 
+# Previous Versions
+
 ### App 6.1.1
 
 * New: Dark mode supported
@@ -40,8 +42,6 @@
 > #### primary::Note
 >
 > Traps datamodel has been renamed from `pan_endpoint` to `pan_traps` and some fields have changed names in the datamodel to support Traps 5.0 additional data. If you have previously created your own dashboards based on the Palo Alto Networks datamodels, you may need to update those dashboards.
-
-# Previous Versions
 
 ### App 6.0
 
