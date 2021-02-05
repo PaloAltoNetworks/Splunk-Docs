@@ -1,10 +1,10 @@
 # Release Notes
 
-# Latest
+## Latest
 
 > Release notes have moved to GitHub: https://github.com/PaloAltoNetworks/Splunk-Apps/releases
 
-# Previous Versions
+## Archived Release Notes
 
 ### App 6.1.1
 
