@@ -15,12 +15,14 @@ Secure the network domain. Syslog network and system health events to Splunk.
 #### HTTP Event Collector(HEC)
 
 Cloud based log management. Collect events directly from Cortex Data Lake using HTTP Event Collector.
+
 - [More information about Cortex Data Lake](https://www.paloaltonetworks.com/cortex/cortex-data-lake)
-- [Retrieve Cortex Data Lake into Splunk](/firewalls-panorama-and-traps.md)
+- [Retrieve Cortex Data Lake Logs](/cortex-hec.md)
 
 #### IOT Security
 
 Comprehensive IOT security. Collect IoT alerts and vulnerabilities via API.
+
 - [More information about IoT Security](https://www.paloaltonetworks.com/network-security/iot-security)
 - [Bring Traps data into Splunk](/iot-security.md)
  
