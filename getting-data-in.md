@@ -12,9 +12,9 @@ Secure the network domain. Syslog network and system health events to Splunk.
 - [More information about Panorama](https://www.paloaltonetworks.com/products/management/panorama)
 - [Bring Firewall and Panorama data into Splunk](/firewalls-panorama-and-traps.md)
 
-#### HTTP Event Collector(HEC)
+#### Cortex Data Lake via HTTP Event Collector(HEC)
 
-Cloud based log management. Collect events directly from Cortex Data Lake using HTTP Event Collector.
+Cloud based log management. Collect events directly from Cortex Data Lake using HTTP Event Collector(HEC).
 
 - [More information about Cortex Data Lake](https://www.paloaltonetworks.com/cortex/cortex-data-lake)
 - [Retrieve Cortex Data Lake Logs](/cortex-hec.md)
