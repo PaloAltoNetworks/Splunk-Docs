@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Splunk Enterprise Security &#xB7; GitBook</title>
+        <title>IoT Security &#xB7; GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -74,10 +74,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="lookups.html">
+    <link rel="next" href="wildfire.html">
     
     
-    <link rel="prev" href="tune-or-reduce-firewall-logs.html">
+    <link rel="prev" href="autofocus-and-minemeld.html">
     
 
     </head>
@@ -302,7 +302,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.3.5" data-path="iot-security.html">
+        <li class="chapter active" data-level="2.3.5" data-path="iot-security.html">
             
                 <a href="iot-security.html">
             
@@ -392,7 +392,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="3.3" data-path="enterprise-security.html">
+        <li class="chapter " data-level="3.3" data-path="enterprise-security.html">
             
                 <a href="enterprise-security.html">
             
@@ -533,7 +533,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".">Splunk Enterprise Security</a>
+        <a href=".">IoT Security</a>
     </h1>
 </div>
 
@@ -548,101 +548,60 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="splunk-enterprise-security">Splunk Enterprise Security</h1>
-<h2 id="common-information-model-cim-compliance">Common Information Model (CIM) Compliance</h2>
-<p>The Palo Alto Networks Add-on is fully compliant with the <a href="http://docs.splunk.com/Documentation/CIM/latest/User/Overview" target="_blank">Common Information Model</a> (CIM) provided by Splunk to normalize data fields. This table indicates the <a href="http://docs.splunk.com/Documentation/CIM/4.9.1/User/Overview#What_data_models_are_included" target="_blank">CIM datamodels</a> and tags that apply to Palo Alto Networks data.</p>
+                                <h1 id="iot-security">IoT Security</h1>
+<p>IoT Security is supported starting with App/Add-on 6.6.0.</p>
+<p>Aperture is cloud-hosted so logs are retrieved by Splunk using the Aperture logging API. Logs are pulled down in JSON format with sourcetype=&quot;pan:aperture&quot; and eventtype=&quot;pan_aperture&quot;.</p>
+<h2 id="create-api-key-in-iot-security">Create API Key in IoT Security</h2>
+<p>Use the instruction in the Aperture Administrator&apos;s Guide to create a Client App in your Aperture instance:</p>
+<p><a href="https://docs.paloaltonetworks.com/iot/iot-security-api-reference/iot-security-api-overview/get-started-with-the-iot-security-api.html" target="_blank">https://docs.paloaltonetworks.com/iot/iot-security-api-reference/iot-security-api-overview/get-started-with-the-iot-security-api.html</a></p>
+<p>This action will provide you a <strong>Key</strong> and <strong>Key ID</strong>.  The Key be shown only once, so make sure to record it or you&apos;ll need to re-create the Key.</p>
+<h2 id="create-iot-security-input-and-add-key-to-splunk">Create IoT Security Input and add Key to Splunk</h2>
+<p>In Splunk, navigate to the <strong>Palo Alto Networks Add-on</strong>.</p>
+<p><img src="assets/add-on.png" alt=""></p>
+<p>Within the Add-on, click the <strong>Input</strong> tab at the top left.  Then click <strong>Create New Input</strong> and select <strong>IoT Security</strong>.
+<img src="assets/aperture-mod-input.png" alt=""></p>
+<p><img src="assets/aperture-settings.png" alt=""></p>
+<p>In the dialog window, enter the following:</p>
 <table>
 <thead>
 <tr>
-<th style="text-align:left">CIM Datamodel</th>
-<th style="text-align:left">Tags</th>
-<th style="text-align:left">Palo Alto Networks Eventtypes</th>
+<th style="text-align:left">Field</th>
+<th style="text-align:left">Value</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align:left"><a href="http://docs.splunk.com/Documentation/CIM/latest/User/ChangeAnalysis" target="_blank">Change Analysis</a></td>
-<td style="text-align:left">change</td>
-<td style="text-align:left">pan_config</td>
+<td style="text-align:left">Name</td>
+<td style="text-align:left">Any friendly name (eg. &quot;iot_security&quot;)</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://docs.splunk.com/Documentation/CIM/latest/User/Email" target="_blank">Email</a></td>
-<td style="text-align:left">email, filter</td>
-<td style="text-align:left">pan_email</td>
+<td style="text-align:left">Interval</td>
+<td style="text-align:left">Frequency in seconds to check for new logs (60 seconds recommended)</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://docs.splunk.com/Documentation/CIM/latest/User/IntrusionDetection" target="_blank">Intrusion Detection</a></td>
-<td style="text-align:left">ids, attack</td>
-<td style="text-align:left">pan_threat</td>
+<td style="text-align:left">Index</td>
+<td style="text-align:left">The index in which to put the IoT Security logs</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://docs.splunk.com/Documentation/CIM/latest/User/Malware" target="_blank">Malware</a></td>
-<td style="text-align:left">malware, attack, operations</td>
-<td style="text-align:left">pan_malware_attacks, pan_malware_operations, pan_wildfire</td>
+<td style="text-align:left">Customer ID</td>
+<td style="text-align:left">Found in the hostname when accessing IoT Security. (eg. <a href="https://customer-id.iot.paloaltonetworks.com" target="_blank">https://customer-id.iot.paloaltonetworks.com</a>)</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://docs.splunk.com/Documentation/CIM/latest/User/NetworkSessions" target="_blank">Network Sessions</a></td>
-<td style="text-align:left">network, session, start, end</td>
-<td style="text-align:left">pan_traffic_start, pan_traffic_end</td>
+<td style="text-align:left">Access Key ID</td>
+<td style="text-align:left">Enter Key ID</td>
 </tr>
 <tr>
-<td style="text-align:left"><a href="http://docs.splunk.com/Documentation/CIM/latest/User/NetworkTraffic" target="_blank">Network Traffic</a></td>
-<td style="text-align:left">network, communicate</td>
-<td style="text-align:left">pan_traffic</td>
-</tr>
-<tr>
-<td style="text-align:left"><a href="http://docs.splunk.com/Documentation/CIM/latest/User/Web" target="_blank">Web</a></td>
-<td style="text-align:left">web, proxy</td>
-<td style="text-align:left">pan_url</td>
+<td style="text-align:left">Secret Access Key</td>
+<td style="text-align:left">Enter Key</td>
 </tr>
 </tbody>
 </table>
-<h2 id="share-minemeld-indicators">Share MineMeld Indicators</h2>
-<p><em>Added in Add-on version 6.0</em></p>
-<p>Indicators can be shared between MineMeld and Splunk Enterprise Security.  There are multiple types of indicators that can be shared:</p>
-<ul>
-<li>Domain</li>
-<li>File</li>
-<li>IPv4</li>
-<li>URL</li>
-</ul>
-<p>Enabling indicator sharing is a two step process.  First, enable the saved searches of the indicator types to be shared.  Second, enable the corresponding threatlists in Splunk Enterprise Security.</p>
-<p>Indicators are shared with Splunk Enterprise Security as a CSV file threatlist.  The saved searches are all set to run once every hour by default.  The Enterprise Security threatlist is set to poll every four hours by default.  So after enabling the desired indicator sharing, you may need to wait for a little time before they show up in Splunk Enterprise Security.</p>
-<p>Here&apos;s an example walk through for enabling sharing IPv4 indicators.</p>
-<h4 id="enable-saved-searches">Enable Saved Searches</h4>
-<p>Navigate to <strong>Settings</strong> &gt; <strong>Searches, reports, and alerts</strong>.</p>
-<p>Find the <code>Generate MineMeld IPv4 Enterprise Security Threatlist</code> saved search, then in the Actions column, click <strong>Edit</strong> &gt; <strong>Enable</strong>.</p>
-<h4 id="enable-enterprise-security-threatlists">Enable Enterprise Security Threatlists</h4>
-<p>Add the following four <code>threatlist</code> inputs to the file:
-<code>$SPLUNK_HOME/etc/apps/Splunk_TA_paloalto/local/inputs.conf</code> (or to your preferred inputs.conf file)</p>
-<pre><code>[threatlist://minemeld_ipv4threatlist]
-description = MineMeld IPv4 threatlist indicators for Splunk ES
-interval = 14400
-disabled = false
-type = threatlist
-url = lookup://minemeld_ipv4threatlist
+<p>Then click <strong>Add</strong> to save the modular input.</p>
+<h2 id="verify">Verify</h2>
+<p>After waiting the interval time, check that logs are coming into Splunk by clicking <strong>Search</strong> at the top and entering this search:</p>
+<pre><code>eventtype=&quot;pan_iot_device&quot;
+</code></pre><p>You should see some JSON formatted logs show up. If nothing shows up, wait a little longer, ensure there is activity in IoT Security to generate logs, and try the <a href="troubleshoot.html">Troubleshooting Guide</a>.</p>
 
-[threatlist://minemeld_domainthreatlist]
-description = MineMeld Domain threatlist indicators for Splunk ES
-interval = 14400
-disabled = false
-type = threatlist
-url = lookup://minemeld_domainthreatlist
-
-[threatlist://minemeld_urlthreatlist]
-description = MineMeld URL threatlist indicators for Splunk ES
-interval = 14400
-disabled = false
-type = threatlist
-url = lookup://minemeld_urlthreatlist
-
-[threatlist://minemeld_filethreatlist]
-description = MineMeld file threatlist indicators for Splunk ES
-interval = 14400
-disabled = false
-type = threatlist
-url = lookup://minemeld_filethreatlist
-</code></pre>
                                 
                                 </section>
                             
@@ -669,12 +628,12 @@ url = lookup://minemeld_filethreatlist
 
             
                 
-                <a href="tune-or-reduce-firewall-logs.html" class="navigation navigation-prev " aria-label="Previous page: Tune or Reduce Firewall Logs">
+                <a href="autofocus-and-minemeld.html" class="navigation navigation-prev " aria-label="Previous page: AutoFocus and MineMeld">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="lookups.html" class="navigation navigation-next " aria-label="Next page: Add Context to Searches">
+                <a href="wildfire.html" class="navigation navigation-next " aria-label="Next page: WildFire">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -685,7 +644,7 @@ url = lookup://minemeld_filethreatlist
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Splunk Enterprise Security","level":"3.3","depth":1,"next":{"title":"Add Context to Searches","level":"3.4","depth":1,"path":"lookups.md","ref":"lookups.md","articles":[]},"previous":{"title":"Tune or Reduce Firewall Logs","level":"3.2","depth":1,"path":"tune-or-reduce-firewall-logs.md","ref":"tune-or-reduce-firewall-logs.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"_pictures":[{"backlink":"installation.html#fig2.2.1","level":"2.2","list_caption":"Figure: Downloading the App and Add-on from within Splunk Enterprise.","alt":"Downloading the App and Add-on from within Splunk Enterprise.","nro":1,"url":"assets/download_app.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Downloading the App and Add-on from within Splunk Enterprise.","attributes":{},"skip":false,"key":"2.2.1"},{"backlink":"getting-data-in.html#fig2.3.1","level":"2.3","list_caption":"Figure: Architecture Diagram","alt":"Architecture Diagram","nro":2,"url":"/assets/architecture.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Architecture Diagram","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"firewalls-panorama-and-traps.html#fig2.3.1.1","level":"2.3.1","list_caption":"Figure: The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","alt":"","nro":3,"url":"https://splunk.paloaltonetworks.com/assets/firewall-credentials.png","index":1,"caption_template":"Figure: _CAPTION_","label":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","attributes":{},"title":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","skip":false,"key":"2.3.1.1"},{"backlink":"autofocus-and-minemeld.html#fig2.3.4.1","level":"2.3.4","list_caption":"Figure: Example of MineMeld nodes (Left to Right: miners, processors, outputs","alt":"Example of MineMeld nodes (Left to Right: miners, processors, outputs","nro":4,"url":"/assets/minemeld-nodes.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Example of MineMeld nodes (Left to Right: miners, processors, outputs","attributes":{},"skip":false,"key":"2.3.4.1"},{"backlink":"autofocus-and-minemeld.html#fig2.3.4.2","level":"2.3.4","list_caption":"Figure: MineMeld Feed URL needed for Splunk","alt":"MineMeld Feed URL needed for Splunk","nro":5,"url":"/assets/minemeld-feed-url.png","index":2,"caption_template":"Figure: _CAPTION_","label":"MineMeld Feed URL needed for Splunk","attributes":{},"skip":false,"key":"2.3.4.2"},{"backlink":"autofocus-and-minemeld.html#fig2.3.4.3","level":"2.3.4","list_caption":"Figure: Enter an AutoFocus API Key to collect information about AutoFocus tags in MineMeld data","alt":"Enter an AutoFocus API Key to collect information about AutoFocus tags in MineMeld data","nro":6,"url":"/assets/autofocus-api-key.png","index":3,"caption_template":"Figure: _CAPTION_","label":"Enter an AutoFocus API Key to collect information about AutoFocus tags in MineMeld data","attributes":{},"skip":false,"key":"2.3.4.3"},{"backlink":"wildfire.html#fig2.3.6.1","level":"2.3.6","list_caption":"Figure: WildFire dashboard with data","alt":"WildFire dashboard with data","nro":7,"url":"/assets/wildfire_dashboard.png","index":1,"caption_template":"Figure: _CAPTION_","label":"WildFire dashboard with data","attributes":{},"skip":false,"key":"2.3.6.1"},{"backlink":"upgrade.html#fig3.1.1","level":"3.1","list_caption":"Figure: The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","alt":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","nro":8,"url":"/assets/firewall-credentials.png","index":1,"caption_template":"Figure: _CAPTION_","label":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","attributes":{},"skip":false,"key":"3.1.1"},{"backlink":"adaptive-response.html#fig4.1.1","level":"4.1","list_caption":"Figure: The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","alt":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","nro":9,"url":"/assets/firewall-credentials.png","index":1,"caption_template":"Figure: _CAPTION_","label":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","attributes":{},"skip":false,"key":"4.1.1"},{"backlink":"adaptive-response.html#fig4.1.2","level":"4.1","list_caption":"Figure: Firewall permissions required for App special features","alt":"Firewall permissions required for App special features","nro":10,"url":"/assets/admin_role.png","index":2,"caption_template":"Figure: _CAPTION_","label":"Firewall permissions required for App special features","attributes":{},"skip":false,"key":"4.1.2"}]},"plugins":["image-captions","bootstrap-callout","header","collapsible-chapters","ga"],"pluginsConfig":{"scripts":{"files":[]},"search":{},"collapsible-chapters":{},"layout":{"headerPath":"layouts/header.html"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"header":{},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":{"cookieDomain":"splunk.paloaltonetworks.com"},"token":"UA-44897305-6"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"enterprise-security.md","mtime":"2021-04-05T16:55:17.197Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-05T16:55:53.061Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"IoT Security","level":"2.3.5","depth":2,"next":{"title":"WildFire","level":"2.3.6","depth":2,"path":"wildfire.md","ref":"wildfire.md","articles":[]},"previous":{"title":"AutoFocus and MineMeld","level":"2.3.4","depth":2,"path":"autofocus-and-minemeld.md","ref":"autofocus-and-minemeld.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"_pictures":[{"backlink":"installation.html#fig2.2.1","level":"2.2","list_caption":"Figure: Downloading the App and Add-on from within Splunk Enterprise.","alt":"Downloading the App and Add-on from within Splunk Enterprise.","nro":1,"url":"assets/download_app.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Downloading the App and Add-on from within Splunk Enterprise.","attributes":{},"skip":false,"key":"2.2.1"},{"backlink":"getting-data-in.html#fig2.3.1","level":"2.3","list_caption":"Figure: Architecture Diagram","alt":"Architecture Diagram","nro":2,"url":"/assets/architecture.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Architecture Diagram","attributes":{},"skip":false,"key":"2.3.1"},{"backlink":"firewalls-panorama-and-traps.html#fig2.3.1.1","level":"2.3.1","list_caption":"Figure: The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","alt":"","nro":3,"url":"https://splunk.paloaltonetworks.com/assets/firewall-credentials.png","index":1,"caption_template":"Figure: _CAPTION_","label":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","attributes":{},"title":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","skip":false,"key":"2.3.1.1"},{"backlink":"autofocus-and-minemeld.html#fig2.3.4.1","level":"2.3.4","list_caption":"Figure: Example of MineMeld nodes (Left to Right: miners, processors, outputs","alt":"Example of MineMeld nodes (Left to Right: miners, processors, outputs","nro":4,"url":"/assets/minemeld-nodes.png","index":1,"caption_template":"Figure: _CAPTION_","label":"Example of MineMeld nodes (Left to Right: miners, processors, outputs","attributes":{},"skip":false,"key":"2.3.4.1"},{"backlink":"autofocus-and-minemeld.html#fig2.3.4.2","level":"2.3.4","list_caption":"Figure: MineMeld Feed URL needed for Splunk","alt":"MineMeld Feed URL needed for Splunk","nro":5,"url":"/assets/minemeld-feed-url.png","index":2,"caption_template":"Figure: _CAPTION_","label":"MineMeld Feed URL needed for Splunk","attributes":{},"skip":false,"key":"2.3.4.2"},{"backlink":"autofocus-and-minemeld.html#fig2.3.4.3","level":"2.3.4","list_caption":"Figure: Enter an AutoFocus API Key to collect information about AutoFocus tags in MineMeld data","alt":"Enter an AutoFocus API Key to collect information about AutoFocus tags in MineMeld data","nro":6,"url":"/assets/autofocus-api-key.png","index":3,"caption_template":"Figure: _CAPTION_","label":"Enter an AutoFocus API Key to collect information about AutoFocus tags in MineMeld data","attributes":{},"skip":false,"key":"2.3.4.3"},{"backlink":"wildfire.html#fig2.3.6.1","level":"2.3.6","list_caption":"Figure: WildFire dashboard with data","alt":"WildFire dashboard with data","nro":7,"url":"/assets/wildfire_dashboard.png","index":1,"caption_template":"Figure: _CAPTION_","label":"WildFire dashboard with data","attributes":{},"skip":false,"key":"2.3.6.1"},{"backlink":"upgrade.html#fig3.1.1","level":"3.1","list_caption":"Figure: The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","alt":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","nro":8,"url":"/assets/firewall-credentials.png","index":1,"caption_template":"Figure: _CAPTION_","label":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","attributes":{},"skip":false,"key":"3.1.1"},{"backlink":"adaptive-response.html#fig4.1.1","level":"4.1","list_caption":"Figure: The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","alt":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","nro":9,"url":"/assets/firewall-credentials.png","index":1,"caption_template":"Figure: _CAPTION_","label":"The credentials name \"Firewall\" will be used for connection to Firewalls or Panorama","attributes":{},"skip":false,"key":"4.1.1"},{"backlink":"adaptive-response.html#fig4.1.2","level":"4.1","list_caption":"Figure: Firewall permissions required for App special features","alt":"Firewall permissions required for App special features","nro":10,"url":"/assets/admin_role.png","index":2,"caption_template":"Figure: _CAPTION_","label":"Firewall permissions required for App special features","attributes":{},"skip":false,"key":"4.1.2"}]},"plugins":["image-captions","bootstrap-callout","header","collapsible-chapters","ga"],"pluginsConfig":{"scripts":{"files":[]},"search":{},"collapsible-chapters":{},"layout":{"headerPath":"layouts/header.html"},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"header":{},"bootstrap-callout":{},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"ga":{"configuration":{"cookieDomain":"splunk.paloaltonetworks.com"},"token":"UA-44897305-6"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"variable_name":"_pictures"}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"iot-security.md","mtime":"2021-04-05T16:55:17.197Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2021-04-05T16:55:53.061Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
