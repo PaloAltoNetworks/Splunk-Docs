@@ -19,11 +19,12 @@ In Splunk, navigate to the **Palo Alto Networks Add-on**.
 ![](/assets/add-on.png)
 
 Within the Add-on, click the **Input** tab at the top left.  Then click **Create New Input** and select **IoT Security**.
-![](/assets/aperture-mod-input.png)
+![](/assets/iot-mod-input.png)
 
-![](/assets/aperture-settings.png)
 
 In the dialog window, enter the following:
+
+![](/assets/iot-settings.png)
 
 | Field | Value |
 | :--- | :--- |
