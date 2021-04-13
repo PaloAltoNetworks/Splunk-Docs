@@ -2,11 +2,11 @@
 
 IoT Security is supported starting with App/Add-on 6.6.0.
 
-Aperture is cloud-hosted so logs are retrieved by Splunk using the Aperture logging API. Logs are pulled down in JSON format with sourcetype="pan:aperture" and eventtype="pan_aperture".
+IoT Security is cloud-hosted so logs are retrieved by Splunk using the IoT Security logging API. Logs are pulled down in JSON format with sourcetype="pan:iot_alert", sourcetype="pan:iot_device" and eventtype="pan_iot_device", eventtype="pan_iot_alert".
 
 ## Create API Key in IoT Security
 
-Use the instruction in the Aperture Administrator's Guide to create a Client App in your Aperture instance:
+Use the instruction in the IoT Security Administrator's Guide to gain API access:
 
 [https://docs.paloaltonetworks.com/iot/iot-security-api-reference/iot-security-api-overview/get-started-with-the-iot-security-api.html](https://docs.paloaltonetworks.com/iot/iot-security-api-reference/iot-security-api-overview/get-started-with-the-iot-security-api.html)
 
