@@ -27,7 +27,6 @@ The **Palo Alto Networks App** and **Add-on** have different features that are d
 -   Dashboards to track incidents, SaaS application usage, IoT Security, user activity, system health, configuration changes for audits, malware, GlobalProtect VPN, and other Palo Alto Networks specific features.
 -   Datamodels with pivots for easy access to data and visualizations
 -   Splunk [Adaptive Response](/adaptive-response.md) integration for automated action and remediation
--   Index the [behavioral footprint](/wildfire.md) of malware seen by WildFire
 -   [Sync user login events with User-ID](/userid.md)
 -   [Use Adaptive Response to share context with Dynamic Address/User Groups](/adaptive-response.md)
 -   [Update metadata from content packs](/lookups.md#contentpack)

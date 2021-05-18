@@ -69,12 +69,12 @@ Is your organization safe from those who intend the most harm? Know your adversa
 * [Aperture Support](/aperture.md)
 * [PAN-OS 8.0](https://www.paloaltonetworks.com/poducts/new/new-panos8-0) new fields
 * Threat Intelligence from MineMeld can be [shared with Splunk Enterprise Security](/enterprise-security.md#share-minemeld-indicators)
-* [Improved CIM adoption](/upgrade.md#datamodel-changes)
-* [Datamodel optimizations](/upgrade.md#datamodel-changes) for size on disk and performance
+* Improved CIM adoption
+* Datamodel optimizations for size on disk and performance
 
 > #### primary::Note
 >
-> Some fields have changed names in the datamodel. If you have previously created your own dashboards based on the Palo Alto Networks datamodels, you may need to update some field names. See the [Upgrade Guide](/upgrade.md#datamodel-changes) for changed field names.
+> Some fields have changed names in the datamodel. If you have previously created your own dashboards based on the Palo Alto Networks datamodels, you may need to update some field names. 
 
 ### App 5.4
 
@@ -190,8 +190,6 @@ WARNING: Traps versions before 3.3.2 are no longer supported beginning with this
 
 5.0.0  
 This major release re-architects the Palo Alto Networks App by splitting it into an App and an Add-on. The [Palo Alto Networks Add-on](https://splunkbase.splunk.com/app/2757) is included in the [Palo Alto Networks App](https://splunkbase.splunk.com/app/491) and is installed or upgraded automatically with the App.
-
-Review the [Upgrade Guide](upgrade.md) to upgrade to version 5.0.0.
 
 In addition to the new Palo Alto Networks Add-on, this version also has the following new features:
 

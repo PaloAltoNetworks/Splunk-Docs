@@ -18,13 +18,11 @@
   * [Aperture](aperture.md)
   * [AutoFocus and MineMeld](autofocus-and-minemeld.md)
   * [IoT Security](iot-security.md)
-  * [WildFire](wildfire.md)
   * [Syslog-ng and Universal Forwarder](universal-forwarder.md)
 * [Log Correlation](log-correlation.md)
 
 ## Configuration
 
-* [Upgrade the App/Add-on](upgrade.md)
 * [Tune or Reduce Firewall Logs](tune-or-reduce-firewall-logs.md)
 * [Splunk Enterprise Security](enterprise-security.md)
 * [Add Context to Searches](lookups.md)
