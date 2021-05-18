@@ -11,10 +11,9 @@
 
 ## Getting Started
 
-* [Compatibility](compatibility.md)
 * [Installation](installation.md)
 * [Getting Data Into Splunk](getting-data-in.md)
-  * [Firewalls, Panorama, and Traps](firewalls-panorama-and-traps.md)
+  * [Firewalls, Panorama, and Traps](firewalls-panorama.md)
   * [Cortex Data Lake](cortex-hec.md)
   * [Aperture](aperture.md)
   * [AutoFocus and MineMeld](autofocus-and-minemeld.md)
@@ -37,5 +36,4 @@
 * [External Search](external-search.md)
 * [User-ID with Splunk](userid.md)
 * [Searchbar Command Reference](commands.md)
-* [Dashboard Reference](dashboards.md)
 

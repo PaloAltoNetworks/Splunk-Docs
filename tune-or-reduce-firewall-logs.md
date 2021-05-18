@@ -10,7 +10,7 @@ This page will evolve over time as we get feedback from customers. If it's not a
 
 ## Log Types
 
-There are many log types, and not all of them are relevant to every organization. The following table shows the characteristics of the logs types as of PAN-OS 8.1:
+There are many log types, and not all of them are relevant to every organization. The following table shows the characteristics of the most common logs types:
 
 | Log Type | Splunk Sourcetype | Log Size | Log Frequency |
 | :--- | :--- | :--- | :--- |
@@ -22,11 +22,6 @@ There are many log types, and not all of them are relevant to every organization
 | Configuration | pan:config | Small | Low |
 | Correlation | pan:correlation | Small | Low |
 | HIP Match | pan:hipmatch | Small | Medium |
-| User-ID | Not supported |  |  |
-| Authentication | Not supported |  |  |
-| Tunnel | Not supported |  |  |
-| GTP | Not supported |  |  |
-| SCTP | Not supported |  |  |
 
 Note: URL and File logs are of type Threat, but they are called out separately because they have a different frequency than most threat logs.
 

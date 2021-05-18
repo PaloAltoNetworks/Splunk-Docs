@@ -47,7 +47,7 @@
 
 6.0.0
 
-Is your organization safe from those who intend the most harm? Know your adversary with the new [Adversary Scoreboard](/dashboards.md#adversary) and measure how effective your security is at defeating their attacks. Automatically prioritize attacks with the new [All Incident Feed](/dashboards.md#incidents), and investigate with the new [Incident Context View](/dashboards.md#incident-context).
+Is your organization safe from those who intend the most harm? Know your adversary with the new Adversary Scoreboard and measure how effective your security is at defeating their attacks. Automatically prioritize attacks with the new [All Incident Feed](/dashboards.md#incidents), and investigate with the new [Incident Context View](/dashboards.md#incident-context).
 
 * All [new dashboards](/dashboards.md):
   * [Adversary Scoreboard](/dashboards.md#adversary)
@@ -67,7 +67,7 @@ Is your organization safe from those who intend the most harm? Know your adversa
 * [MineMeld Support](/autofocus-and-minemeld.md)
 * [AutoFocus Tags Support](/autofocus-and-minemeld.md)
 * [Aperture Support](/aperture.md)
-* [PAN-OS 8.0](https://www.paloaltonetworks.com/products/new/new-panos8-0) new fields
+* [PAN-OS 8.0](https://www.paloaltonetworks.com/poducts/new/new-panos8-0) new fields
 * Threat Intelligence from MineMeld can be [shared with Splunk Enterprise Security](/enterprise-security.md#share-minemeld-indicators)
 * [Improved CIM adoption](/upgrade.md#datamodel-changes)
 * [Datamodel optimizations](/upgrade.md#datamodel-changes) for size on disk and performance

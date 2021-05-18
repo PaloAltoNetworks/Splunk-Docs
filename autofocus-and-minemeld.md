@@ -1,4 +1,7 @@
 # AutoFocus and MineMeld
+> #### primary::Note
+>
+> MineMeld and AutoFocus has been deprecated as of 7.0.0
 
 Threat Intelligence can be leveraged in Splunk to correlate and tag logs as coming from a specific threat actor or campaign. This gives attribution and context to the events in Splunk.
 
