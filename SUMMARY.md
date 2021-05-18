@@ -14,6 +14,7 @@
 * [Installation](installation.md)
 * [Getting Data Into Splunk](getting-data-in.md)
   * [Firewalls, Panorama, and Traps](firewalls-panorama.md)
+  * [Cortex XDR](cortex-xdr.md)
   * [Cortex Data Lake](cortex-hec.md)
   * [Aperture](aperture.md)
   * [AutoFocus and MineMeld](autofocus-and-minemeld.md)

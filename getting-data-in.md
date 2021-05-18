@@ -10,6 +10,13 @@ Secure the network domain. Syslog network and system health events to Splunk.
 - [More information about Panorama](https://www.paloaltonetworks.com/products/management/panorama)
 - [Bring Firewall and Panorama data into Splunk](/firewalls-panorama.md)
 
+#### Cortex XDR
+
+Advanced threat detection. View Cortex XDR incidents in Splunk via API.
+- [More information about Cortex XDR](https://www.paloaltonetworks.com/cortex/cortex-xdr)
+- [View Cortex XDR Incidents in Splunk](/cortex-hec.md)
+
+
 #### Cortex Data Lake via HTTP Event Collector(HEC)
 
 Cloud based log management. Collect events directly from Cortex Data Lake using HTTP Event Collector(HEC).
@@ -22,7 +29,7 @@ Cloud based log management. Collect events directly from Cortex Data Lake using 
 Comprehensive IOT security. Collect IoT alerts and vulnerabilities via API.
 
 - [More information about IoT Security](https://www.paloaltonetworks.com/network-security/iot-security)
-- [Bring Traps data into Splunk](/iot-security.md)
+- [Bring IOT Security into Splunk](/iot-security.md)
  
 #### Aperture
 
