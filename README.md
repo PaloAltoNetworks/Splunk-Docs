@@ -1,16 +1,11 @@
 <img src="assets/logos.png" class="no-shadow" />
 
-Webinars and Videos
-------------------
-
-Watch the App in action with our [Webinars and Videos](/webinars-and-videos.md)
-
 About the App
 -------------
 
 Palo Alto Networks and Splunk have partnered to deliver an advanced security reporting and analysis tool. The collaboration delivers operational reporting as well as simplified and configurable dashboard views across Palo Alto Networks family of next-generation firewalls.
 
-Splunk for Palo Alto Networks leverages the data visibility provided by Palo Alto Networks's firewalls and endpoint protection with Splunk's extensive investigation and visualization capabilities to deliver an advanced security reporting and analysis tool. This app enables security analysts, administrators, and architects to correlate application and user activities across all network and security infrastructures from a real-time and historical perspective.
+Splunk for Palo Alto Networks leverages the data visibility provided by Palo Alto Networks's Cortex XDR with Splunk's extensive investigation and visualization capabilities to deliver an advanced security reporting and analysis tool. This app enables security analysts, administrators, and architects to correlate application and user activities across all network and security infrastructures from a real-time and historical perspective.
 
 Complicated incident analysis that previously consumed days of manual and error-prone data mining can now be completed in a fraction of the time, saving not only manpower but also enabling key enterprise security resources to focus on critical, time-sensitive investigations.
 
@@ -29,14 +24,11 @@ The **Palo Alto Networks App** and **Add-on** have different features that are d
 
 **Palo Alto Networks App**
 
--   Dashboards to track adversary attacks, incidents, SaaS application usage, user activity, system health, configuration changes for audits, malware, GlobalProtect VPN, and other Palo Alto Networks specific features.
--   Advanced correlations in each dashboard
+-   Dashboards to track incidents, SaaS application usage, IoT Security, user activity, system health, configuration changes for audits, malware, GlobalProtect VPN, and other Palo Alto Networks specific features.
 -   Datamodels with pivots for easy access to data and visualizations
--   Leverage [AutoFocus](/autofocus-and-minemeld.md) to prioritize attacks and investigations and search for IOC's
 -   Splunk [Adaptive Response](/adaptive-response.md) integration for automated action and remediation
--   Index the [behavioral footprint](/wildfire.md) of malware seen by WildFire
 -   [Sync user login events with User-ID](/userid.md)
--   [Use Adaptive Response to share context with Dynamic Address Groups](/adaptive-response.md)
+-   [Use Adaptive Response to share context with Dynamic Address/User Groups](/adaptive-response.md)
 -   [Update metadata from content packs](/lookups.md#contentpack)
 -   [Special searchbar commands](/commands.md)
 -   Macros for easy access to logs
@@ -44,9 +36,8 @@ The **Palo Alto Networks App** and **Add-on** have different features that are d
 **Palo Alto Networks Add-on**
 
 -   Fully [Common Information Model](/enterprise-security.md) (CIM) compliant and designed for use with [Splunk Enterprise Security](/enterprise-security.md)
--   Field extraction for Palo Alto Networks logs from [Firewalls, Panorama, Traps Endpoint Security](/firewalls-panorama-and-traps.md), and [Aperture SaaS Application Security](https://www.paloaltonetworks.com/products/secure-the-cloud/aperture)
--   Leverage threat intelligence from [MineMeld and AutoFocus](/autofocus-and-minemeld.md)
--   [IP Classification](/lookups.md) tailored to your network environment
+-   Field extraction for Palo Alto Networks logs from [Firewalls, Panorama, Cortex XDR](/firewalls-panorama.md), and [Aperture SaaS Application Security](https://www.paloaltonetworks.com/products/secure-the-cloud/aperture)
+\-   [IP Classification](/lookups.md) tailored to your network environment
 -   [Designate SaaS applications](/lookups.md#saas) as sanctioned or unsanctioned for your organization
 -   App and Threat metadata from the Palo Alto Networks content and signature packs
 

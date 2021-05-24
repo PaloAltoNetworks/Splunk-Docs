@@ -46,7 +46,6 @@ I use Splunk ES with the Palo Alto Add-on (TA), why use the App?
 The Palo Alto Networks App offers significant additional benefits including:
 
 -   Take immediate action to stop threats with [automated remediation](/adaptive-response.md)
--   Index the [behavioral footprint](/wildfire.md) of malware seen by Wildfire
 -   [Sync user logins](/userid.md) from authentication logs to User-ID
 -   [Update content pack](/lookups.md) metadata for apps and threats
 -   Datamodel with Pivots for easy access to data and visualizations

@@ -20,7 +20,7 @@ The AutoFocus API key is found in the AutoFocus portal on the **Settings** tab a
 
 Navigate to the **Palo Alto Networks Add-on**
 
-![](/assets/add-on.png)
+![](/assets/add-on.jpg)
 
 Click the **Configuration** tab at the top.  Click the **Add-on Settings** tab. Enter your AutoFocus API key into the field.
 

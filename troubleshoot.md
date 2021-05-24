@@ -22,6 +22,25 @@ The 'Overview' dashboard has data, but other dashboards do not, usually datamode
 
 The 'Overview' dashboards has no data, but other dashboards work correctly, the clock on your firewall is a few minutes off, or the timezone is set wrong. The 'Overview' dashboard is a real-time 5 minute search, while the other dashboards pull a larger timeframe from the data model. So the 'Overview' is more suseptible to minor variations in system clock. Please verify the clock and timezone on Splunk and the Firewall/Panorama are set exactly the same.
 
+### Troubleshooting Cortex XDR 
+
+**Enable Debug Logging**
+
+In Splunk, navigate to the **Palo Alto Networks Add-on**.
+
+![screenshot](/assets/add-on.jpg)
+
+Navigate to Configuration and click on the logging. Then change the log level to DEBUG.
+
+![screenshot](/assets/enable-debug-logs.jpg)
+
+Use this Splunk search to troubleshoot error messages from Cortex XDR.
+
+```
+index="_internal" source="/opt/splunk/var/log/splunk/splunk_ta_paloalto_cortex_xdr.log"
+```
+
+![screenshot](/assets/cortex-xdr-debug.jpg)
 ### Time and Timezone Problems
 
 There are a few factors that determine the time and timezone of a log:
@@ -60,6 +79,9 @@ If your logs are not getting converted to these other sourcetypes and are instea
 4. If you're using syslog-ng or another syslog collector with a Splunk Heavy or Universal Forwarder, then syslog-ng can add a prefix to the logs which interferes with parsing. Follow the directions at [Syslog-ng and Universal Forwarder](/universal-forwarder.md) to configure syslog-ng to omit this prefix.
 
 ### No WildFire Data
+> #### primary::Note
+>
+> WildFire reports have been deprecated as of App/Add-on 7.0.0 
 
 The [WildFire dashboard](/dashboards.md#wildfire) is empty or no WildFire data is appearing in the index. For Splunk to take advantage of WildFire, you log WildFire events from the Firewall/Panorama first. Splunk will leverage the WildFire cloud API to pull reports and IOC's from the WildFire analysis only after it receives notification of the WildFire event from the Firewall/Panorama.
 

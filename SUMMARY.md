@@ -11,21 +11,19 @@
 
 ## Getting Started
 
-* [Compatibility](compatibility.md)
 * [Installation](installation.md)
 * [Getting Data Into Splunk](getting-data-in.md)
-  * [Firewalls, Panorama, and Traps](firewalls-panorama-and-traps.md)
+  * [Firewalls and Panorama](firewalls-panorama.md)
+  * [Cortex XDR](cortex-xdr.md)
   * [Cortex Data Lake](cortex-hec.md)
   * [Aperture](aperture.md)
   * [AutoFocus and MineMeld](autofocus-and-minemeld.md)
   * [IoT Security](iot-security.md)
-  * [WildFire](wildfire.md)
   * [Syslog-ng and Universal Forwarder](universal-forwarder.md)
 * [Log Correlation](log-correlation.md)
 
 ## Configuration
 
-* [Upgrade the App/Add-on](upgrade.md)
 * [Tune or Reduce Firewall Logs](tune-or-reduce-firewall-logs.md)
 * [Splunk Enterprise Security](enterprise-security.md)
 * [Add Context to Searches](lookups.md)
@@ -37,5 +35,4 @@
 * [External Search](external-search.md)
 * [User-ID with Splunk](userid.md)
 * [Searchbar Command Reference](commands.md)
-* [Dashboard Reference](dashboards.md)
 

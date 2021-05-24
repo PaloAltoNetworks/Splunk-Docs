@@ -16,7 +16,7 @@ This action will provide you a **Key** and **Key ID**.  The Key be shown only on
 
 In Splunk, navigate to the **Palo Alto Networks Add-on**.
 
-![](/assets/add-on.png)
+![](/assets/add-on.jpg)
 
 Within the Add-on, click the **Input** tab at the top left.  Then click **Create New Input** and select **IoT Security**.
 ![](/assets/iot-mod-input.png)

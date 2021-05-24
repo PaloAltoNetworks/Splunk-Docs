@@ -16,7 +16,7 @@ This action will provide you a **Client ID** and **Client Secret**.  The Client 
 
 In Splunk, navigate to the **Palo Alto Networks Add-on**.
 
-![](/assets/add-on.png)
+![](/assets/add-on.jpg)
 
 Once inside the Add-on, click the **Configuration** tab, and ensure you're on the **Account** tab.  Click **Add** in the top right corner to add new credentials.
 

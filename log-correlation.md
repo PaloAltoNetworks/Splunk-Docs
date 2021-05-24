@@ -1,6 +1,6 @@
 # Log Correlation
 
-A common use of Splunk is to correlate different kinds of logs together. In fact, Palo Alto Networks Next-generation Firewall logs often need to be correlated together, such as joining traffic logs with threat logs, or joining Firewall logs with Traps logs. This page includes a few common examples which you can use as a starting point to build your own correlations.
+A common use of Splunk is to correlate different kinds of logs together. In fact, Palo Alto Networks Next-generation Firewall logs often need to be correlated together, such as joining traffic logs with threat logs. This page includes a few common examples which you can use as a starting point to build your own correlations.
 
 ## Correlation techniques
 

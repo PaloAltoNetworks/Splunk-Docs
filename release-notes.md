@@ -47,7 +47,7 @@
 
 6.0.0
 
-Is your organization safe from those who intend the most harm? Know your adversary with the new [Adversary Scoreboard](/dashboards.md#adversary) and measure how effective your security is at defeating their attacks. Automatically prioritize attacks with the new [All Incident Feed](/dashboards.md#incidents), and investigate with the new [Incident Context View](/dashboards.md#incident-context).
+Is your organization safe from those who intend the most harm? Know your adversary with the new Adversary Scoreboard and measure how effective your security is at defeating their attacks. Automatically prioritize attacks with the new [All Incident Feed](/dashboards.md#incidents), and investigate with the new [Incident Context View](/dashboards.md#incident-context).
 
 * All [new dashboards](/dashboards.md):
   * [Adversary Scoreboard](/dashboards.md#adversary)
@@ -67,14 +67,14 @@ Is your organization safe from those who intend the most harm? Know your adversa
 * [MineMeld Support](/autofocus-and-minemeld.md)
 * [AutoFocus Tags Support](/autofocus-and-minemeld.md)
 * [Aperture Support](/aperture.md)
-* [PAN-OS 8.0](https://www.paloaltonetworks.com/products/new/new-panos8-0) new fields
+* [PAN-OS 8.0](https://www.paloaltonetworks.com/poducts/new/new-panos8-0) new fields
 * Threat Intelligence from MineMeld can be [shared with Splunk Enterprise Security](/enterprise-security.md#share-minemeld-indicators)
-* [Improved CIM adoption](/upgrade.md#datamodel-changes)
-* [Datamodel optimizations](/upgrade.md#datamodel-changes) for size on disk and performance
+* Improved CIM adoption
+* Datamodel optimizations for size on disk and performance
 
 > #### primary::Note
 >
-> Some fields have changed names in the datamodel. If you have previously created your own dashboards based on the Palo Alto Networks datamodels, you may need to update some field names. See the [Upgrade Guide](/upgrade.md#datamodel-changes) for changed field names.
+> Some fields have changed names in the datamodel. If you have previously created your own dashboards based on the Palo Alto Networks datamodels, you may need to update some field names. 
 
 ### App 5.4
 
@@ -190,8 +190,6 @@ WARNING: Traps versions before 3.3.2 are no longer supported beginning with this
 
 5.0.0  
 This major release re-architects the Palo Alto Networks App by splitting it into an App and an Add-on. The [Palo Alto Networks Add-on](https://splunkbase.splunk.com/app/2757) is included in the [Palo Alto Networks App](https://splunkbase.splunk.com/app/491) and is installed or upgraded automatically with the App.
-
-Review the [Upgrade Guide](upgrade.md) to upgrade to version 5.0.0.
 
 In addition to the new Palo Alto Networks Add-on, this version also has the following new features:
 

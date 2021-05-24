@@ -1,4 +1,7 @@
 # AutoFocus and MineMeld
+> #### primary::Note
+>
+> MineMeld and AutoFocus has been deprecated as of 7.0.0
 
 Threat Intelligence can be leveraged in Splunk to correlate and tag logs as coming from a specific threat actor or campaign. This gives attribution and context to the events in Splunk.
 
@@ -23,7 +26,7 @@ Once you've created an output node with indicators feeding to it, you'll need to
 
 Navigate to the **Palo Alto Networks Add-on**
 
-![](/assets/add-on.png)
+![](/assets/add-on.jpg)
 
 Within the Add-on, click the **Inputs** tab at the top left. Then click **Create New Input** and then select **MineMeld Feed**.
 
