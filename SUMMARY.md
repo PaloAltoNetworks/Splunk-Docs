@@ -13,7 +13,7 @@
 
 * [Installation](installation.md)
 * [Getting Data Into Splunk](getting-data-in.md)
-  * [Firewalls, Panorama, and Traps](firewalls-panorama.md)
+  * [Firewalls and Panorama](firewalls-panorama.md)
   * [Cortex XDR](cortex-xdr.md)
   * [Cortex Data Lake](cortex-hec.md)
   * [Aperture](aperture.md)
