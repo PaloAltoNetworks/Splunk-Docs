@@ -4,9 +4,11 @@ title: AutoFocus and MineMeld
 ---
 
 # AutoFocus and MineMeld
-> #### primary::Note
->
-> MineMeld and AutoFocus has been deprecated as of 7.0.0
+:::caution Deprecated
+
+MineMeld and AutoFocus has been deprecated as of 7.0.0
+
+:::
 
 Threat Intelligence can be leveraged in Splunk to correlate and tag logs as coming from a specific threat actor or campaign. This gives attribution and context to the events in Splunk.
 
@@ -38,9 +40,11 @@ Within the Add-on, click the **Inputs** tab at the top left. Then click **Create
 
 ![](/assets/minemeld-mod-input.png)
 
-> #### primary::Note
->
-> **AutoFocus Export** is another way to bring AutoFocus indicators into Splunk without MineMeld, using AutoFocus Export Lists which are manually curated lists of indicators. MineMeld Feeds convey the same information to Splunk, but automatically collect indicators from AutoFocus instead of using manually created export lists. It is recommended to use MineMeld instead of Export Lists.
+:::info
+
+**AutoFocus Export** is another way to bring AutoFocus indicators into Splunk without MineMeld, using AutoFocus Export Lists which are manually curated lists of indicators. MineMeld Feeds convey the same information to Splunk, but automatically collect indicators from AutoFocus instead of using manually created export lists. It is recommended to use MineMeld instead of Export Lists.
+
+:::
 
 ![](/assets/minemeld-feed-settings-6-1.png)
 
@@ -69,9 +73,11 @@ This should come up with a table full of indicators and data about those indicat
 
 AutoFocus categorizes threat indicators using tags including threat actors, malicious behaviors, campaigns, and malware families. These tags are part of the indicators from MineMeld above.  This feature brings the tag metadata into Splunk, to get the complete picture of what each tag means.
 
-> #### primary::Note
->
-> **Requires MineMeld** This feature does nothing without configuring a MineMeld input using the instructions above. The AutoFocus Tags collected by this AutoFocus API key consists of metadata about the tags retrieved from MineMeld. This metadata is not useful on its own without MineMeld.
+:::note
+
+**Requires MineMeld** This feature does nothing without configuring a MineMeld input using the instructions above. The AutoFocus Tags collected by this AutoFocus API key consists of metadata about the tags retrieved from MineMeld. This metadata is not useful on its own without MineMeld.
+
+:::
 
 AutoFocus tag metadata is easily collected by entering your AutoFocus API key into Splunk.
 

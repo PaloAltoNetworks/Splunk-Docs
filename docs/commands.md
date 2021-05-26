@@ -79,9 +79,11 @@ Command added in App version 4.1. New parameters added in App version 5.0.
 | tag        |         | 4.1      | Tag for the IP, referenced in the Dynamic Address Group        |
 | tag_field |         | 5.0      | Log field containing the tag for IP address in the same log    |
 
-> #### primary::Note
->
-> Prior to App version 5.0, the `ip_field` parameter is just `field`
+:::note
+
+Prior to App version 5.0, the `ip_field` parameter is just `field`
+
+:::
 
 Example 1:  
 Any IP on the network that generated a spyware (command-and-control traffic) alert is tagged as an infected host on the firewall at 10.1.1.1:
@@ -105,9 +107,11 @@ If anyone tries to connect to www.splunk.com, remove the tag 'suspicious-ip-addr
 
     `pan_url` dest_hostname="www.splunk.com" | pantag device="main-fw.company.com" vsys="vsys3" action="remove" ip_field="dest_ip" tag="suspicious-ip-addresses"
 
-> #### primary::Note
->
-> The IP is tagged on the firewall immediately, however, it can take up to 60 seconds for the tagged IP addresses to show up in the corresponding Dynamic Address Group in the security policy. This delay is intentional to prevent accidental DoS scenarios.
+:::note
+
+The IP is tagged on the firewall immediately, however, it can take up to 60 seconds for the tagged IP addresses to show up in the corresponding Dynamic Address Group in the security policy. This delay is intentional to prevent accidental DoS scenarios.
+
+:::
 
 ## pancontentpack
 

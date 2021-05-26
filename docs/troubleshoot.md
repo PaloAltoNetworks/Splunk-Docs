@@ -85,9 +85,12 @@ If your logs are not getting converted to these other sourcetypes and are instea
 4. If you're using syslog-ng or another syslog collector with a Splunk Heavy or Universal Forwarder, then syslog-ng can add a prefix to the logs which interferes with parsing. Follow the directions at [Syslog-ng and Universal Forwarder](/universal-forwarder.md) to configure syslog-ng to omit this prefix.
 
 ### No WildFire Data
-> #### primary::Note
->
-> WildFire reports have been deprecated as of App/Add-on 7.0.0 
+
+:::caution Deprecated
+
+WildFire reports have been deprecated as of App/Add-on 7.0.0 
+
+:::
 
 The [WildFire dashboard](/dashboards.md#wildfire) is empty or no WildFire data is appearing in the index. For Splunk to take advantage of WildFire, you log WildFire events from the Firewall/Panorama first. Splunk will leverage the WildFire cloud API to pull reports and IOC's from the WildFire analysis only after it receives notification of the WildFire event from the Firewall/Panorama.
 

@@ -44,19 +44,25 @@ Secure your enterprise SaaS application. Splunk reaches out to the Aperture logg
 - [Bring Aperture data into Splunk](/aperture.md)
 
 #### AutoFocus and MineMeld
-> #### primary::Note
->
-> MineMeld and AutoFocus has been deprecated as of 7.0.0
+:::caution Deprecated
+
+MineMeld and AutoFocus has been deprecated as of 7.0.0
+
+:::
 
 Threat Intelligence to help prioritize and contextualize the rest of your data in Splunk. AutoFocus tags are collected via the AutoFocus API and threat indicators are collected from a MineMeld output feed.
 
 - [More information about AutoFocus](https://www.paloaltonetworks.com/products/secure-the-network/subscriptions/autofocus)
 - [More information about MineMeld](https://www.paloaltonetworks.com/products/secure-the-network/subscriptions/minemeld)
 - [Bring AutoFocus and MineMeld data into Splunk](/autofocus-and-minemeld.md)
+
 #### Traps Endpoint Protection
-> #### primary::Note
->
-> Traps Endpoint has been deprecated and replaced with Cortex XDR.
+
+:::info
+
+Traps Endpoint has been deprecated and replaced with Cortex XDR.
+
+:::
 
 Secure the endpoint domain. Syslog endpoint security and operations events to Splunk.
 

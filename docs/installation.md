@@ -18,13 +18,14 @@ The Palo Alto Networks Splunk App and Add-on are designed to work together, and 
 
 Some organizations prefer not to install Add-ons on Search Heads. This is fine for log ingest, but will prevent some advanced features from functioning, such as [Adaptive Response](https://www.splunk.com/en_us/solutions/solution-areas/security-and-fraud/adaptive-response-initiative.html) and [Threat Intelligence](/threat-intelligence.md).
 
-> #### warning::Important changes
->
-> Previous guidance was to install the App and Add-on to all Search Heads, Indexers, and Heavy Forwarders. However, this can result in duplicate storage of accelerated datamodels. Now, it is recommended to install the App only on Search Heads per the table above. If you have installed the App on Indexers or Heavy Forwarders, please delete the App so only the Add-on remains on those nodes.
->
-> Earlier versions of the App would install the Add-on automatically. This is no longer allowed by Splunk so since App 5.4.2 you are required to install the App and Add-on individually.
->
-> Data Model acceleration is no longer enabled by default. Dashboards will not display any data until the data model is accelerated.
+:::info Important Changes
+
+Data Model acceleration is no longer enabled by default. Dashboards will not
+display any data until the data model is accelerated. See the section below
+titled "Data
+Model Acceleration".
+
+:::
 
 ### Install the App and Add-on
 

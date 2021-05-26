@@ -40,9 +40,11 @@ Set the name of your export list in the `label` field. This field must match the
 
 Verify the data is being synced by running a search `` | `pan_autofocus_export` ``
 
-> #### primary::Note
->
-> A pipe(`|`) is always used in front of the macro to do a lookup search.
+:::info
+
+A pipe(`|`) is always used in front of the macro to do a lookup search.
+
+:::
 
 **Macros** There are several new macros that can be used to correlate a search with the artifacts imported from the AutoFocus Export List.
 

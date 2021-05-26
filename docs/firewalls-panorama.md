@@ -65,9 +65,11 @@ You can optionally use a more specific sourcetype than `pan:log` such as `pan:fi
 Create the inputs.conf in the correct directory:  
 `$SPLUNK_HOME/etc/apps/Splunk_TA_paloalto/local/inputs.conf`
 
-> #### primary::Note
->
-> The `local` directory is not created during installation, so you may need to create it. Also, the inputs.conf does not have to be in the Add-on directory, but this is the conventional place to put it.
+:::info
+
+The `local` directory is not created during installation, so you may need to create it. Also, the inputs.conf does not have to be in the Add-on directory, but this is the conventional place to put it.
+
+:::
 
 Add the following lines to the `inputs.conf` file. This examples uses the default syslog port UDP 514. Change the port as needed. :
 
@@ -93,9 +95,14 @@ The Palo Alto Networks syslog documentation describes each option in detail:
 
 **Firewall and Panorama syslog to Splunk:**  
 [https://www.paloaltonetworks.com/documentation/81/pan-os/pan-os/monitoring/use-syslog-for-monitoring/configure-syslog-monitoring](https://www.paloaltonetworks.com/documentation/81/pan-os/pan-os/monitoring/use-syslog-for-monitoring/configure-syslog-monitoring)
-> #### primary::Note
->
-> Firewall and Panorama logs must be sent in the default format.  
+
+:::caution IMPORTANT
+
+Firewall and Panorama logs must be sent in the **default format**. Custom formats,
+CEF, and LEEF format cannot be parsed by the Splunk Add-on.
+
+:::
+
 ## Test the configuration
 
 The easiest way to test that everything is working is to configure the firewall to syslog all config events. On the firewall or Panorama, navigate to the **Device** tab, then **Log Settings**. Enable config logs and commit the configuration.
@@ -108,9 +115,11 @@ Verify the log reached Splunk by going to the Palo Alto Networks App click Searc
 eventtype=pan_config
 ```
 
-> #### primary::Note
->
-> Use the default Search app if using just the Palo Alto Networks Add-on.
+:::note
+
+Use the default Search app if using just the Palo Alto Networks Add-on.
+
+:::
 
 If Splunk is getting the syslogs from the firewall and parsing them correctly, then you'll see the config event syslogs show up here from the changes you made on the firewall configuration.
 

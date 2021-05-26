@@ -46,9 +46,11 @@ sidebar_position: 6
 * Fix: url\_length field fixed
 * Fix: Corrected the double parse of Aperture logs
 
-> #### primary::Note
->
-> Traps datamodel has been renamed from `pan_endpoint` to `pan_traps` and some fields have changed names in the datamodel to support Traps 5.0 additional data. If you have previously created your own dashboards based on the Palo Alto Networks datamodels, you may need to update those dashboards.
+:::note
+
+Traps datamodel has been renamed from `pan_endpoint` to `pan_traps` and some fields have changed names in the datamodel to support Traps 5.0 additional data. If you have previously created your own dashboards based on the Palo Alto Networks datamodels, you may need to update those dashboards.
+
+:::
 
 ### App 6.0
 
@@ -79,9 +81,11 @@ Is your organization safe from those who intend the most harm? Know your adversa
 * Improved CIM adoption
 * Datamodel optimizations for size on disk and performance
 
-> #### primary::Note
->
-> Some fields have changed names in the datamodel. If you have previously created your own dashboards based on the Palo Alto Networks datamodels, you may need to update some field names. 
+:::note
+
+Some fields have changed names in the datamodel. If you have previously created your own dashboards based on the Palo Alto Networks datamodels, you may need to update some field names. 
+
+:::
 
 ### App 5.4
 
@@ -159,9 +163,11 @@ You might need to update custom searches or panels you created that leverage the
 * Removed deprecated commands \(**panblock** and **panupdate**\) as a requirement for certification.
 * Removes support for Splunk 6.1 and ealier as a requirement for certification.
 
-> #### primary::Note
->
-> If you are using Splunk 6.1 or earlier, you must upgrade to Splunk 6.2 or later before upgrading to App v5.2.0. If you currently use **panblock** or **panupdate** commands, please update your usage of the App to leverage [pantag](commands.md#pantag) and [panuserupdate](commands.md#panuserupdate) instead.
+:::note
+
+If you are using Splunk 6.1 or earlier, you must upgrade to Splunk 6.2 or later before upgrading to App v5.2.0. If you currently use **panblock** or **panupdate** commands, please update your usage of the App to leverage [pantag](commands.md#pantag) and [panuserupdate](commands.md#panuserupdate) instead.
+
+:::
 
 ### App 5.1
 
@@ -183,9 +189,11 @@ WARNING: Traps versions before 3.3.2 are no longer supported beginning with this
 
 * Support new Traps 3.3.2 log format
 
-> #### primary::Note
->
-> Traps versions before 3.3.2 are no longer supported beginning with this Add-on version
+:::note
+
+Traps versions before 3.3.2 are no longer supported beginning with this Add-on version
+
+:::
 
 ### App 5.0
 

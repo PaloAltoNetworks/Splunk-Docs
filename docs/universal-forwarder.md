@@ -10,9 +10,11 @@ This document assumes you already have syslog-ng, Splunk Universal Forwarder and
 
 You should also have the Palo Alto Networks for Splunk Add-on installed as described in the [Installation Guide](installation.md)
 
-> #### primary::Note
->
-> The App and Add-on do not need to be installed on the Universal Forwarder.
+:::info
+
+The App and Add-on do not need to be installed on the Universal Forwarder.
+
+:::
 
 ## Step 1: Setup Syslog-ng
 
@@ -59,9 +61,11 @@ Create or modify`/opt/splunkforwader/etc/system/local/outputs.conf` and add a tc
 
     [tcpout-server://192.168.0.3:9997]
 
-> #### primary::Note
->
-> Replace the IP address 192.168.0.3 with the IP of Splunk indexer.
+:::note
+
+Replace the IP address 192.168.0.3 with the IP of Splunk indexer.
+
+:::
 
 To forward to multiple Splunk servers use this tcpout stanza instead:
 
@@ -101,7 +105,9 @@ Verify that `sourcetype` is being transformed. You should see `pan:traffic` , `p
 
 If log `sourcetype` is `pan:log` then syslog-ng is changing the logs and they are not being transformed. Go back to step 1 and verify you made the correct changes.
 
-> #### primary::Note
->
-> If the Indexer has not been running and receiving for a lengthy period of time. It may take awhile for logs to show up.
+:::info
+
+If the Indexer has not been running and receiving for a lengthy period of time. It may take awhile for logs to show up.
+
+:::
 

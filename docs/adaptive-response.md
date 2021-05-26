@@ -37,10 +37,6 @@ To use Adaptive Response or the custom searchbar commands, please configure the 
 
 To configure credentials, navigate to the Add-on, click the **Palo Alto Networks** menu in the top left of the App, and click **Configuration**.
 
-> #### primary::Note
->
-> To configure Add-on 3.x, navigate to the Splunk App Manager. Find the Add-on (Palo Alto Networks Add-on for Splunk) in the list and on the right side click **Set up**.
-
 ![The credentials name &quot;Firewall&quot; will be used for connection to Firewalls or Panorama](/assets/firewall-credentials.png)
 
 Enter the credentials for your Firewall or Panorama and name the credentials "Firewall". Only one set of credentials can be entered with this name. The credentials are encrypted by Splunk and used for the following features:

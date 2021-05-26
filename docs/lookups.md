@@ -79,9 +79,11 @@ Set `<IP-or-hostname>` to the IP or hostname of your Firewall or Panorama. Ensur
 
 This example updates the lookup tables every Saturday at 12:05 AM for apps and 12:10 AM for threats. Change the cron_schedule to your desired update schedule.
 
-> #### primary::Note
->
-> The Palo Alto Networks App version 5.0 or higher must be installed for the lookup table update to work. But the saved searches must be created in the Add-on, not the App.
+:::info
+
+The Palo Alto Networks App version 5.0 or higher must be installed for the lookup table update to work. But the saved searches must be created in the Add-on, not the App.
+
+:::
 >
 > If using a custom admin role on the firewall, it must have **Configuration** permissions for the **XML API**. See [Configure Adaptive Response](/adaptive-response.md#configure-adaptive-response) for more information.
 
