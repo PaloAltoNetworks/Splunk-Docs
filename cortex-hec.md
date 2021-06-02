@@ -1,7 +1,14 @@
-# Cortex Data Lake via HTTP Event Collector(HEC)
+# Cortex Data Lake
 
-Send Cortex Data Lake logs to Splunk Cloud and Splunk Enterprise with HTTP Event Collector(HEC). 
+Send Cortex Data Lake logs to Splunk Cloud and Splunk Enterprise with HTTP Event
+Collector (HEC).
 
+Cortex Data Lake logs are stored as sourcetype=pan:firewall_cloud
+
+HTTPS / HEC is the best way to send events from Cortex Data Lake to
+Splunk. Syslog is not supported by Splunk Cloud and does not contain key-value
+pairs for field extraction. HEC is a modern Splunk protocol supported by Splunk
+Cloud with flexibility to send only the fields you care about to Splunk.
 
 ## Create Event Collector Token in Splunk for Cortex Data Lake
 

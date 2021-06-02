@@ -4,7 +4,7 @@ Splunk can collect data from Palo Alto Networks products, each providing a wealt
 
 #### Firewall and Panorama
 
-Secure the network domain. Syslog network and system health events to Splunk.
+Secure the network domain. Syslog network and NGFW system health events to Splunk.
 
 - [More information about Next-generation Firewall](https://www.paloaltonetworks.com/products/secure-the-network/next-generation-firewall)
 - [More information about Panorama](https://www.paloaltonetworks.com/products/management/panorama)
@@ -16,10 +16,10 @@ Advanced threat detection. View Cortex XDR incidents in Splunk via API.
 - [More information about Cortex XDR](https://www.paloaltonetworks.com/cortex/cortex-xdr)
 - [View Cortex XDR Incidents in Splunk](/cortex-xdr.md)
 
+#### Cortex Data Lake
 
-#### Cortex Data Lake via HTTP Event Collector(HEC)
-
-Cloud based log management. Collect events directly from Cortex Data Lake using HTTP Event Collector(HEC).
+Cloud-based NGFW log management. Collect events directly from Cortex Data Lake using
+HTTP Event Collector (HEC).
 
 - [More information about Cortex Data Lake](https://www.paloaltonetworks.com/cortex/cortex-data-lake)
 - [Retrieve Cortex Data Lake Logs](/cortex-hec.md)
