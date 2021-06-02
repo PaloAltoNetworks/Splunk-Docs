@@ -12,13 +12,13 @@ Secure the network domain. Syslog network and NGFW system health events to Splun
 
 #### Cortex XDR
 
-Advanced threat detection. View Cortex XDR incidents in Splunk via API.
+Advanced threat detection. Collect Cortex XDR incidents into Splunk via API.
 - [More information about Cortex XDR](https://www.paloaltonetworks.com/cortex/cortex-xdr)
 - [View Cortex XDR Incidents in Splunk](/cortex-xdr.md)
 
 #### Cortex Data Lake
 
-Cloud-based NGFW log management. Collect events directly from Cortex Data Lake using
+Cloud-based NGFW log management. Receive events directly from Cortex Data Lake using
 HTTP Event Collector (HEC).
 
 - [More information about Cortex Data Lake](https://www.paloaltonetworks.com/cortex/cortex-data-lake)
@@ -39,19 +39,22 @@ Secure your enterprise SaaS application. Splunk reaches out to the Aperture logg
 - [Bring Aperture data into Splunk](/aperture.md)
 
 #### AutoFocus and MineMeld
+
 > #### primary::Note
 >
-> MineMeld and AutoFocus has been deprecated as of 7.0.0
+> MineMeld and AutoFocus has been deprecated as of App/Add-on 7.0.0
 
 Threat Intelligence to help prioritize and contextualize the rest of your data in Splunk. AutoFocus tags are collected via the AutoFocus API and threat indicators are collected from a MineMeld output feed.
 
 - [More information about AutoFocus](https://www.paloaltonetworks.com/products/secure-the-network/subscriptions/autofocus)
 - [More information about MineMeld](https://www.paloaltonetworks.com/products/secure-the-network/subscriptions/minemeld)
 - [Bring AutoFocus and MineMeld data into Splunk](/autofocus-and-minemeld.md)
+
 #### Traps Endpoint Protection
+
 > #### primary::Note
 >
-> Traps Endpoint has been deprecated and replaced with Cortex XDR.
+> Traps Endpoint has been deprecated and replaced with Cortex XDR in App/Add-on 7.0.0
 
 Secure the endpoint domain. Syslog endpoint security and operations events to Splunk.
 
