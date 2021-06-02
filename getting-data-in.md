@@ -14,7 +14,7 @@ Secure the network domain. Syslog network and system health events to Splunk.
 
 Advanced threat detection. View Cortex XDR incidents in Splunk via API.
 - [More information about Cortex XDR](https://www.paloaltonetworks.com/cortex/cortex-xdr)
-- [View Cortex XDR Incidents in Splunk](/cortex-hec.md)
+- [View Cortex XDR Incidents in Splunk](/cortex-xdr.md)
 
 
 #### Cortex Data Lake via HTTP Event Collector(HEC)
