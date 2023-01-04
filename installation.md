@@ -1,13 +1,17 @@
 # Installation
 
-### Download
+## Upgrading App and Add-on
+
+ It is recommended to uninstall older versions prior to upgrading to version 8.0.0 of the app and add-on. Upgrading through the Splunk GUI process may leave artifacts of jQuery and python 2. This may result in compatibility error messages.
+
+## Download
 
 * [Palo Alto Networks App](https://splunkbase.splunk.com/app/491)
 * [Palo Alto Networks Add-on](https://splunkbase.splunk.com/app/2757)
 
 The Palo Alto Networks Splunk App and Add-on are designed to work together, and with Splunk Enterprise Security if available. The App requires the Add-on to be installed. The Add-on can be used with or without the App.
 
-### Where to install
+## Where to install
 
 | Splunk Node | What to install |
 | :--- | :--- |
@@ -26,13 +30,13 @@ Some organizations prefer not to install Add-ons on Search Heads. This is fine f
 >
 > Data Model acceleration is no longer enabled by default. Dashboards will not display any data until the data model is accelerated.
 
-### Install the App and Add-on
+## Install the App and Add-on
 
 Install the Palo Alto Networks App by downloading it from the App homepage, or by installing it from within Splunk.
 
 ![Downloading the App and Add-on from within Splunk Enterprise.](assets/download_app.png)
 
-### Enable datamodel acceleration
+## Enable datamodel acceleration
 
 If using the Palo Alto Networks App, you **must** enable datamodel acceleration to see data in the dashboards. Acceleration is on by default in App 6.0 and lower, and off by default in App 6.1 and higher (due to new Splunk app certification rules)
 

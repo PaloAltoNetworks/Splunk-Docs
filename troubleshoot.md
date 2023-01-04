@@ -4,7 +4,12 @@
 
 ### Problem after upgrading the App/Add-on
 
+
+
 Check the [Release Notes](/release-notes.md) for actions needed during App/Add-on upgrade and ensure you completed all required actions for upgrade.
+
+
+> If you experience error messages related to older versions of jQuery or Python 2, uninstall and reinstall both the app and add-on. Python 2 support was removed in version 8.0.0.
 
 When upgrading any app in Splunk, configuration created by the Splunk administrator is leftover in the app's local directory. If the file in the local directory in the app is not compatible with the new version, then unexpected problems can happen. This is true for all apps in Splunk and a best practice is to backup and delete the local directory in the app after upgrading it if there are problems after the upgrade. Note that you might need to leave inputs.conf if that is how your logs are getting into Splunk.
 
