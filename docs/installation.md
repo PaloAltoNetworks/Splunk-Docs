@@ -1,5 +1,8 @@
 # Installation
 
+### Upgrading App and Add-on
+
+ It is recommended to uninstall older versions prior to upgrading to version 8.0.0+ of the app and add-on. Upgrading through the Splunk GUI process may leave artifacts of jQuery and python 2. This may result in compatibility error messages.
 ### Download
 
 * [Palo Alto Networks App](https://splunkbase.splunk.com/app/491)

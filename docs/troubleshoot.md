@@ -10,7 +10,9 @@ sidebar_position: 4
 
 ### Problem after upgrading the App/Add-on
 
-Check the [Release Notes](/release-notes.md) for actions needed during App/Add-on upgrade and ensure you completed all required actions for upgrade.
+Check the [Release Notes](/release-notes) for actions needed during App/Add-on upgrade and ensure you completed all required actions for upgrade.
+
+> If you experience error messages related to older versions of jQuery or Python 2, uninstall and reinstall both the app and add-on. Python 2 support was removed in version 8.0.0.
 
 When upgrading any app in Splunk, configuration created by the Splunk administrator is leftover in the app's local directory. If the file in the local directory in the app is not compatible with the new version, then unexpected problems can happen. This is true for all apps in Splunk and a best practice is to backup and delete the local directory in the app after upgrading it if there are problems after the upgrade. Note that you might need to leave inputs.conf if that is how your logs are getting into Splunk.
 
@@ -92,7 +94,7 @@ WildFire reports have been deprecated as of App/Add-on 7.0.0
 
 :::
 
-The [WildFire dashboard](/dashboards.md#wildfire) is empty or no WildFire data is appearing in the index. For Splunk to take advantage of WildFire, you log WildFire events from the Firewall/Panorama first. Splunk will leverage the WildFire cloud API to pull reports and IOC's from the WildFire analysis only after it receives notification of the WildFire event from the Firewall/Panorama.
+The [WildFire dashboard](/dashboards#wildfire) is empty or no WildFire data is appearing in the index. For Splunk to take advantage of WildFire, you log WildFire events from the Firewall/Panorama first. Splunk will leverage the WildFire cloud API to pull reports and IOC's from the WildFire analysis only after it receives notification of the WildFire event from the Firewall/Panorama.
 
 Some things to check to get WildFire data into Splunk:
 
@@ -118,7 +120,7 @@ Follow these troubleshooting steps if there are problems getting the dashboards 
 
 **Step 1. Check that all initial configuration is complete**
 
-* Verify inputs.conf is set up per the [instructions](/firewalls-panorama-and-traps.md). inputs.conf must have the line `no_appending_timestamp = true` for UDP syslogs
+* Verify inputs.conf is set up per the [instructions](/firewalls-panorama). inputs.conf must have the line `no_appending_timestamp = true` for UDP syslogs
 * Check for other inputs.conf outside the App or Add-on that might be using the same port
 * Check the firewall is not using a Custom Log Format \(must use the default log format\)
 * Check the Endpoint Security Manager is using CEF format
@@ -128,7 +130,7 @@ Follow these troubleshooting steps if there are problems getting the dashboards 
 
 **Step 2. Verify logs are indexed**
 
-Use the method described in the [Test the configuration](/firewalls-panorama-and-traps.md#test-the-configuration) section to produce some syslogs. Verify the logs are reaching the Splunk server by navigating to the Splunk for Palo Alto Networks app, click 'Search' in the navigation bar, then enter:
+Use the method described in the [Test the configuration](/firewalls-panorama#test-the-configuration) section to produce some syslogs. Verify the logs are reaching the Splunk server by navigating to the Splunk for Palo Alto Networks app, click 'Search' in the navigation bar, then enter:
 
 ```
 eventtype=pan
@@ -146,7 +148,7 @@ If no logs show up, then the logs are not getting indexed correctly. Use these s
 
 **Step 3. Verify logs are parsed correctly**
 
-Use the method described above in the [Test the configuration](/firewalls-panorama-and-traps.md#test-the-configuration) section to produce some syslogs. Verify the logs are reaching the Splunk server by navigating to the Palo Alto Networks App, click 'Search' in the navigation bar, and enter the following search:
+Use the method described above in the [Test the configuration](/firewalls-panorama#test-the-configuration) section to produce some syslogs. Verify the logs are reaching the Splunk server by navigating to the Palo Alto Networks App, click 'Search' in the navigation bar, and enter the following search:
 
 ```
 eventtype=pan_config
@@ -170,7 +172,7 @@ Check that the dashboards are populating with data. The Overview \(pre-6.0\) and
 * Check acceleration settings in the data model under Settings &gt; Data Model &gt;  
   and find the Palo Alto Networks datamodels. \(There may be 1, 3, or 4 datamodels depending on the App version\)
 
-* Verify that acceleration is enabled for all Palo Alto Networks datamodels.  See [Enable Datamodel Acceleration](/installation.md#enable-datamodel-acceleration) for guidance to enable the datamodels.
+* Verify that acceleration is enabled for all Palo Alto Networks datamodels.  See [Enable Datamodel Acceleration](/installation#enable-datamodel-acceleration) for guidance to enable the datamodels.
 
 * Click the arrow next to the Palo Alto Networks data models and check the data model build percentage. It should be 100% or very close to it.
 
@@ -178,5 +180,5 @@ Check that the dashboards are populating with data. The Overview \(pre-6.0\) and
 
 **Step 5. Get support**
 
-If you get to the end of these troubleshooting steps and you still can't figure out what's wrong, please search [Splunk Answers](https://answers.splunk.com/app/questions/491.html) or ask a question using the information on the [Get Support](support.md#get-support) page.
+If you get to the end of these troubleshooting steps and you still can't figure out what's wrong, please search [Splunk Answers](https://answers.splunk.com/app/questions/491.html) or ask a question using the information on the [Get Support](support#get-support) page.
 

@@ -23,8 +23,8 @@ What can the Palo Alto Networks Splunk App do?
 The Splunk for Palo Alto Networks app is one of the most downloaded apps for Splunk and is completely free. Splunk apps tell Splunk how to handle data and come with dashboards that display visualizations and analysis of the data. The Splunk for Palo Alto Networks app brings in syslogs from firewalls, Panorama, and Traps Endpoint Security Manager and makes the data easily searchable, analyzes the data with correlations, and displays the data including any anomalies visually. When actionable alerts are produced, Splunk can take action by leveraging the firewall and Panorama APIs to add context that the firewall uses to prevent targeted threats.
 
 Learn more:  
--   [Features](README.md#features)
--   [Advanced Features](/adaptive-response.md)
+-   [Features](/#features)
+-   [Advanced Features](/adaptive-response)
 
 What kinds of data does the app take in?
 ----------------------------------------
