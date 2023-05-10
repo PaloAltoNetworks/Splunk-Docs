@@ -1,5 +1,11 @@
-/** @type {import('@docusaurus/types').DocusaurusConfig} */
-module.exports = {
+// @ts-check
+// Note: type annotations allow type checking and IDEs autocompletion
+
+const lightCodeTheme = require('prism-react-renderer/themes/github');
+const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+
+/** @type {import('@docusaurus/types').Config} */
+const config = {
   title: 'Palo Alto Networks App for Splunk',
   tagline: 'Advanced security reporting and analysis tool',
   url: 'https://splunk.paloaltonetworks.com',
@@ -9,7 +15,17 @@ module.exports = {
   onBrokenMarkdownLinks: 'warn',
   organizationName: 'PaloAltoNetworks', // Usually your GitHub org/user name.
   projectName: 'Splunk-Docs', // Usually your repo name.
-  themeConfig: {
+  // Even if you don't use internalization, you can use this field to set useful
+  // metadata like html lang. For example, if your site is Chinese, you may want
+  // to replace "en" with "zh-Hans".
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+  },
+
+  themeConfig:
+    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
+    ({
     navbar: {
       title: 'Palo Alto Networks App for Splunk',
       logo: {
@@ -81,21 +97,37 @@ module.exports = {
       },
       copyright: `Copyright © ${new Date().getFullYear()} Palo Alto Networks, Inc.`,
     },
-  },
+    prism: {
+      theme: lightCodeTheme,
+      darkTheme: darkCodeTheme,
+    },
+  }),
   presets: [
     [
-      '@docusaurus/preset-classic',
-      {
+      'classic',
+      /** @type {import('@docusaurus/preset-classic').Options} */
+      ({
         docs: {
-          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
+          routeBasePath: '/',
           // Please change this to your repo.
-          editUrl: 'https://github.com/PaloAltoNetworks/Splunk-Docs/',
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+        },
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-      },
+      }),
     ],
   ],
 }
+
+module.exports = config;
