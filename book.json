@@ -4,7 +4,8 @@
         "bootstrap-callout",
         "header",
         "collapsible-chapters",
-        "ga"
+        "ga",
+        "bulk-redirect"
     ],
     "pluginsConfig": {
         "scripts": {
@@ -19,7 +20,10 @@
             "configuration": {
                 "cookieDomain": "splunk.paloaltonetworks.com"
             }
+        },
+        "bulk-redirect": {
+            "basepath": "https://pan.dev/splunk/docs/",
+            "redirectsFile": "redirects.json"
         }
-
     }
 }

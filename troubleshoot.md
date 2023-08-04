@@ -1,7 +1,3 @@
----
-redirect_to: https://pan.dev/splunk/docs/troubleshooting/
----
-
 # Troubleshooting
 
 ## Common Problems and Solutions
