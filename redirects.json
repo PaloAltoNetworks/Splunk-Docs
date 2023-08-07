@@ -2,7 +2,7 @@
   "redirects": [
     {
       "from": "index.html",
-      "to": "/"
+      "to": "/splunk/docs/"
     },
     {
       "from": "troubleshoot.html",
