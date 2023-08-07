@@ -1,0 +1,124 @@
+{
+  "redirects": [
+    {
+      "from": "index.html",
+      "to": "/"
+    },
+    {
+      "from": "troubleshoot.html",
+      "to": "troubleshooting"
+    },
+    {
+      "from": "webinars-and-videos.html",
+      "to": "/"
+    },
+    {
+      "from": "faq.html",
+      "to": "faq"
+    },
+    {
+      "from": "",
+      "to": "release-notes"
+    },
+    {
+      "from": "adaptive-response.html",
+      "to": "adaptive-response"
+    },
+    {
+      "from": "aperture.html",
+      "to": "aperture"
+    },
+    {
+      "from": "autofocus-and-minemeld.html",
+      "to": "autofocus-and-minemeld"
+    },
+    {
+      "from": "commands.html",
+      "to": "commands"
+    },
+    {
+      "from": "cortex-hec.html",
+      "to": "cortex-hec"
+    },
+    {
+      "from": "cortex-xdr.html",
+      "to": "cortex-xdr"
+    },
+    {
+      "from": "dashboards.html",
+      "to:": "/"
+    },
+    {
+      "from": "enterprise-security.html",
+      "to": "enterprise-security"
+    },
+    {
+      "from": "external-search.html",
+      "to": "external-search"
+    },
+    {
+      "from": "faq.html",
+      "to": "faq"
+    },
+    {
+      "from": "firewalls-panorama.html",
+      "to": "firewalls-panorama"
+    },
+    {
+      "from": "getting-data-in.html",
+      "to": "getting-data-in"
+    },
+    {
+      "from": "installation.html",
+      "to": "installation"
+    },
+    {
+      "from": "iot-security.html",
+      "to": "iot-security"
+    },
+    {
+      "from": "log-correlation.html",
+      "to": "log-correlation"
+    },
+    {
+      "from": "lookups.html",
+      "to": "lookups"
+    },
+    {
+      "from": "release-notes.html",
+      "to": "release-notes"
+    },
+    {
+      "from": "source-type-reference.html",
+      "to": "source-type-reference"
+    },
+    {
+      "from": "support.html",
+      "to": "support"
+    },
+    {
+      "from": "threat-intelligence.html",
+      "to": "threat-intelligence"
+    },
+    {
+      "from": "trial-demo.html",
+      "to": "trial-demo"
+    },
+    {
+      "from": "tune-or-reduce-firewall-logs.html",
+      "to": "tune-or-reduce-firewall-logs"
+    },
+    {
+      "from": "universal-forwarder.html",
+      "to": "universal-forwarder"
+    },
+    {
+      "from": "userid.html",
+      "to": "userid"
+    },
+    {
+      "from": "webinar-and-videos.html",
+      "to": "/"
+    }
+  ]
+}
