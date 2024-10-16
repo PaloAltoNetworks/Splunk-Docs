@@ -27,6 +27,10 @@ jobs:
       - run: npm ci
       - run: npm run build
 
+      # remove package.json so it isn't hosted
+      - run: rm ./_book/package.json
+      - run: rm ./_book/package-lock.json
+
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
