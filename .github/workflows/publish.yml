@@ -9,15 +9,15 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2
 
       - name: Setup Node
-        uses: actions/setup-node@v2-beta
+        uses: actions/setup-node@27082cecf3ff7a1742dbd5e12605f0cb59dce2d9 # v2-beta
         with:
           node-version: '12.16.1'
 
       - name: Cache dependencies
-        uses: actions/cache@v1
+        uses: actions/cache@f5ce41475b483ad7581884324a6eca9f48f8dcc7 # v1
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
@@ -32,7 +32,7 @@ jobs:
       - run: rm ./_book/package-lock.json
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@373f7f263a76c20808c831209c920827a82a2847 # v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_book
